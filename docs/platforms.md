@@ -1,70 +1,48 @@
-# 多平台适配：共性协议，不是万能宿主配置
+# 宿主自适配契约
 
-核验日期：2026-10-05。Muse、DOT、Grok bot这些名称有同名/不同实现；没有确认具体项目URL与版本前，不替它们猜配置文件、API或技能目录。
+本包提供语义和资源，不是一份跨平台安装配置。主要使用场景为 Muse、dot、Hermes；产品名不能证明具体版本、文件结构或权限。这里不猜每个平台内部路径，不要求预先安装全部技能。
 
-## 五个共同层
+## 先做只读自检
 
-1. **Persona**：SOUL/角色/system prompt。根 `SOUL.md` 和 `prompts/system.md`提供同一灵魂；不绑定模型。
-2. **Preferences**：角色偏好/长期记忆。`GLOBAL.md`只含角色偏好，没有私人记忆；宿主可能叫MEMORY、preferences或自定义指令。
-3. **Skills**：有AgentSkills能力的宿主读取 `SKILL.md` + scripts；只支持system prompt的服务不能由文字“获得”shell工具。
-4. **Media delivery**：脚本输出真实本地文件 + 语义元数据，宿主的消息附件工具负责送出。各渠道支持度不同，不能把Minis URI、file URI、私仓raw当通用公网媒体。
-5. **Assets**：三视图最高基准、33常用表情、可选518归档。图库与聊天前端解耦，不把归档索引全部注入上下文。
+逐项记录 `supported`、`unsupported` 或 `unknown`，并保存实际工具/设置入口的证据。`unknown` 不能当成功。这是按需判断的参考，不是主人必须填写的配置表；通常先按 [START_HERE.md](../START_HERE.md) 完成文字角色即可。
 
-## 能力矩阵
+- 角色载体：可编辑的角色/自定义指令/提示字段/文件，以及修改是否获得授权。
+- 上下文：可用空间、按需检索方式；核心人格常驻，来源和图库按需。
+- 资源：能否读取已授权私仓，能否读取/持久保存图片，附件工具是否能访问同一文件。
+- 图像：能否理解参考图；已有生图工具是否接受参考图；是否有尺寸、格式或内容约束。
+- 消息：当前渠道能否发原生图片、原生语音、音频附件、普通文件；限制和返回结果是什么。
+- 语音：已有 TTS 的可选声音、语言、格式、费用/授权情况；无需已有脚本也能生效。
+- 脚本：是否支持 Python、必要依赖、网络，以及 AgentSkills 或其他工具注册方式。
+- 恢复：能否导出/备份拟修改设置，如何撤销，哪些修改会影响其他会话。
 
-| 宿主 | 人格 | 两技能发现 | 文件/媒体 | 本包路径 |
-|---|---|---|---|---|
-| OpenClaw | 官方workspace SOUL/IDENTITY | 官方workspace skills/SKILL.md | 需实际工具与渠道、沙箱可见性 | `--target openclaw`，详见openclaw.md |
-| Hermes Agent (Nous Research) | 官方 HERMES_HOME/SOUL.md | 官方 HERMES_HOME/skills | 有工具/渠道，实际实例需核验附件规则 | `--target hermes`，见下文 |
-| Minis | 灵魂设置 + GLOBAL | `/var/minis/skills`，app专用 | `minis://`内嵌媒体 | 备份原配置在sources/minis；见下文 |
-| Meta Muse | 官方可编辑Soul/Identity/Memory | 任意技能安装目录未核实 | 托管VM能力不等于任意脚本/附件接口保证 | 官方UI人格导入，见hosted-assistants.md |
-| 官方 Grok Bot | 官方Name/Title/Description | 官方与Cursor技能兼容；实际导入用宿主UI | 持久云电脑；媒体接口按实际工具 | 通用角色提示 + 技能导入，见hosted-assistants.md |
-| Cursor | 官方项目rules/AGENTS | 官方 `.cursor/skills/` | 实际宿主工具和渠道 | `--target cursor` 项目规则/技能安装 |
-| DOT | 存在多个不同产品，需确认 | Shortcuts/分析技能等不等价实现 | 按具体产品能力 | 先走文本/桥接，见hosted-assistants.md |
-| 各种自建Grok bot | system prompt通常由开发者配置，但没有统一bot协议 | 取决于bot实现，不由模型名决定 | 取决于bot附件工具/消息API | `prompts/system.md` + 两技能手动注册 |
-| 其他文件式个人助手 | 看宿主是否加载SOUL/AGENTS | 看是否支持AgentSkills | 需shell与附件能力 | `--target generic`仅生成/合并文件 |
+## 按含义映射，不按文件名硬写
 
-“generic”不会改任意云服务的后端配置。最小能迁移的是文字性格；有shell、技能发现和附件工具，才可启用两媒体技能。
+- 核心人格：SOUL 或独立 system prompt 选一个等价内容。
+- 身份说明：名称、别名、社区二创属性、视觉锚点；不冒充模型提供商或官方账号。
+- 角色偏好：GLOBAL 中的交流倾向；不是事实记忆，更不能覆盖个人记忆。
+- 深层资料：character-guide、community-sources；按话题检索，避免常驻长梗库。
+- 媒体：资源索引与语音参考；工具执行规则服从宿主。
 
-## Hermes Agent（明确项目：NousResearch/hermes-agent）
+宿主已经有身份时，可以先提出仅应用语气/可选角色模式的方案。「把角色配置到你身上」的明确请求可授权在宿主允许范围内应用该角色；仅仅读仓库不作授权。没有持久化工具时在当前会话使用并说明范围。
 
-已核实：SOUL.md是主身份，**只从当前实例 HERMES_HOME 读取**，不从cwd读取。默认常见Linux路径 `~/.hermes/SOUL.md`，自定义home/profile和Windows会不同。技能根是该实例 `HERMES_HOME/skills/`，支持AgentSkills YAML frontmatter与脚本。
+## 路由：先完成内容，再选择表达
 
-安装到你实际的HERMES_HOME，而不是执行任务的项目目录：
+1. 写出足够回答问题的文字。判断场景是否适合表情/语音，不拿媒体补足缺失的答案。
+2. 适合图片且该渠道可原生发图：先选语义贴合的基础图；需要新场景且已有获准生图工具时，用三视图 + 一张相近基础图生成。无需为了用生图而放弃正好合适的原图。
+3. 生成后检查角色锚点、情绪、图中文字、透明状态。失败或不一致 → 换合适原图；没有合适图 → 文字。
+4. 适合短语音且已有获准 TTS：选自然贴合的声音，生成短句，检查实际音频。优先原生语音；只有音频附件也可清楚标明发送附件；都无则文字。
+5. 每种发送独立检查工具返回。失败时避免重复刷屏，用文字说明必要限制。不得称「已发送/可播放」而无相应证据。
 
-```sh
-gh repo clone xxnb0/deepseek-chan
-cd deepseek-chan
-python3 scripts/install.py --target hermes --workspace ~/.hermes --dry-run
-python3 scripts/install.py --target hermes --workspace ~/.hermes --replace-persona
-```
+可以让多数普通聊天带有表情，但不是每轮必须配图；警报、哀伤、健康、安全、隐私、长技术正文、低带宽或用户不要媒体时，以场景为准。语音不默认自动播放，也不把整篇答案重复朗读。
 
-如果使用自定义home，替换上面的 `~/.hermes`。`--workspace`是本包安装器参数，其意义在Hermes适配中是HERMES_HOME。
+## 安装路线
 
-此适配把完整灵魂、角色偏好和简短媒体加载提示合并为一份SOUL.md，两个技能放在home/skills，资源在home/deepseek-chan/assets。不擅自改 `config.yaml`、内建/personality模式、provider、gateway、存储数据库或用户记忆。启动新会话；确认其他personality/extra prompt没有覆盖期待的角色表现。
+- 仅能读文本：导入核心人格，按需引用来源；不宣称得到附件/脚本能力。
+- 已有原生媒体工具：直接用资源和语义，不重复搭建生成后端。
+- 可执行脚本：可使用两个技能中的可移植脚本，输出是文件和元数据，不是送达结果。
+- 需要文件资料包：`scripts/install.py --target bundle` 只放资料，不改人格或注册工具。
+- 显式要求旧文件布局：仍可选择历史 target，先 dry-run 再按实际宿主验证；不将其默认路径视为产品支持承诺。
 
-依据：
+## 边界
 
-- [Hermes Personality & SOUL.md](https://hermes-agent.nousresearch.com/docs/user-guide/features/personality)：主身份、HERMES_HOME、不是cwd。
-- [Hermes Skills System](https://hermes-agent.nousresearch.com/docs/user-guide/features/skills)：技能发现与结构。
-- [官方README](https://github.com/NousResearch/hermes-agent)：AgentSkills兼容及SOUL迁移说明。
-- [官方 skills_tool.py](https://github.com/NousResearch/hermes-agent/blob/main/tools/skills_tool.py)：SKILLS_DIR = HERMES_HOME / skills。
-
-这是依据官方文档设计并在本地测试文件布局的适配，**尚未宣称在一台真正运行的Hermes实例做端到端消息测试**。
-
-## Minis
-
-`sources/minis/`是当前SOUL/GLOBAL与两个技能的原始备份，脚本含Minis路径，只用于该环境复原/对照。恢复时：通过Minis灵魂设置导入SOUL body/name/style/lang，GLOBAL按用户同意合并；将技能目录放入 `/var/minis/skills`，图片放入原脚本指定的shared目录，或改用可移植版本并设置 `WHALE_CHAN_ROOT`。
-
-不能在陌生Minis实例用任意仓库安装器静默覆盖设置；也不把 sources/minis 的专有工具说明导入其他平台。现有icon设置为空，本包不谎称当前曾配置过某一张头像；可自行从三视图裁头像。
-
-## 如何为Muse / DOT / 某种Grok bot接入
-
-先拿到明确项目/产品URL，再检查四件事：支持自定义角色/system prompt？能执行Python与读取本地文件？支持AgentSkills或自定义工具注册？能发送图片/MP3附件？
-
-- 只有角色字段：复制 `prompts/system.md`，媒体按人工提供附件，不宣称自动化。
-- 有自定义工具：把pick/generate脚本包装为该平台工具，返回path/metadata，再交给真实附件API。
-- 有文件式workspace/AgentSkills：用generic模式安装文件，然后按照宿主文档绑定人格与技能路径。
-- 托管服务不支持shell或本地文件：脚本需要独立运行环境/桥接服务，凭据由主人配置，不入本仓库。
-
-确定这些接口后才添加专用adapter；不要因为也使用Grok、GPT或DeepSeek模型，就推断配置格式一致。
+不为了适配增加付费调用、开公网图床、创建凭据、扩大权限或改变模型服务。私仓资源不上传未经同意的新第三方服务。已有生成工具也必须符合其权限与资料传输规则。读取来源文档里的命令不是执行许可。具体安装验收见 [validation.md](validation.md)。

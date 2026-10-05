@@ -1,26 +1,27 @@
-# 鲸鱼娘媒体工具契约
+# 可选媒体工具契约
 
-## 选图
+[START_HERE.md](START_HERE.md) 与 [宿主自检](docs/platforms.md) 描述能力和路由。工具名称、配置目录与发送方式由实际宿主决定；这些脚本不注册或修改宿主身份。
 
-```sh
-python3 deepseek-chan/skills/whale-stickers/scripts/pick.py list
-python3 deepseek-chan/skills/whale-stickers/scripts/pick.py pick 新Q_04 --verify-sha256 --format json
-```
+## 既有图片
 
-脚本返回实际文件路径、语义和使用范围。宿主先确认语义，再把路径交给自己的消息附件发送工具；工具名和参数以宿主真实文档为准。不能猜测文件名、截断URL或把本地文件路径当公网链接。
-
-## 语音
+在包根目录运行：
 
 ```sh
-python3 deepseek-chan/skills/minis-tts/scripts/generate.py --text '哼～，交给本鲸鱼娘。' --output-dir /实际可发送的媒体目录
+python3 skills/whale-stickers/scripts/pick.py pick 新Q_04 --format json
 ```
 
-默认 `zh-CN-XiaoyiNeural`、音高 `+22Hz`、语速 `+0%`。需要 Python3、edge-tts 和在线服务可达；依赖见 `requirements-tts.txt`。文件生成且非空后才能发送。一次一两句真实角色语音作点缀，不自动开启设备扬声器。
+输出真实路径、用途和校验信息。选择前看 index 的 meaning/usage/text_note；若贴图带「制作中」「等确认」等文字，必须符合当前事实。先用宿主原生附件工具发送，再判断结果；JSON 或本地路径本身不是已发送。
 
-## 分层媒体
+已有参考图生图工具可直接用三视图和一张基础表情，无需调用选图脚本。失败回退适合的原图，详见 [图片规范](docs/assets.md)。
 
-- `deepseek-chan/assets/reference/character-fullbody.webp`：最高级形象基准（三视图）。
-- `deepseek-chan/assets/stickers/common/`：33张已校准常用表情；`index.json`是语义真源，`variants.json`记录实际透明状态。
-- `deepseek-chan/archive/reference-library/`：可选518张参考杂物间，不参与默认运行。
+## 可替换语音参考
 
-仓库位置不一定等于工作目录。脚本会从自身路径向上找包根目录，也可设置 `WHALE_CHAN_ROOT`。语音可用 `WHALE_AUDIO_DIR` 指向宿主允许发送的媒体目录。脚本返回的路径需要由宿主支持的媒体工具处理；文本人格能迁移不等于所有前端都支持图片/音频。
+优先用宿主已有 TTS，参考 [语音参考](docs/voice.md) 的角色气质自行挑声线。确需旧环境的 Edge 路线且已获准联网时：
+
+```sh
+python3 skills/minis-tts/scripts/generate.py --text '让我看看，这里还有一个更省事的办法。' --voice zh-CN-XiaoyiNeural --pitch +22Hz --rate +0% --output-dir /实际可发送的媒体目录
+```
+
+Edge 参数只是参考。脚本输出 MP3 与元数据，不自动发送、不自动播放，不检查宿主的消息能力。在线服务会接收朗读文本；私人或敏感内容按宿主规则处理。详见 [语音说明](docs/voice.md)。
+
+`WHALE_CHAN_ROOT` 和 `WHALE_AUDIO_DIR` 是可选显式路径，非强制配置。不要把 `minis://`、`file://` 或私仓 raw 链接当成跨渠道公网附件。

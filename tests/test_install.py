@@ -29,7 +29,7 @@ class InstallTests(unittest.TestCase):
                 self.run_install(target,path)
                 prefix=path/('.cursor/skills' if target=='cursor' else 'skills')
                 pick=prefix/'whale-stickers/scripts/pick.py'
-                result=subprocess.run([sys.executable,str(pick),'pick','新Q_04','--format','json'],capture_output=True,text=True)
+                result=subprocess.run([sys.executable,str(pick),'pick','08','--format','json'],capture_output=True,text=True)
                 self.assertEqual(result.returncode,0,result.stderr)
                 data=json.loads(result.stdout)
                 self.assertTrue(data['sticker']['sha256_verified'])
@@ -38,7 +38,31 @@ class InstallTests(unittest.TestCase):
                 self.run_install(target,path)
                 after={p.relative_to(path).as_posix():p.read_bytes() for p in path.glob('*.md')}
                 self.assertEqual(before,after)
-                self.assertFalse((path/'deepseek-chan/archive').exists())
+                self.assertTrue((path/'deepseek-chan/archive/reference-library/index.json').is_file())
+                self.assertFalse(list((path/'deepseek-chan/archive').rglob('*.webp')))
+
+    def test_bundle_default_does_not_modify_host(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path=Path(tmp)
+            for name in ('SOUL.md','IDENTITY.md','AGENTS.md','GLOBAL.md','TOOLS.md'):
+                (path/name).write_text('Keep '+name)
+            r=subprocess.run([sys.executable,str(INSTALL),'--workspace',str(path)],capture_output=True,text=True)
+            self.assertEqual(r.returncode,0,r.stderr)
+            for name in ('SOUL.md','IDENTITY.md','AGENTS.md','GLOBAL.md','TOOLS.md'):
+                self.assertEqual((path/name).read_text(),'Keep '+name)
+            self.assertFalse((path/'skills').exists())
+            self.assertTrue((path/'deepseek-chan/START_HERE.md').is_file())
+            self.assertTrue((path/'deepseek-chan/docs/character-guide.md').is_file())
+            self.assertTrue((path/'deepseek-chan/tests/persona-cases.json').is_file())
+            self.assertTrue((path/'deepseek-chan/scripts/verify.py').is_file())
+
+    def test_orphan_merge_marker_refused_before_writes(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path=Path(tmp)
+            (path/'AGENTS.md').write_text('Keep host\n<!-- deepseek-chan:end -->')
+            r=self.run_install('generic',path,expected=1)
+            self.assertIn('Invalid existing',r.stderr)
+            self.assertFalse((path/'deepseek-chan').exists())
 
     def test_conflict_refused_backup_and_merge(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -50,6 +74,8 @@ class InstallTests(unittest.TestCase):
             self.run_install('openclaw',path,'--dry-run')
             self.run_install('openclaw',path,'--replace-persona')
             self.assertIn('Keep host operations',(path/'AGENTS.md').read_text())
+            self.assertIn('(deepseek-chan/START_HERE.md)',(path/'AGENTS.md').read_text())
+            self.assertIn('(deepseek-chan/assets/reference/character-fullbody.webp)',(path/'IDENTITY.md').read_text())
             backup=list((path/'.deepseek-chan-backups').glob('*/SOUL.md'))
             self.assertEqual(len(backup),1)
             self.assertEqual(backup[0].read_text(),'Existing persona')
