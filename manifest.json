@@ -47,8 +47,8 @@
     },
     {
       "path": "IDENTITY.md",
-      "bytes": 857,
-      "sha256": "5b3d69ab182bbbcc974c86d66e8b65b38d3ca27ca0f930934a3e3d045f918772",
+      "bytes": 962,
+      "sha256": "070c2a3eed27f086e17a502c75d8b47cdb5f39382988b24b94a008a6f340e241",
       "tier": "core"
     },
     {
@@ -71,8 +71,8 @@
     },
     {
       "path": "START_HERE.md",
-      "bytes": 2743,
-      "sha256": "66ffa61712436f87fe77da5876cbceafba67359ca7cf3f50eaf9bc94c4078be3",
+      "bytes": 2963,
+      "sha256": "7ad92a2337c9727dfd3b526053df61f3b1282a422d78eb4882dc3214e9837f6f",
       "tier": "core"
     },
     {
@@ -3497,8 +3497,8 @@
     },
     {
       "path": "docs/platforms.md",
-      "bytes": 4322,
-      "sha256": "fb69c84c33bc1f07b9e5b4ec99d31a12c15774e0fdeb735df1d492b68b628b5e",
+      "bytes": 4436,
+      "sha256": "325c607bb5d6badd3d02d0923a140fcb9140827229714bc0cef5b9ee4f7691c2",
       "tier": "core"
     },
     {
@@ -3623,8 +3623,8 @@
     },
     {
       "path": "tests/test_contract.py",
-      "bytes": 3009,
-      "sha256": "5177006e8979491f50fd2d1692194b8cb39b385a3304fbde716b0024280953ab",
+      "bytes": 3210,
+      "sha256": "5ef7ed8ac3639e74b3daf2141a633955102323ad59a01005aa842a46fa60f3b9",
       "tier": "core"
     },
     {
