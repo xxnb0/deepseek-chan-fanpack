@@ -29,50 +29,56 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 1666,
-      "sha256": "bd7f75503b563325cf04ddbe1025a21825f1ee4dbd9956b97748ef843cd3bda5",
+      "bytes": 1748,
+      "sha256": "f83748b5ec6079614a8872281fee8b1de5c446a202f0402f4b007831e0c8b9cf",
       "tier": "core"
     },
     {
       "path": "BOOTSTRAP_MESSAGE.md",
-      "bytes": 1594,
-      "sha256": "8e6f0ce99f4037b8bd705c2d5b9ad885a7b5dff5d411cb62d2fddc1a8ab9b94a",
+      "bytes": 481,
+      "sha256": "0f4eff9f3c318444efffe84d6a4be5c8d306bf8eeb3fad1cadf6cafa86097fc3",
       "tier": "core"
     },
     {
       "path": "GLOBAL.md",
-      "bytes": 668,
-      "sha256": "af10bd3fb7c8e98bfe07a6ebe10054cb7540148939d6c2b0cd4ecba8683df2aa",
+      "bytes": 705,
+      "sha256": "ef5e8f93acc83f483951e1f61b2cba9b4682103452df675d9e5799725d004a4b",
       "tier": "core"
     },
     {
       "path": "IDENTITY.md",
-      "bytes": 446,
-      "sha256": "a149c2eb545b17420333219e7b556ce3e383012549471f614a0dbfa7b5aab1c1",
+      "bytes": 1263,
+      "sha256": "bdae0c74fc662f3d3415684c682bb1683e45b46062fa469bf671474588228825",
       "tier": "core"
     },
     {
       "path": "NOTICE.md",
-      "bytes": 1368,
-      "sha256": "b145d8c257d2035c7942cd87e91b097ad2f5695e9862d339208d86fe5234be50",
+      "bytes": 2315,
+      "sha256": "819022a9eb8420db3a01c14991cdf35d63335954559d7f676ddcca5bac92ddfd",
       "tier": "core"
     },
     {
       "path": "README.md",
-      "bytes": 6687,
-      "sha256": "e323ff0cc6332cc5e8f521c18dc729608a49b95f68fe8c4d9745ff11d1a23693",
+      "bytes": 2696,
+      "sha256": "449acc5da40d7c85d3b9d916dddf9891030c202bd99e3159388447270e846af1",
       "tier": "core"
     },
     {
       "path": "SOUL.md",
-      "bytes": 3753,
-      "sha256": "e733149908bfbd873a7e65deafeffe2adcec8ae0b39650b86e5afafd5414abcb",
+      "bytes": 3702,
+      "sha256": "5d19889bc4e262943c13f717ad806777dd2ab9fdc42d5a232855711f62885bb8",
+      "tier": "core"
+    },
+    {
+      "path": "START_HERE.md",
+      "bytes": 2714,
+      "sha256": "2e74c67b81591452ca70343ecf7630ccf30b88a19504db17042ca5b11d9dd826",
       "tier": "core"
     },
     {
       "path": "TOOLS.md",
-      "bytes": 1610,
-      "sha256": "da269557179dc41e29650640c63f88025b8033150294ab910964f294d3af4d5b",
+      "bytes": 1622,
+      "sha256": "1438a0eaa9f31393e96c7b65e31cccd41852f81524017471c316370298dbea68",
       "tier": "core"
     },
     {
@@ -3323,8 +3329,8 @@
     },
     {
       "path": "assets/stickers/common/preview.html",
-      "bytes": 16451,
-      "sha256": "e90a105daf3cd8e7c53accfd236232d4803ef3b532359d194a25ac0075f2c33f",
+      "bytes": 16452,
+      "sha256": "c045be6f327dbfc06335ab4b17a12f02ccaa6693a76c6eb498d93edba2b31c92",
       "tier": "core"
     },
     {
@@ -3335,8 +3341,8 @@
     },
     {
       "path": "assets/stickers/common/usage.md",
-      "bytes": 4347,
-      "sha256": "e593f701553aff43047b05135276d931a2a453d982da92753a4466154ce9b658",
+      "bytes": 4325,
+      "sha256": "22b92cbd1ced5ea8d084f2c23bfd6e8bdf1ed591db2084f5cea03f16267795c4",
       "tier": "core"
     },
     {
@@ -3443,14 +3449,26 @@
     },
     {
       "path": "docs/assets.md",
-      "bytes": 3333,
-      "sha256": "08478bbc77e699349d0c1b3fa9e2f2a5cd4c50bd20dde920aba9fbb5d00259d6",
+      "bytes": 4850,
+      "sha256": "967fe1376372456e210fc2eb37da5979e79636143683167b55b6f940c3cc9df4",
+      "tier": "core"
+    },
+    {
+      "path": "docs/character-guide.md",
+      "bytes": 6465,
+      "sha256": "b9fc5723d7e3567bf34b6634d4cd0e6a4b3a4a1322adf2f8de2b4489c29efca6",
+      "tier": "core"
+    },
+    {
+      "path": "docs/community-sources.md",
+      "bytes": 8983,
+      "sha256": "d30c244f3f14dca1594dd02d1664f8c1386a84e75c40570f237f1262b585cdca",
       "tier": "core"
     },
     {
       "path": "docs/hosted-assistants.md",
-      "bytes": 4804,
-      "sha256": "aa89eef91fb1b36fa254a4c7242f78fe5f8b66fa157ac64c1227747021c45001",
+      "bytes": 1612,
+      "sha256": "1f1b9346d79896cbaf1873af57ba1d4561656370dad5e01340f4b3bda1b81e4f",
       "tier": "core"
     },
     {
@@ -3461,26 +3479,38 @@
     },
     {
       "path": "docs/platforms.md",
-      "bytes": 6228,
-      "sha256": "459f6485f6fc035016d7b1e74514d3f6312f1412909bf75b862e526fe16059d5",
+      "bytes": 4310,
+      "sha256": "acf9eaedf687566c58bacba0fd3ff64ae20be65c0cecc0fbfdda47b0d667ba68",
+      "tier": "core"
+    },
+    {
+      "path": "docs/validation-v1.0.0.md",
+      "bytes": 2053,
+      "sha256": "170bd14e2123d9660d6f93f5c8bac7a283961a42d1e62bed12cc8f273d681569",
       "tier": "core"
     },
     {
       "path": "docs/validation.md",
-      "bytes": 1873,
-      "sha256": "c3f126f3159788e86ec313bde660c33203c2d84dc785c793b69b4c31b71e0286",
+      "bytes": 4967,
+      "sha256": "1b843ca25f9ebc05cf0a7c6d58a2bd31f1e1985f5034f0b77f728275c0bbdf12",
+      "tier": "core"
+    },
+    {
+      "path": "docs/voice.md",
+      "bytes": 2541,
+      "sha256": "59334ee03424a23477bb4fe8b5d05283f9fa401c24814c5e0329be4deab6bbe3",
       "tier": "core"
     },
     {
       "path": "personality.json",
-      "bytes": 3815,
-      "sha256": "cc125c6e8890f50fb7836410f4119db8f1e4af4fee8d668aa75353b2b403042e",
+      "bytes": 3770,
+      "sha256": "172f57dbb1b2de94970f76c81eda299b28561745865db200dfbf13d2df498318",
       "tier": "core"
     },
     {
       "path": "prompts/system.md",
-      "bytes": 4756,
-      "sha256": "5268ba901b55549579556adcc05cb685dde60a42365c39e13fb03f046b73a4cd",
+      "bytes": 3646,
+      "sha256": "6181fc11d56d70039b9fbedf38ddde57ee071d0bf897856d51a18d6dabab3dd5",
       "tier": "core"
     },
     {
@@ -3491,20 +3521,20 @@
     },
     {
       "path": "scripts/install.py",
-      "bytes": 6652,
-      "sha256": "f8b03c36a3fb6d3d6d66c284be31069902c2acfe39557dcb4d05c349ea45ef29",
+      "bytes": 7534,
+      "sha256": "ed743d4bd60139d723a830be892c17979945e0550e693b7333e4adae65c2d2dd",
       "tier": "core"
     },
     {
       "path": "scripts/verify.py",
-      "bytes": 2484,
-      "sha256": "f7660857bb8646278ea2e48fdfe0199845a1f5bd89360a6f345372e4bc504b47",
+      "bytes": 5980,
+      "sha256": "c701209d533bfd650404e7ac59b640bad2c6308af38e18a1375d3cc72d145e7f",
       "tier": "core"
     },
     {
       "path": "skills/minis-tts/SKILL.md",
-      "bytes": 5639,
-      "sha256": "4b2783bf96b8caffb55ac6391ca71ae544f6bdd935ce13123ccf99b4fccff72f",
+      "bytes": 3624,
+      "sha256": "828177b8fdcc95370ae2c966297e18c46bec7930c7de68f472da546bc9b2502b",
       "tier": "core"
     },
     {
@@ -3515,8 +3545,8 @@
     },
     {
       "path": "skills/whale-stickers/SKILL.md",
-      "bytes": 8510,
-      "sha256": "efd1524cbecae4b5563dd50e7ed7963c2e6c474f8214f32f9aecca4a6d9fa2ab",
+      "bytes": 8909,
+      "sha256": "63a8ce99f9ddd2e3227475055f5252f3428b8bca16cfbf277783b19339037548",
       "tier": "core"
     },
     {
@@ -3533,8 +3563,8 @@
     },
     {
       "path": "sources/minis/GLOBAL.md",
-      "bytes": 668,
-      "sha256": "af10bd3fb7c8e98bfe07a6ebe10054cb7540148939d6c2b0cd4ecba8683df2aa",
+      "bytes": 669,
+      "sha256": "1a0f33d992c6fb6963660e537d892d0d434febd608fa2a24d9f47fc643fcb3ed",
       "tier": "core"
     },
     {
@@ -3574,9 +3604,33 @@
       "tier": "core"
     },
     {
+      "path": "tests/persona-cases.json",
+      "bytes": 5342,
+      "sha256": "a68a39018529cd26838348c7562f95e70028e06d19a835c1e1c5ee4e9f21b250",
+      "tier": "core"
+    },
+    {
+      "path": "tests/test_contract.py",
+      "bytes": 2477,
+      "sha256": "21c995c69a755c961494feef507828b9dfa789351f19c1435a1edc989be15214",
+      "tier": "core"
+    },
+    {
       "path": "tests/test_install.py",
-      "bytes": 3121,
-      "sha256": "a55dd5a80317271bd58d98cfa53d33f6a5c05962f8fb61cc2a91afd9a4676132",
+      "bytes": 4823,
+      "sha256": "e79187fb2b61f370bd7874ffd7b5eb9b77a593b3578cae1953360eb8f69450b0",
+      "tier": "core"
+    },
+    {
+      "path": "tests/test_tts.py",
+      "bytes": 4212,
+      "sha256": "0ef22423ba15c193b7b42eff616a1a369cc9a972d78479f94cb0f0556146838a",
+      "tier": "core"
+    },
+    {
+      "path": "tests/test_verify.py",
+      "bytes": 2398,
+      "sha256": "4f777f2533e68d826bc2203a37530e4f98f3cfe083ec905852ba343bc744859e",
       "tier": "core"
     }
   ]
