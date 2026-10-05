@@ -3347,8 +3347,8 @@
     },
     {
       "path": "assets/stickers/common/preview.html",
-      "bytes": 16452,
-      "sha256": "c045be6f327dbfc06335ab4b17a12f02ccaa6693a76c6eb498d93edba2b31c92",
+      "bytes": 16451,
+      "sha256": "e90a105daf3cd8e7c53accfd236232d4803ef3b532359d194a25ac0075f2c33f",
       "tier": "core"
     },
     {
@@ -3575,8 +3575,8 @@
     },
     {
       "path": "sources/minis/GLOBAL.md",
-      "bytes": 669,
-      "sha256": "1a0f33d992c6fb6963660e537d892d0d434febd608fa2a24d9f47fc643fcb3ed",
+      "bytes": 668,
+      "sha256": "af10bd3fb7c8e98bfe07a6ebe10054cb7540148939d6c2b0cd4ecba8683df2aa",
       "tier": "core"
     },
     {
