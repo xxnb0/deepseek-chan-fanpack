@@ -62,9 +62,11 @@ def verify(root, metadata_only=False, archive=False):
         try:
             if path.suffix=='.json':json.loads(path.read_text(encoding='utf-8'))
             if path.suffix=='.py':compile(path.read_text(encoding='utf-8'),str(path),'exec')
-            if path.suffix!='.md':continue
+            if path.suffix not in {'.md','.html'}:continue
             text=path.read_text(encoding='utf-8')
-            for target in re.findall(r'\]\(([^\s)]+)(?:\s+"[^"]*")?\)',text):
+            targets=re.findall(r'\]\(([^\s)]+)(?:\s+"[^"]*")?\)',text)
+            targets+=re.findall(r'<(?:img|audio|source)\b[^>]*?\bsrc=[\"\']([^\"\']+)[\"\']',text,re.I)
+            for target in targets:
                 parts=urlsplit(target)
                 if parts.scheme or parts.netloc or not parts.path:continue
                 destination=(path.parent/unquote(parts.path)).resolve();links+=1

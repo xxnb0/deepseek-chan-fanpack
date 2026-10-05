@@ -48,7 +48,7 @@ def main():
     attic = ROOT/'archive/reference-library'
     attic_images = [f for f in attic.glob('*') if f.suffix.lower() in {'.png','.jpg','.jpeg','.webp','.gif'}]
     if args.include_archive and not attic_images:
-        p.error('Optional archive images are not extracted. Use the full release bundle first.')
+        p.error('Optional archive images are not extracted. Obtain the optional archive images first.')
     skill_prefix = '.cursor/skills' if args.target == 'cursor' else 'skills'
     replace = ['SOUL.md'] + (['IDENTITY.md'] if args.target != 'hermes' else [])
     if args.target == 'bundle':

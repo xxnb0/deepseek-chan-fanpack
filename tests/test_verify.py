@@ -29,7 +29,7 @@ class VerifyTests(unittest.TestCase):
         result=verify.verify(self.root,metadata_only=True)
         self.assertTrue(result['ok'],result['errors'])
         self.assertFalse(result['full_media_verification'])
-        self.assertEqual(len(result['media_files_not_byte_verified']),34)
+        self.assertEqual(len(result['media_files_not_byte_verified']),35)
         self.assertEqual(result['media_files_byte_verified'],0)
 
     def test_full_mode_rejects_sparse_checkout(self):
@@ -38,7 +38,7 @@ class VerifyTests(unittest.TestCase):
         self.assertTrue(any('Missing: assets/' in e for e in result['errors']))
 
     def test_metadata_does_not_hide_broken_document_links(self):
-        p=self.root/'README.md';p.write_text(p.read_text()+'\n[bad](not-a-real-doc.md)\n')
+        p=self.root/'README.md';p.write_text(p.read_text()+'\n[bad](not-a-real-doc.md)\n<img src="missing-image.png">\n')
         result=verify.verify(self.root,metadata_only=True)
         self.assertFalse(result['ok'])
         self.assertTrue(any('Broken document link' in e for e in result['errors']))

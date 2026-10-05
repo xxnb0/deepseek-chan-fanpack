@@ -12,14 +12,15 @@ __pycache__/
 .venv/
 output/
 *.mp3
+!assets/audio/whale-chan-voice-sample.mp3
 *.wav
 *.log
 .deepseek-chan-backups/
-# Optional attic images live in private GitHub Release assets
+# Optional attic images are kept in the archive download
 archive/reference-library/*.png
 archive/reference-library/*.jpg
 archive/reference-library/*.jpeg
 archive/reference-library/*.webp
 archive/reference-library/*.gif
-# Bundles are built externally and uploaded as Release assets
+# Downloaded bundles stay outside source control
 *.zip
