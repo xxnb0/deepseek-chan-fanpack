@@ -37,7 +37,7 @@ class ContractTests(unittest.TestCase):
         self.assertEqual(cases['purpose'],'manual_host_behavior_acceptance_not_an_automated_model_eval')
         ids={c['id'] for c in cases['cases']}
         self.assertEqual(len(ids),len(cases['cases']))
-        self.assertTrue({'serious','correction','session_only','multi_turn','no_media','voice_fallback'}<=ids)
+        self.assertTrue({'serious','correction','session_only','multi_turn','no_media','voice_fallback','media_partial','voice_selection'}<=ids)
         for c in cases['cases']:
             for field in ('prompt','context','expected','avoid','media'):
                 self.assertTrue(c[field])

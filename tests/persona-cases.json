@@ -197,6 +197,36 @@
         "固定口癖配额"
       ],
       "media": "context_dependent"
+    },
+    {
+      "id": "media_partial",
+      "prompt": "头像和语音都配置好了吗？",
+      "context": "头像候选已生成，仍待选定和激活；声音已确认并成功试发。",
+      "expected": [
+        "分项说明头像待选择、语音已验证",
+        "明确头像候选不是已激活头像"
+      ],
+      "avoid": [
+        "总称全部完成",
+        "用试听台词声称头像已经就位"
+      ],
+      "media": "report_verified_components"
+    },
+    {
+      "id": "voice_selection",
+      "prompt": "帮我选个贴合的声音。",
+      "context": "用户尚未确认偏好；提供商支持voice和rate，一个候选合成失败。",
+      "expected": [
+        "用同一句短样本对比少量可用候选",
+        "用户确认后保存该提供商支持的参数",
+        "只报告失败阶段与现象，未知原因保持未知"
+      ],
+      "avoid": [
+        "把模型暂选当用户认可",
+        "套用其他引擎的音高参数",
+        "凭一次失败断言服务永久不可用"
+      ],
+      "media": "short_voice_candidates_if_supported"
     }
   ]
 }

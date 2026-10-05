@@ -29,7 +29,7 @@ class VerifyTests(unittest.TestCase):
         result=verify.verify(self.root,metadata_only=True)
         self.assertTrue(result['ok'],result['errors'])
         self.assertFalse(result['full_media_verification'])
-        self.assertEqual(len(result['media_files_not_byte_verified']),35)
+        self.assertEqual(len(result['media_files_not_byte_verified']),36)
         self.assertEqual(result['media_files_byte_verified'],0)
 
     def test_full_mode_rejects_sparse_checkout(self):

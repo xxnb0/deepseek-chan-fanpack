@@ -59,8 +59,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3102,
-      "sha256": "982e8ece9b2a5507893fbd92b80e92f8b37754f298d56ab1363f14dadf0bae75",
+      "bytes": 3270,
+      "sha256": "7d66552b5dd8782ee8b44baf6965c5e576f24c7a6d801c857ed70d2b13452b46",
       "tier": "core"
     },
     {
@@ -71,8 +71,8 @@
     },
     {
       "path": "START_HERE.md",
-      "bytes": 2963,
-      "sha256": "7ad92a2337c9727dfd3b526053df61f3b1282a422d78eb4882dc3214e9837f6f",
+      "bytes": 3076,
+      "sha256": "2b649647d94c8be6c7e1561571d3984a6c89a4c1e4c26740e23391375b3027e1",
       "tier": "core"
     },
     {
@@ -3203,8 +3203,14 @@
     },
     {
       "path": "assets/audio/README.md",
-      "bytes": 426,
-      "sha256": "d2b995ec78bf19d2f67486658a818ab77e2ebdad19deb84fb4c3d49d3fc6c78b",
+      "bytes": 593,
+      "sha256": "f1561e5f9b5bae1526cdd9a5db0c93826bccfd5c86fe1060356767994b54a349",
+      "tier": "core"
+    },
+    {
+      "path": "assets/audio/whale-chan-voice-preview.mp4",
+      "bytes": 226439,
+      "sha256": "6d3f21c9a96c8594c631ecb36cd71cc9e0fb96011d0c06ff9da98b37076ea493",
       "tier": "core"
     },
     {
@@ -3503,14 +3509,14 @@
     },
     {
       "path": "docs/validation.md",
-      "bytes": 3259,
-      "sha256": "fadcbf40cfb66a93256faaed9bd13a5774d87a22f06b4e60aacb4747158e18fa",
+      "bytes": 3286,
+      "sha256": "2994ebfc3aa03abd780a3b79fd3706af075e69564d15d136ad0da1490dc6c6ee",
       "tier": "core"
     },
     {
       "path": "docs/voice.md",
-      "bytes": 2243,
-      "sha256": "8e86c28a1e2c64be610bea8cf12734686047d12a3f87595c00c98647fecba920",
+      "bytes": 2449,
+      "sha256": "1f7677e1a89acd9b66b8cc1edf2ec49cdb5bfc38b4f513eb1babf67090a2fefb",
       "tier": "core"
     },
     {
@@ -3539,8 +3545,8 @@
     },
     {
       "path": "scripts/verify.py",
-      "bytes": 6128,
-      "sha256": "2ca46be36933d461fb6988e1d299af918efeac5ff503dfbe077fc75c33b8595a",
+      "bytes": 6135,
+      "sha256": "2e5a27fdad390c9648f32a3ba96ea6eed06090ba4d9c57c8fefbf155ba662431",
       "tier": "core"
     },
     {
@@ -3617,14 +3623,14 @@
     },
     {
       "path": "tests/persona-cases.json",
-      "bytes": 5342,
-      "sha256": "a68a39018529cd26838348c7562f95e70028e06d19a835c1e1c5ee4e9f21b250",
+      "bytes": 6460,
+      "sha256": "8a6126a08f88134ef46338c2f9cc4188b406d5605f7283f8498c7d74b1366c23",
       "tier": "core"
     },
     {
       "path": "tests/test_contract.py",
-      "bytes": 3210,
-      "sha256": "5ef7ed8ac3639e74b3daf2141a633955102323ad59a01005aa842a46fa60f3b9",
+      "bytes": 3244,
+      "sha256": "713e20a2aececd45f165766eaaa1743233387966618ea64bae2e14df81011458",
       "tier": "core"
     },
     {
@@ -3642,7 +3648,7 @@
     {
       "path": "tests/test_verify.py",
       "bytes": 2429,
-      "sha256": "cce0ff9fee3fb942924996480775e673e95f00afaf440b0fdade0cb200848f4c",
+      "sha256": "02215bb721f21c7e4e86107c81bafc9c959e64e61ad1dd313c503b577ea7c738",
       "tier": "core"
     }
   ]

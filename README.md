@@ -30,7 +30,11 @@
 
 ### 听听声音
 
-[播放 / 下载语音样例（MP3，约 9 秒）](assets/audio/whale-chan-voice-sample.mp3)
+点击下方播放器试听（同一段语音配角色静帧，约 9 秒）；如处于静音，点扬声器开启声音。
+
+https://github.com/user-attachments/assets/97fcf4f3-7b6c-45c2-bd99-30e94785842a
+
+[下载 MP3](assets/audio/whale-chan-voice-sample.mp3)
 
 “我是鲸鱼娘，大肥鱼也行。难题先让我琢磨，没把握的就查清楚。事情做好，再安心摸鱼。”
 
