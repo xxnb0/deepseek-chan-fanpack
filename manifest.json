@@ -23,26 +23,14 @@
   "files": [
     {
       "path": ".gitignore",
-      "bytes": 513,
-      "sha256": "14c5f4bf6c2e46ba8746c57fa43ea7305f6722316a16c1bd1f747512c5a92ae8",
+      "bytes": 489,
+      "sha256": "14cf5853e6d7bc140e0227b66f15ac2a11d953ae460316a9ae730bcd3411d703",
       "tier": "core"
     },
     {
       "path": "AGENTS.md",
-      "bytes": 1679,
-      "sha256": "f3a6854a116a687949aac92585ec29661f4b9715e351caa0cf48da998a906317",
-      "tier": "core"
-    },
-    {
-      "path": "BOOTSTRAP_MESSAGE.md",
-      "bytes": 567,
-      "sha256": "2defab161c5d76aef9010c13e23b6d952ef70fdf4d7cec713aea3f2502c67272",
-      "tier": "core"
-    },
-    {
-      "path": "GLOBAL.md",
-      "bytes": 705,
-      "sha256": "ef5e8f93acc83f483951e1f61b2cba9b4682103452df675d9e5799725d004a4b",
+      "bytes": 1650,
+      "sha256": "e8280f1b9606af05806a2aebcfa4de7fa61c1665169b35cc89390c5e9d7ced68",
       "tier": "core"
     },
     {
@@ -59,8 +47,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3270,
-      "sha256": "7d66552b5dd8782ee8b44baf6965c5e576f24c7a6d801c857ed70d2b13452b46",
+      "bytes": 3306,
+      "sha256": "fce6a82d36debc1c44112ca169c8c18f593dc357d2b96195dc11815c963bcfa7",
       "tier": "core"
     },
     {
@@ -77,8 +65,8 @@
     },
     {
       "path": "TOOLS.md",
-      "bytes": 1641,
-      "sha256": "6e9bc25019fe159295333440e7615ecad42b883c754770c6cc239099be116e64",
+      "bytes": 1581,
+      "sha256": "52a6aa5fa52729c6045469c867382cba5b7fa4db6a8fb5fafe263a8f160620c6",
       "tier": "core"
     },
     {
@@ -3358,12 +3346,6 @@
       "tier": "core"
     },
     {
-      "path": "assets/stickers/common/source-readme.md",
-      "bytes": 1203,
-      "sha256": "f02d0d7c1178773d415e9f3022d561a4e34f9f482734c9bdfebdd6b5901fa68b",
-      "tier": "core"
-    },
-    {
       "path": "assets/stickers/common/usage.md",
       "bytes": 4280,
       "sha256": "62c9fa0bfbe41abd6e9b8355e231a1c2cc456fdcd6c5414b2d4c811f023c6bcb",
@@ -3490,33 +3472,21 @@
       "tier": "core"
     },
     {
-      "path": "docs/hosted-assistants.md",
-      "bytes": 1508,
-      "sha256": "ce3ab6e4e3197c64d6b6cd3721fd143218c704bf7b170803a15d56e5b957d091",
-      "tier": "core"
-    },
-    {
-      "path": "docs/openclaw.md",
-      "bytes": 2994,
-      "sha256": "1e563144c7d52d96c30b2cf98acef3dbbff7adf044686e93ef4bddebc5b7e502",
-      "tier": "core"
-    },
-    {
       "path": "docs/platforms.md",
-      "bytes": 4436,
-      "sha256": "325c607bb5d6badd3d02d0923a140fcb9140827229714bc0cef5b9ee4f7691c2",
+      "bytes": 4006,
+      "sha256": "a78a34cf1d3f021b99902d5649a3dd1b125dab99ad70599ee310f47925ee3894",
       "tier": "core"
     },
     {
       "path": "docs/validation.md",
-      "bytes": 3286,
-      "sha256": "2994ebfc3aa03abd780a3b79fd3706af075e69564d15d136ad0da1490dc6c6ee",
+      "bytes": 1811,
+      "sha256": "426ed6e7b2c6686e874ff26511d3aa9b5be63d78307818e804bd3a48c74a3f38",
       "tier": "core"
     },
     {
       "path": "docs/voice.md",
-      "bytes": 2449,
-      "sha256": "1f7677e1a89acd9b66b8cc1edf2ec49cdb5bfc38b4f513eb1babf67090a2fefb",
+      "bytes": 2422,
+      "sha256": "96756d9b9631d0152b83045a57f73958a3b73a2791328fcbf148fc208fc6816b",
       "tier": "core"
     },
     {
@@ -3538,87 +3508,39 @@
       "tier": "core"
     },
     {
-      "path": "scripts/install.py",
-      "bytes": 7541,
-      "sha256": "22780f17bfd8cb4831c101e986c4b7c88579711252bcaed33d0ac494f07ef862",
-      "tier": "core"
-    },
-    {
       "path": "scripts/verify.py",
       "bytes": 6135,
-      "sha256": "2e5a27fdad390c9648f32a3ba96ea6eed06090ba4d9c57c8fefbf155ba662431",
-      "tier": "core"
-    },
-    {
-      "path": "skills/minis-tts/SKILL.md",
-      "bytes": 3650,
-      "sha256": "42d4b3e4b84962b6cb7d35310edb344c35ba9f6146edf3e6b2766a34182cb92e",
-      "tier": "core"
-    },
-    {
-      "path": "skills/minis-tts/scripts/generate.py",
-      "bytes": 6898,
-      "sha256": "2bc4930062c86fa10021b2c5ca7d0f242168f7fdcc1745d7d7bc437443dc7528",
+      "sha256": "169e77979915c045c85e8138b4dc977671f5a921f4318b84822c9ee4ace5b385",
       "tier": "core"
     },
     {
       "path": "skills/whale-stickers/SKILL.md",
-      "bytes": 8827,
-      "sha256": "0904b6df5a176d51ff16708c6c9e4f38405e839006f94a3cedcdfa7adb745d5b",
+      "bytes": 7278,
+      "sha256": "7ef616783a3436f74ae3e902ca77fcc35bd269e2cc5cd61d8d2f8f1729666a5d",
       "tier": "core"
     },
     {
       "path": "skills/whale-stickers/scripts/pick.py",
-      "bytes": 10688,
-      "sha256": "bc9b24d15ec6653691f8de306138efc3d18369cfe713fc22868a823077c102bf",
+      "bytes": 8295,
+      "sha256": "5516f3c5bbade7a5a36cddf75ac6f803f6e78ca8bb9d654a621af1d61b8059f6",
       "tier": "core"
     },
     {
       "path": "skills/whale-stickers/tests/test_pick.py",
-      "bytes": 7681,
-      "sha256": "d7fa0d75e77654a2c416f812de05309a8ee10e51cb4090db8e0fce395334697f",
+      "bytes": 7025,
+      "sha256": "ca6bed1a11bba67d070d59dcd580c90c1f7560303038c386e492c705fbad8546",
       "tier": "core"
     },
     {
-      "path": "sources/minis/GLOBAL.md",
-      "bytes": 668,
-      "sha256": "af10bd3fb7c8e98bfe07a6ebe10054cb7540148939d6c2b0cd4ecba8683df2aa",
+      "path": "skills/whale-tts/SKILL.md",
+      "bytes": 2097,
+      "sha256": "df32f3c807504f6337447e6c449c6010b03bb60181acad0fd1a0d4818ef82b2c",
       "tier": "core"
     },
     {
-      "path": "sources/minis/SOUL.md",
-      "bytes": 3753,
-      "sha256": "e733149908bfbd873a7e65deafeffe2adcec8ae0b39650b86e5afafd5414abcb",
-      "tier": "core"
-    },
-    {
-      "path": "sources/minis/skills/minis-tts/SKILL.md",
-      "bytes": 4456,
-      "sha256": "3cb8e8cf18cb7c38b2e203491ee05a55113ad42ee6a4776b775a366ac65862b8",
-      "tier": "core"
-    },
-    {
-      "path": "sources/minis/skills/minis-tts/scripts/generate.py",
-      "bytes": 2602,
-      "sha256": "611ad21e84ada44bd2e46989972cdd99651809a0b33af69b9c3d1043f6d69330",
-      "tier": "core"
-    },
-    {
-      "path": "sources/minis/skills/whale-stickers/SKILL.md",
-      "bytes": 2519,
-      "sha256": "2631c44686836b3f52c3599780641638f658a51fde32ef9cfa6a48ad2aa3f2dd",
-      "tier": "core"
-    },
-    {
-      "path": "sources/minis/skills/whale-stickers/scripts/pick.py",
-      "bytes": 2792,
-      "sha256": "b316d6efbde2e78c56397fb51647b823ad10e95b3640d52e6245c1b63c2ba12c",
-      "tier": "core"
-    },
-    {
-      "path": "sources/minis/soul.json",
-      "bytes": 3815,
-      "sha256": "cc125c6e8890f50fb7836410f4119db8f1e4af4fee8d668aa75353b2b403042e",
+      "path": "skills/whale-tts/scripts/generate.py",
+      "bytes": 5919,
+      "sha256": "0ad0914a67cd2aea7f18fb2ac2f4f1e0c517d1cb81bb42ff55a4bea98b0d8af4",
       "tier": "core"
     },
     {
@@ -3629,20 +3551,14 @@
     },
     {
       "path": "tests/test_contract.py",
-      "bytes": 3244,
-      "sha256": "713e20a2aececd45f165766eaaa1743233387966618ea64bae2e14df81011458",
-      "tier": "core"
-    },
-    {
-      "path": "tests/test_install.py",
-      "bytes": 4823,
-      "sha256": "e79187fb2b61f370bd7874ffd7b5eb9b77a593b3578cae1953360eb8f69450b0",
+      "bytes": 3599,
+      "sha256": "c60eda5e8c0ed4cc9c5593977752815c41e12542a198489de85f50d4ace519b1",
       "tier": "core"
     },
     {
       "path": "tests/test_tts.py",
-      "bytes": 4212,
-      "sha256": "0ef22423ba15c193b7b42eff616a1a369cc9a972d78479f94cb0f0556146838a",
+      "bytes": 6509,
+      "sha256": "0aa3e056c452e875e995111a1e3aad98b1fac2bed7755ec41f258ed7463c5885",
       "tier": "core"
     },
     {

@@ -75,7 +75,7 @@ def verify(root, metadata_only=False, archive=False):
                 if not destination.exists() and not (metadata_only and rel in known and destination.suffix.lower() in MEDIA):
                     errors.append('Broken document link: '+str(path.relative_to(root))+' -> '+target)
         except (ValueError,SyntaxError,UnicodeError) as exc:errors.append('Parse: '+str(path.relative_to(root))+': '+str(exc))
-    for skill in ('whale-stickers','minis-tts'):
+    for skill in ('whale-stickers','whale-tts'):
         path=root/'skills'/skill/'SKILL.md'
         text=path.read_text(encoding='utf-8')
         if not text.startswith('---\n') or '\n---\n' not in text[4:]:errors.append('Invalid skill header: '+skill)

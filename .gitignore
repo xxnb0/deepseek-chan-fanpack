@@ -15,7 +15,6 @@ output/
 !assets/audio/whale-chan-voice-sample.mp3
 *.wav
 *.log
-.deepseek-chan-backups/
 # Optional attic images are kept in the archive download
 archive/reference-library/*.png
 archive/reference-library/*.jpg

@@ -26,9 +26,9 @@
 python3 -m venv .venv
 . .venv/bin/activate
 python3 -m pip install -r requirements-tts.txt
-python3 skills/minis-tts/scripts/generate.py --text '已经核对好了，结果放在这里。' --output-dir /宿主允许的媒体目录
+python3 skills/whale-tts/scripts/generate.py --text '已经核对好了，结果放在这里。' --output-dir /宿主允许的媒体目录
 ```
 
-参数可用 `--voice`、`--pitch`、`--rate`、`--volume` 覆盖。脚本默认常量保持历史兼容，并由离线测试验证。脚本确认非空与 MP3 标记，只是文件结构检查，不代表完整音频解码、主观试听或线上送达。
+参数可用 `--voice`、`--pitch`、`--rate`、`--volume` 覆盖。默认值与本页参考参数一致。脚本确认非空与 MP3 标记，只是文件结构检查，不代表完整音频解码、主观试听或线上送达。
 
 可用性与服务规则可能变化，不保证离线、永久免费或所有地区可达。

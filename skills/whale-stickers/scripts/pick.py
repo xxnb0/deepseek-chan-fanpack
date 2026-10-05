@@ -7,7 +7,6 @@ import os
 import re
 import sys
 from pathlib import Path
-from urllib.parse import quote, urlsplit, urlunsplit
 
 INDEX_REL = Path("assets/stickers/common/index.json")
 
@@ -20,9 +19,8 @@ def resolve_root(explicit=None):
             raise ValueError("指定包目录缺少 assets/stickers/common/index.json")
         return root
     for ancestor in Path(__file__).resolve().parents:
-        for candidate in (ancestor, ancestor / "deepseek-chan"):
-            if (candidate / INDEX_REL).is_file():
-                return candidate.resolve()
+        if (ancestor / INDEX_REL).is_file():
+            return ancestor.resolve()
     raise ValueError("找不到正式索引；请指定 --root 或 WHALE_CHAN_ROOT")
 
 
@@ -127,46 +125,15 @@ def verified_record(common, item):
             "sha256_verified": True, "bytes": size}
 
 
-def minis_uri(path):
-    try:
-        relative = Path(path).relative_to(Path("/var/minis"))
-    except ValueError:
-        raise ValueError("--format minis 仅支持实际位于 /var/minis 内的文件") from None
-    return "minis://" + quote(relative.as_posix(), safe="/")
-
-
-def media_base(value):
-    try:
-        parts = urlsplit(value)
-        port = parts.port
-    except ValueError:
-        raise ValueError("--url-base 的 HTTP(S) URL 格式无效") from None
-    if (parts.scheme not in ("http", "https") or not parts.netloc or not parts.hostname
-            or parts.username or parts.password or parts.query or parts.fragment
-            or any(c.isspace() for c in parts.netloc) or "\\" in parts.netloc):
-        raise ValueError("--url-base 必须是无凭据、查询串及片段的 HTTP(S) 媒体目录")
-    return urlunsplit((parts.scheme, parts.netloc,
-                       quote(parts.path, safe="/%:@").rstrip("/"), "", "")) + "/"
-
-
-def markdown(record, uri):
-    label = record["meaning"].replace("\\", "\\\\").replace("[", "\\[").replace("]", "\\]")
-    label = " ".join(label.splitlines())
-    return f"![鲸鱼娘·{label}]({uri})"
-
 
 def build_parser():
     parser = argparse.ArgumentParser(description=__doc__)
     def options(target, suppress=False):
         default = argparse.SUPPRESS if suppress else None
         target.add_argument("--root", default=default, help="包数据根目录；优先于 WHALE_CHAN_ROOT")
-        target.add_argument("--format", choices=("json", "path", "minis", "markdown"),
+        target.add_argument("--format", choices=("json", "path"),
                             default=argparse.SUPPRESS if suppress else "json",
-                            help="默认 JSON；markdown 本地 file URI 仅用于明确支持它的前端")
-        target.add_argument("--url-base", default=default, help="用户明确配置的 common 媒体 HTTP(S) 目录")
-        target.add_argument("--verify-sha256", action="store_true",
-                            default=argparse.SUPPRESS if suppress else False,
-                            help="兼容参数；list 和 pick 始终校验 SHA256")
+                            help="默认 JSON；path 只输出已校验的本地文件路径")
         target.add_argument("--transparent-only", action="store_true",
                             default=argparse.SUPPRESS if suppress else False,
                             help="仅从已核验的真实透明图中匹配；仍需符合语义")
@@ -183,9 +150,6 @@ def build_parser():
 def main(argv=None):
     args = build_parser().parse_args(argv)
     try:
-        if args.format == "minis" and args.url_base:
-            raise ValueError("minis 本地 URI 不与 --url-base 混用；HTTP 嵌图请选择 markdown")
-        base = media_base(args.url_base) if args.url_base else None
         root = resolve_root(args.root)
         common, data = load_index(root)
         variants = load_variants(common, data)
@@ -200,23 +164,13 @@ def main(argv=None):
         for record in records:
             if record["file"] in variants:
                 record["variant"] = variants[record["file"]]
-            if base:
-                record["url"] = base + quote(record["file"], safe="")
-                record["markdown"] = markdown(record, record["url"])
         if args.format == "json":
             result = {"ok": True, "root": str(root)}
             result["entries" if args.command == "list" else "sticker"] = (
                 records if args.command == "list" else records[0])
             print(json.dumps(result, ensure_ascii=False, indent=2))
-        elif args.format == "path":
-            print("\n".join(x["path"] for x in records))
         else:
-            lines = []
-            for record in records:
-                uri = minis_uri(record["path"]) if args.format == "minis" else (
-                    record.get("url") or Path(record["path"]).as_uri())
-                lines.append(markdown(record, uri))
-            print("\n".join(lines))
+            print("\n".join(x["path"] for x in records))
         return 0
     except (OSError, ValueError, TypeError) as exc:
         print(json.dumps({"ok": False, "error": str(exc)}, ensure_ascii=False), file=sys.stderr)

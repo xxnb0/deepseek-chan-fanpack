@@ -11,7 +11,6 @@ import tempfile
 import uuid
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import quote
 
 DEFAULT_VOICE = "zh-CN-XiaoyiNeural"
 DEFAULT_PITCH = "+22Hz"
@@ -26,11 +25,8 @@ def resolve_root(explicit=None):
             raise ValueError("指定包数据目录不存在")
         return root
     for ancestor in Path(__file__).resolve().parents:
-        for candidate in (ancestor, ancestor / "deepseek-chan"):
-            if (candidate / "assets/stickers/common/index.json").is_file():
-                return candidate.resolve()
-            if candidate.name == "deepseek-chan" and candidate.is_dir():
-                return candidate.resolve()
+        if (ancestor / "assets/stickers/common/index.json").is_file():
+            return ancestor.resolve()
     raise ValueError("找不到包数据目录；请指定 --root、--output-dir 或 WHALE_AUDIO_DIR")
 
 
@@ -41,13 +37,6 @@ def output_dir(args):
     directory.mkdir(parents=True, exist_ok=True)
     return directory.resolve(strict=True)
 
-
-def minis_uri(path):
-    try:
-        relative = path.relative_to(Path("/var/minis"))
-    except ValueError:
-        return None
-    return "minis://" + quote(relative.as_posix(), safe="/")
 
 
 def safe_name(value):
@@ -77,8 +66,6 @@ def build_parser():
     parser.add_argument("--name", default="speech", help="安全文件名前缀；实际文件名含时间和随机 ID")
     parser.add_argument("--output-dir", help="输出目录；优先于 WHALE_AUDIO_DIR")
     parser.add_argument("--root", help="包数据目录；无输出目录时使用其 output/audio")
-    parser.add_argument("--format", choices=("json", "minis"), default="json",
-                        help="默认 JSON；minis 只接受实际 /var/minis 内的文件")
     parser.add_argument("--timeout", type=float, default=120, help="在线调用超时秒数，默认 %(default)s")
     return parser
 
@@ -105,9 +92,6 @@ def main(argv=None):
         directory = output_dir(args)
         stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
         output = directory / f"{safe_name(args.name)}-{stamp}-{uuid.uuid4().hex[:12]}.mp3"
-        uri = minis_uri(output)
-        if args.format == "minis" and uri is None:
-            raise ValueError("--format minis 仅支持实际位于 /var/minis 内的输出目录")
         descriptor, filename = tempfile.mkstemp(prefix=".tts-", suffix=".part.mp3", dir=directory)
         os.close(descriptor)
         temporary = Path(filename)
@@ -126,13 +110,7 @@ def main(argv=None):
         payload = {"ok": True, "path": str(output), "bytes": size, "media_type": "audio/mpeg",
                    "voice": args.voice, "pitch": args.pitch, "rate": args.rate,
                    "volume": args.volume, "provider": "edge-tts-online"}
-        if uri:
-            payload["minis_url"] = uri
-            payload["minis_embed"] = f"![语音播放]({uri})"
-        if args.format == "minis":
-            print(payload["minis_embed"])
-        else:
-            print(json.dumps(payload, ensure_ascii=False, indent=2))
+        print(json.dumps(payload, ensure_ascii=False, indent=2))
         return 0
     except subprocess.TimeoutExpired:
         print(json.dumps({"ok": False, "error": "edge-tts 调用超时；未交付音频"}, ensure_ascii=False), file=sys.stderr)
