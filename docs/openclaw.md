@@ -1,6 +1,6 @@
 # OpenClaw 适配（文件式工作区）
 
-核验日期：2026-10-05。官方文档有更新可能；本仓库测试的是文件安装和脚本，不代表已经在这台Android设备部署运行了OpenClaw。
+这是供需要旧文件布局的用户参考的兼容入口。实际目录以宿主设置为准。
 
 ## 已核实的加载契约
 
@@ -12,11 +12,11 @@
 
 ## 安装
 
-先确认私仓读取权限，在工作区**之外**克隆本包：
+先确认能读取仓库与所需资源，在工作区**之外**克隆本包：
 
 ```sh
-gh repo clone xxnb0/deepseek-chan
-cd deepseek-chan
+gh repo clone xxnb0/deepseek-chan-fanpack
+cd deepseek-chan-fanpack
 python3 scripts/verify.py
 python3 scripts/install.py --target openclaw --workspace ~/.openclaw/workspace --dry-run
 ```

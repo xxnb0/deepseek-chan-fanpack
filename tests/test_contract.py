@@ -21,6 +21,14 @@ class ContractTests(unittest.TestCase):
         self.assertNotIn('scripts/install.py',(ROOT/'README.md').read_text())
         self.assertIn('START_HERE.md',(ROOT/'README.md').read_text())
 
+    def test_active_docs_do_not_assume_repository_visibility(self):
+        for p in list(ROOT.rglob('*.md'))+[ROOT/'personality.json']:
+            if 'sources' in p.relative_to(ROOT).parts or p.name=='validation-v1.0.0.md':continue
+            text=p.read_text().lower()
+            for term in ('私仓','私有角色资料包','私有备份','private repository'):
+                self.assertNotIn(term,text,str(p.relative_to(ROOT)))
+        self.assertIn('需要能读取仓库与所用资源',(ROOT/'README.md').read_text())
+
     def test_examples_are_manual_not_claimed_live_evaluation(self):
         cases=json.loads((ROOT/'tests/persona-cases.json').read_text())
         self.assertEqual(cases['purpose'],'manual_host_behavior_acceptance_not_an_automated_model_eval')

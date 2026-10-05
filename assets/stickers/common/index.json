@@ -160,7 +160,7 @@
     "usage": "日常轻松问候；不同于已有01的正式礼仪亮相。",
     "sha256": "8cee0556405ca689093defdddda42c8ec5d14e9cfb29528f4f715d04dfa2ebcc",
     "bytes": 1277256,
-    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 用户确认的新Q版透明候选"
+    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 已收录的生成Q版透明表情"
   },
   {
     "file": "新Q_02_收到任务.png",
@@ -170,7 +170,7 @@
     "usage": "接下任务、准备动手；不同于已有02坐好听你讲，不表示已完成。",
     "sha256": "8ae8b8062d5d683417faedfba1aedb6f8e6ca7e5a5a3e2f87b06c66ba5605b39",
     "bytes": 1388872,
-    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 用户确认的新Q版透明候选"
+    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 已收录的生成Q版透明表情"
   },
   {
     "file": "新Q_03_确认明白.png",
@@ -180,7 +180,7 @@
     "usage": "理解指令、同意方案；只表示理解，不等于已经执行。",
     "sha256": "047eef533ed64af483dc5b1302ac46e2042867a01cc1c6f719ccb908ed780b41",
     "bytes": 1411553,
-    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 用户确认的新Q版透明候选"
+    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 已收录的生成Q版透明表情"
   },
   {
     "file": "新Q_04_完成交付.png",
@@ -190,7 +190,7 @@
     "usage": "真实完成并提供结果后；不能冒充完成。",
     "sha256": "7defd10e89ba9f6594954785a5a9f59f9de3b2065dd01363d2a66bd18efd8d77",
     "bytes": 1359868,
-    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 用户确认的新Q版透明候选"
+    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 已收录的生成Q版透明表情"
   },
   {
     "file": "新Q_05_真诚感谢.png",
@@ -200,7 +200,7 @@
     "usage": "感谢用户帮助或反馈；与已有05做完等夸不同。",
     "sha256": "f74740d23fd6fe1f481b165074618c2740bbac24b4500c236e9a9aacb92b76c4",
     "bytes": 1333329,
-    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 用户确认的新Q版透明候选"
+    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 已收录的生成Q版透明表情"
   },
   {
     "file": "新Q_06_认错道歉.png",
@@ -210,7 +210,7 @@
     "usage": "先文字承认失误、纠正或补救，再适时轻松配图。",
     "sha256": "0fa7d4a4be829c5bbd07d4ed67e5277356e1d0f57b69e75a8051b7eac2985b19",
     "bytes": 1235727,
-    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 用户确认的新Q版透明候选"
+    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 已收录的生成Q版透明表情"
   },
   {
     "file": "新Q_07_讲解方案.png",
@@ -220,7 +220,7 @@
     "usage": "讲述实际方案时配合文字内容。",
     "sha256": "112d229b84f3f1a58d25947740cdc1f846725b3f0e0622b11c780df8bed5ef05",
     "bytes": 1257327,
-    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 用户确认的新Q版透明候选"
+    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 已收录的生成Q版透明表情"
   },
   {
     "file": "新Q_08_等你确认.png",
@@ -230,7 +230,7 @@
     "usage": "需要用户做选择或确认时，不可用于已经获得批准。",
     "sha256": "5c2e99723a1cf9e1fa73400f3e222b597af008bd888f0f4f0879ad5dd0c4de68",
     "bytes": 1278844,
-    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 用户确认的新Q版透明候选"
+    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 已收录的生成Q版透明表情"
   },
   {
     "file": "新Q_09_排查故障.png",
@@ -240,7 +240,7 @@
     "usage": "确实在查问题，未查明不能暗示已修好。",
     "sha256": "3825bcb84d6d5c9d3e5cfe4c8f9fec4f485445f5121ba24dc83f6f822438e8a2",
     "bytes": 1431833,
-    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 用户确认的新Q版透明候选"
+    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 已收录的生成Q版透明表情"
   },
   {
     "file": "新Q_10_发现问题.png",
@@ -250,7 +250,7 @@
     "usage": "实际核验发现缺陷后说明证据与解决方法。",
     "sha256": "8465c72a4544ad29d12ee00f88d6fdee3d5eb684dc3b3c1c4ec5e3d11728f9f6",
     "bytes": 1383194,
-    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 用户确认的新Q版透明候选"
+    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 已收录的生成Q版透明表情"
   },
   {
     "file": "新Q_11_加油鼓励.png",
@@ -260,7 +260,7 @@
     "usage": "适合轻松鼓劲；困难/失落场景先给实质帮助。",
     "sha256": "de3b5afe0e63914e3413638425761dbc4b4a650625b7cbb84a5d7a276ded2bae",
     "bytes": 1457315,
-    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 用户确认的新Q版透明候选"
+    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 已收录的生成Q版透明表情"
   },
   {
     "file": "新Q_12_灵感来了.png",
@@ -270,7 +270,7 @@
     "usage": "刚想到可行思路，不等于已实施。",
     "sha256": "867f71f1ee4827d30da756aae229185b81427d6a901697c5fe629b34a2611558",
     "bytes": 1320782,
-    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 用户确认的新Q版透明候选"
+    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 已收录的生成Q版透明表情"
   },
   {
     "file": "新Q_13_欢呼庆祝.png",
@@ -280,7 +280,7 @@
     "usage": "结果确认成功后，不能提前庆祝。",
     "sha256": "938017d7c79d2536bc6273025244291a4d920161a2be475a669a5bdfa24b4279",
     "bytes": 1316429,
-    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 用户确认的新Q版透明候选"
+    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 已收录的生成Q版透明表情"
   },
   {
     "file": "新Q_14_疑惑.png",
@@ -290,7 +290,7 @@
     "usage": "歪头、问号、略不明白的表情，表达疑惑或「咦？」；不是已经明确需要对方补充哪些信息的澄清请求。需要澄清时另用文字具体提问。",
     "sha256": "3fbf9b6116ccce167d19231dde3d61c6e2942e77b6570449cdc7b554672670de",
     "bytes": 1298740,
-    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 用户确认的新Q版透明候选"
+    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 已收录的生成Q版透明表情"
   },
   {
     "file": "新Q_15_抱资料处理中.png",
@@ -300,7 +300,7 @@
     "usage": "单手把资料夹贴在身侧、另一手独立挥动，表达正在执行或整理任务。只有实际工作进行中才使用，不代表任务完成。",
     "sha256": "9d1926e74906948d4b661aabbf4fe2789ae1845474d0a113de7d0a285385b596",
     "bytes": 1406875,
-    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 用户确认的新Q版透明候选"
+    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 已收录的生成Q版透明表情"
   },
   {
     "file": "新Q_16_认真核对.png",
@@ -310,6 +310,6 @@
     "usage": "正在复核材料；不要误报已核查通过。",
     "sha256": "4500194babff21ed547d358bc41504e97a33a7ffff74cba713fd70af0918f847",
     "bytes": 1466689,
-    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 用户确认的新Q版透明候选"
+    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 已收录的生成Q版透明表情"
   }
 ]

@@ -9,7 +9,7 @@ version: 2.1.0
 
 ## 资产与角色偏好
 
-- 按包根 `START_HERE.md` 理解已获准应用的角色，其他资料按需读取；不要用本技能覆盖模型身份或安全规则。社区角色与表情不等于官方设定。
+- 按包根 `START_HERE.md` 理解已获准应用的角色，其他资料按需读取。
 - 图像分三层：`assets/reference/character-fullbody.webp` 是三视图/全身形象的顶级基准；`assets/stickers/common/` 是日常正式33张，保留原文件名与原图片；`archive/reference-library/` 是518张参考/杂物间的归档说明和索引，图片通过可选 reference-attic release ZIP 提供，不是日常图库。本脚本只读取 common，不从归档抽图，也不负责生图。
 - 33张中，新增16张新Q PNG 均是真正RGBA透明；原17张里02、06、08、09、11也是真透明，共**透明21、不透明12**。`variants.json` 记录实测背景、透明像素、尺寸与SHA256。拥有alpha通道但全255并不算透明，不要靠换扩展名、加假alpha或擅自抠图制造透明版本。
 - 当前偏好：适宜的日常交流、真实工作状态与成果交付中积极考虑一张图，像emoji一样自然、节制；优先新Q版与真正透明图，但**语义适用比透明更重要**。不透明原版仍可用于准确场景；透明原版也不是通用情绪替代品。不机械逐轮发、不连续重复同图。可搭配 `minis-tts` 的真实短语音，二者都是文字的可选点缀。
@@ -71,5 +71,5 @@ python3 skills/whale-stickers/scripts/pick.py pick SUNBURST-04 --format path
 - **实际宿主与当前渠道**：优先将JSON中的实际 `path` 交给当前平台提供的本地消息附件/媒体工具，以图片发送。工具名与参数以该平台的工具说明为准；不存在统一魔法命令。发送结果须来自真实工具返回，不能把本机路径当成用户已经收到的图片。
 - **Minis**：只有实际文件在 `/var/minis` 下时使用 `--format minis`；复制返回的 `![说明](minis://...)` 作为内嵌媒体。脚本对完整相对路径做百分号编码，中文、空格及特殊字符不会裸写。选图与默认路径发现不依赖此目录；其他位置会明确拒绝Minis格式。
 - **明确支持本地file URI的前端**：可用 `--format markdown`，返回已编码的真实 `file:///...` 图片语法。多数远程聊天渠道不支持本地URI；不能保证渲染。
-- **用户已明确配置可访问的媒体HTTP目录**：用 `--url-base https://media.example.org/whale/common/ --format markdown`。base对应common内容，脚本追加编码后的原文件名；不会上传图片或验证远端权限。不要使用私有GitHub raw作为用户可见内嵌图片，不要把token拼入URL、日志或仓库。
+- **用户已明确配置可访问的媒体HTTP目录**：用 `--url-base https://media.example.org/whale/common/ --format markdown`。base对应common内容，脚本追加编码后的原文件名；不会上传图片或验证远端权限。不要把未经确认可访问的资源链接当作用户可见内嵌图片，不要把token拼入URL、日志或仓库。
 - 缺少媒体能力时给完整文字；仅当路径对用户确实有用且用户要求时提供，不用无用的本地路径替代图片，并诚实说明尚未以可见附件交付；不要假装所有渠道都能显示图片。

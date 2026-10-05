@@ -24,4 +24,4 @@ python3 skills/minis-tts/scripts/generate.py --text '让我看看，这里还有
 
 Edge 参数只是参考。脚本输出 MP3 与元数据，不自动发送、不自动播放，不检查宿主的消息能力。在线服务会接收朗读文本；私人或敏感内容按宿主规则处理。详见 [语音说明](docs/voice.md)。
 
-`WHALE_CHAN_ROOT` 和 `WHALE_AUDIO_DIR` 是可选显式路径，非强制配置。不要把 `minis://`、`file://` 或私仓 raw 链接当成跨渠道公网附件。
+`WHALE_CHAN_ROOT` 和 `WHALE_AUDIO_DIR` 是可选显式路径，非强制配置。不要把 `minis://`、`file://` 或未经确认可访问的资源链接当成跨渠道公网附件。
