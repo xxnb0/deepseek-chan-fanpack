@@ -1,0 +1,25 @@
+# Credentials / runtime outputs are never versioned
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.token
+hosts.yml
+credentials*
+__pycache__/
+*.pyc
+.venv/
+output/
+*.mp3
+*.wav
+*.log
+.deepseek-chan-backups/
+# Optional attic images live in private GitHub Release assets
+archive/reference-library/*.png
+archive/reference-library/*.jpg
+archive/reference-library/*.jpeg
+archive/reference-library/*.webp
+archive/reference-library/*.gif
+# Bundles are built externally and uploaded as Release assets
+*.zip

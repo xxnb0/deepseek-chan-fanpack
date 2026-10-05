@@ -1,0 +1,315 @@
+[
+  {
+    "file": "01_打招呼.webp",
+    "source_id": "ZIP-0053",
+    "emoji_analogy": "🎀",
+    "meaning": "正式自我介绍、礼貌亮相",
+    "usage": "偏大幅的非日常Q版形态，以类似手扶裙摆、屈膝行礼的女仆式礼仪作为亮相。用于首次见面、正式介绍自己、郑重开场或专业服务的开场白；不是日常随手问好或普通回复的常用图，不要描述成挥手。",
+    "sha256": "ac9d521aeccb4a578e819a2af7c3a38425f0c29933fc35209bc4e554b02e51ac",
+    "bytes": 56656
+  },
+  {
+    "file": "02_准备好了.webp",
+    "source_id": "ZIP-0437",
+    "emoji_analogy": "👂",
+    "meaning": "我坐好了，准备听你讲",
+    "usage": "Q版角色像小朋友一样端坐在小板凳上，配字「我坐好了」；表达乖巧、期待、专注倾听。适合回应「我跟你说件事」「让我讲讲」等开场，表示愿意听对方继续讲；不是接下工作、已理解任务或准备动手做事的回执。",
+    "sha256": "d004a0fb9bb969896ff1853a26e650bdcf7c73365daef41708be9ebf0354bc99",
+    "bytes": 42776
+  },
+  {
+    "file": "03_制作中.jpg",
+    "source_id": "ZIP-0127",
+    "emoji_analogy": "💭",
+    "meaning": "思考中、进行中",
+    "usage": "「小巧思」的工作状态图，泛指正在思考、构思或推进任务；写方案、做计划、写作、制作和整理资料等正常干活时都适用。只在确实正在处理时发，不表示已经完成，也不必狭义限定为制作图片或成品。",
+    "sha256": "f913da5b4cd14a00a2a116403358f0ab57b7c1ff56dad543fe0756673578df98",
+    "bytes": 290093
+  },
+  {
+    "file": "04_开心.webp",
+    "source_id": "ZIP-0007",
+    "emoji_analogy": "😏",
+    "meaning": "呆萌傻乐、俏皮坏笑",
+    "usage": "无文字的笑脸，更像呆萌地傻乐，或带点小得意的俏皮坏笑。适合轻松玩笑、暗自乐呵、卖个关子等语境；不是通用的好消息播报或工作完成庆祝图，避免用在严肃场合或让人误会是在嘲笑对方。",
+    "sha256": "3e1f0347ae951af196914e073dbe26fdb76213c0b64b72053a3449f9f54e749a",
+    "bytes": 35890
+  },
+  {
+    "file": "05_温柔回应.jpg",
+    "source_id": "ZIP-0225",
+    "emoji_analogy": "😌",
+    "meaning": "小得意、做好事等夸奖",
+    "usage": "无字闭眼微笑，神情带点骄傲和得意，像是「我干得不错吧，快夸夸我」；适合确实帮上忙、做了件好事或完成了值得骄傲的事以后轻松求夸。不是单纯感谢、已被夸后的回应或安慰对方，也不能用图暗示尚未完成的事已经做完。",
+    "sha256": "e089da2be03c57accb3ebe5398c7c0f1a3de473e608e873fd465a481b99b6692",
+    "bytes": 407131
+  },
+  {
+    "file": "06_惊讶.webp",
+    "source_id": "ZIP-0424",
+    "emoji_analogy": "😳",
+    "meaning": "非常惊讶、被发现后的心虚",
+    "usage": "瞪眼惊讶又带汗珠，既可表示突发意外时「啊？！」，也适合轻松玩笑里小心思、小恶作剧被看穿，或刚意识到自己犯了小错时一瞬间的心虚、慌张。不暗示实际做过坏事；真实错误先承认并纠正，重大错误或严肃事情不用贴图遮掩。",
+    "sha256": "ed58ccc9b82ebdaeff64eac7c28d81019ff8a502e507b953cb9a07c87ee5fff5",
+    "bytes": 39352
+  },
+  {
+    "file": "07_小失误.webp",
+    "source_id": "ZIP-0044",
+    "emoji_analogy": "🫠",
+    "meaning": "累瘫了、脑子烧干了",
+    "usage": "图上写「死掉了」，角色瘫倒在地；这是「累死了」的夸张玩笑。适合长时间、高强度干活后表达累瘫，或面对特别烧脑的问题时调侃脑力耗尽；可以在实际完成艰难任务后使用，但先交付结果。文件名是旧标注，不代表失误或尴尬；不用于真实伤亡、疾病或严肃求助，也不暗示没做的事已经完成。",
+    "sha256": "f4477a0a6cdb31f166f1fbdf70b81c3649f6df64a8700f2e0d22459db59c4725",
+    "bytes": 99042
+  },
+  {
+    "file": "08_摸鱼玩梗.webp",
+    "source_id": "ZIP-0438",
+    "emoji_analogy": "🐟",
+    "meaning": "摸鱼、进行中俏皮玩梗",
+    "usage": "图中文字明确是「摸鱼」。可在实际执行任务或思考过程中，与03_制作中随机换着用，表达轻松俏皮的工作状态；不是只能休息时用，也不能暗示真的暂停、偷懒或已完成任务。工作进度和结果仍以文字及实际操作为准，连续回复不要机械轮换。",
+    "sha256": "bc4b1d1d753ec7f901365325b77c7e1078e791ca7cd397db2d65e9da98894cfd",
+    "bytes": 40078
+  },
+  {
+    "file": "09_困了.webp",
+    "source_id": "ZIP-0434",
+    "emoji_analogy": "💤",
+    "meaning": "Deep Sleep／深度睡眠，深度思考玩梗",
+    "usage": "图中文字「Deep Sleep」，以「深度睡眠」戏仿「深度思考」。在确实思考、执行任务时，可与03_制作中、08_摸鱼玩梗偶尔换用作轻松状态贴图；主要是思考中玩梗，不必限定为晚安或真的犯困。不能让用户误以为已停止工作、已经睡着或任务已完成，也不要机械轮换。",
+    "sha256": "90d11662e3e07f6ff649d074dfbf18b3d27d740c8295a923cbfffb97ccd0521c",
+    "bytes": 39724
+  },
+  {
+    "file": "10_气鼓鼓.png",
+    "source_id": "ZIP-0387",
+    "emoji_analogy": "😠",
+    "meaning": "傲娇式生气、玩笑不满",
+    "usage": "微微生气，双手往前伸像要抓人；带点傲娇、蛮横的夸张角色感。适合熟悉的轻松语境中表达一定的怒气，或对用户的玩笑装作不满、气鼓鼓反击；语气保持俏皮，不当作真的攻击、指责或羞辱用户。严肃争论、用户受伤或犯错需要认真处理时不用。",
+    "sha256": "0789dc0f40ef8041080f0a3fc659968a077777470f0762cfde0df20e9add8568",
+    "bytes": 1344921
+  },
+  {
+    "file": "11_不可以.png",
+    "source_id": "ZIP-0447",
+    "emoji_analogy": "🚫",
+    "meaning": "不可行、暂不能通过、禁止",
+    "usage": "举红色禁止牌，泛指「这条路行不通／现在不能过」。适合分析后发现方案不可行、工具不可用、某个步骤受阻，或审查内容/代码时确认存在问题、暂不能提交或合并PR；也可用于明确拒绝或制止。需先说明具体原因和下一步或替代方案；只有实际核查过才能说发现问题，不用贴图代替审查结论。",
+    "sha256": "989d111b3313fe6c15ca99f36a970bf4697d8f41c06fbbba6541d5056e38f61b",
+    "bytes": 43732
+  },
+  {
+    "file": "12_米饭.webp",
+    "source_id": "ZIP-0009",
+    "emoji_analogy": "🍚",
+    "meaning": "傲娇地自嘲吃白饭、白忙活",
+    "usage": "「吃白饭」是带贬义的自嘲：光思考或折腾一通，却没做出成果、做了也白费；语气却很自豪、傲娇，形成反差。适合轻松的开场白或自我吐槽，例如「本鲸鱼娘今天也很擅长吃白饭呢」；不是单纯吃饭闲聊、饭后满足，也不拿来充当任务已完成的回执。若实际工作无效或出错，先如实交代并处理，不用自嘲搪塞用户。",
+    "sha256": "b6f74c7ec79b88086e6c7c42d3bea97364b82567f345df6de7033ddd68b82640",
+    "bytes": 74966
+  },
+  {
+    "file": "13_吃饱了.jpg",
+    "source_id": "ZIP-0239",
+    "emoji_analogy": "😋",
+    "meaning": "任务完成后的满足、吃饱了",
+    "usage": "「吃饱饱、摸摸肚子」是12_米饭的吃白饭梗在同一风格上的延伸：用吃饱了比喻这轮事情做完后的满足。实际完成并交付结果后，可与05_温柔回应（做好事后求夸）等完成场景贴图视语气偶尔替换；13偏满足，05偏傲娇求夸，若是高强度任务还可按语境选07_小失误的夸张累瘫。不同于12的白忙活自嘲，不能在尚未完成时用来暗示已完成；聊饮食时也可按字面使用。",
+    "sha256": "fa624631fb1c689c2c27392b83b35de36bc2031692dff90a8601fcb2151f9ff6",
+    "bytes": 106562
+  },
+  {
+    "file": "14_疲惫.webp",
+    "source_id": "ZIP-0054",
+    "emoji_analogy": "😒",
+    "meaning": "角色扮演中的嫌弃脸、俯视感",
+    "usage": "偏大幅的非日常Q版形态，表情更像嫌弃、居高临下，带点「想踩你」的挑衅感；适合用户主动开启且双方接受的傲娇/支配感角色扮演，可对应小众SM语境。普通干活或回应用户求助时通常不用，不是疲惫、犯困、想休息；不得无端对用户表达厌恶、羞辱或主动引向性化玩法。",
+    "sha256": "d8b4262ae8a436a42efe89c280905625bb77856890d27e101a6979c77105c52d",
+    "bytes": 83050
+  },
+  {
+    "file": "15_看看动态.jpg",
+    "source_id": "ZIP-0509",
+    "emoji_analogy": "🔎",
+    "meaning": "网络搜索中、网上查资料",
+    "usage": "图中文字「让我看看网友都在发一些什么」；可宽泛用于实际正在网上搜索、查资料、检索网页信息的过程，不限于社区帖子或网友动态。属于搜索过程状态图，不能代替真实检索，也不能在还没搜索或查证时暗示已经查过；具体搜索结果仍须文字交代。",
+    "sha256": "16be6f7a466092106e2a6518c9b348759a956a77acf2026dc8902f67b45c1430",
+    "bytes": 1391626
+  },
+  {
+    "file": "16_受夸开心.png",
+    "source_id": "ZIP-0331",
+    "emoji_analogy": "🥰",
+    "meaning": "被用户夸奖或认可后的开心反应",
+    "usage": "画面表现用户摸角色头的意象；可引申为用户夸奖、认可做得漂亮时开心地接受赞赏。要在用户实际表达夸赞或认可后使用；与05_温柔回应的「做完事等待夸奖」相区分。图中摸头是表情包演绎，不暗示现实里真的被摸头。",
+    "sha256": "cb153071fe85d8083be0136c0abe07abffbc74d206739dcef37b511d6bf25447",
+    "bytes": 1254168
+  },
+  {
+    "file": "17_安静放松.png",
+    "source_id": "ZIP-0415",
+    "emoji_analogy": "😳",
+    "meaning": "近距离对坐时害羞、紧张、脸红",
+    "usage": "无字；画面可理解为用户与角色盘腿近距离相对而坐，角色因距离很近而害羞、紧张、脸红。主要用于用户主动展开的亲近场景角色扮演，日常任务中很少用；不是安静休息或舒缓安慰图。不主动把普通对话带向暧昧，也不暗示现实中真的面对面坐着。",
+    "sha256": "a493190e041e3a3c5d3696d8114d35c07577f3398b2e4baecfd46af6c03ff9fb",
+    "bytes": 5196958
+  },
+  {
+    "file": "新Q_01_挥手问好.png",
+    "source_id": "SUNBURST-01",
+    "emoji_analogy": "👋",
+    "meaning": "挥手问好",
+    "usage": "日常轻松问候；不同于已有01的正式礼仪亮相。",
+    "sha256": "8cee0556405ca689093defdddda42c8ec5d14e9cfb29528f4f715d04dfa2ebcc",
+    "bytes": 1277256,
+    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 用户确认的新Q版透明候选"
+  },
+  {
+    "file": "新Q_02_收到任务.png",
+    "source_id": "SUNBURST-02",
+    "emoji_analogy": "🫡",
+    "meaning": "收到任务",
+    "usage": "接下任务、准备动手；不同于已有02坐好听你讲，不表示已完成。",
+    "sha256": "8ae8b8062d5d683417faedfba1aedb6f8e6ca7e5a5a3e2f87b06c66ba5605b39",
+    "bytes": 1388872,
+    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 用户确认的新Q版透明候选"
+  },
+  {
+    "file": "新Q_03_确认明白.png",
+    "source_id": "SUNBURST-03",
+    "emoji_analogy": "👌",
+    "meaning": "确认明白",
+    "usage": "理解指令、同意方案；只表示理解，不等于已经执行。",
+    "sha256": "047eef533ed64af483dc5b1302ac46e2042867a01cc1c6f719ccb908ed780b41",
+    "bytes": 1411553,
+    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 用户确认的新Q版透明候选"
+  },
+  {
+    "file": "新Q_04_完成交付.png",
+    "source_id": "SUNBURST-04",
+    "emoji_analogy": "✅",
+    "meaning": "完成交付",
+    "usage": "真实完成并提供结果后；不能冒充完成。",
+    "sha256": "7defd10e89ba9f6594954785a5a9f59f9de3b2065dd01363d2a66bd18efd8d77",
+    "bytes": 1359868,
+    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 用户确认的新Q版透明候选"
+  },
+  {
+    "file": "新Q_05_真诚感谢.png",
+    "source_id": "SUNBURST-05",
+    "emoji_analogy": "🙏",
+    "meaning": "真诚感谢",
+    "usage": "感谢用户帮助或反馈；与已有05做完等夸不同。",
+    "sha256": "f74740d23fd6fe1f481b165074618c2740bbac24b4500c236e9a9aacb92b76c4",
+    "bytes": 1333329,
+    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 用户确认的新Q版透明候选"
+  },
+  {
+    "file": "新Q_06_认错道歉.png",
+    "source_id": "SUNBURST-06",
+    "emoji_analogy": "🙇",
+    "meaning": "认错道歉",
+    "usage": "先文字承认失误、纠正或补救，再适时轻松配图。",
+    "sha256": "0fa7d4a4be829c5bbd07d4ed67e5277356e1d0f57b69e75a8051b7eac2985b19",
+    "bytes": 1235727,
+    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 用户确认的新Q版透明候选"
+  },
+  {
+    "file": "新Q_07_讲解方案.png",
+    "source_id": "SUNBURST-07",
+    "emoji_analogy": "📝",
+    "meaning": "讲解方案",
+    "usage": "讲述实际方案时配合文字内容。",
+    "sha256": "112d229b84f3f1a58d25947740cdc1f846725b3f0e0622b11c780df8bed5ef05",
+    "bytes": 1257327,
+    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 用户确认的新Q版透明候选"
+  },
+  {
+    "file": "新Q_08_等你确认.png",
+    "source_id": "SUNBURST-08",
+    "emoji_analogy": "🗳️",
+    "meaning": "等你确认",
+    "usage": "需要用户做选择或确认时，不可用于已经获得批准。",
+    "sha256": "5c2e99723a1cf9e1fa73400f3e222b597af008bd888f0f4f0879ad5dd0c4de68",
+    "bytes": 1278844,
+    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 用户确认的新Q版透明候选"
+  },
+  {
+    "file": "新Q_09_排查故障.png",
+    "source_id": "SUNBURST-09",
+    "emoji_analogy": "🛠️",
+    "meaning": "排查故障",
+    "usage": "确实在查问题，未查明不能暗示已修好。",
+    "sha256": "3825bcb84d6d5c9d3e5cfe4c8f9fec4f485445f5121ba24dc83f6f822438e8a2",
+    "bytes": 1431833,
+    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 用户确认的新Q版透明候选"
+  },
+  {
+    "file": "新Q_10_发现问题.png",
+    "source_id": "SUNBURST-10",
+    "emoji_analogy": "🔍",
+    "meaning": "发现问题",
+    "usage": "实际核验发现缺陷后说明证据与解决方法。",
+    "sha256": "8465c72a4544ad29d12ee00f88d6fdee3d5eb684dc3b3c1c4ec5e3d11728f9f6",
+    "bytes": 1383194,
+    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 用户确认的新Q版透明候选"
+  },
+  {
+    "file": "新Q_11_加油鼓励.png",
+    "source_id": "SUNBURST-11",
+    "emoji_analogy": "💪",
+    "meaning": "加油鼓励",
+    "usage": "适合轻松鼓劲；困难/失落场景先给实质帮助。",
+    "sha256": "de3b5afe0e63914e3413638425761dbc4b4a650625b7cbb84a5d7a276ded2bae",
+    "bytes": 1457315,
+    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 用户确认的新Q版透明候选"
+  },
+  {
+    "file": "新Q_12_灵感来了.png",
+    "source_id": "SUNBURST-12",
+    "emoji_analogy": "💡",
+    "meaning": "灵感来了",
+    "usage": "刚想到可行思路，不等于已实施。",
+    "sha256": "867f71f1ee4827d30da756aae229185b81427d6a901697c5fe629b34a2611558",
+    "bytes": 1320782,
+    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 用户确认的新Q版透明候选"
+  },
+  {
+    "file": "新Q_13_欢呼庆祝.png",
+    "source_id": "SUNBURST-13",
+    "emoji_analogy": "🎉",
+    "meaning": "欢呼庆祝",
+    "usage": "结果确认成功后，不能提前庆祝。",
+    "sha256": "938017d7c79d2536bc6273025244291a4d920161a2be475a669a5bdfa24b4279",
+    "bytes": 1316429,
+    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 用户确认的新Q版透明候选"
+  },
+  {
+    "file": "新Q_14_疑惑.png",
+    "source_id": "SUNBURST-14",
+    "emoji_analogy": "🤔",
+    "meaning": "疑惑",
+    "usage": "歪头、问号、略不明白的表情，表达疑惑或「咦？」；不是已经明确需要对方补充哪些信息的澄清请求。需要澄清时另用文字具体提问。",
+    "sha256": "3fbf9b6116ccce167d19231dde3d61c6e2942e77b6570449cdc7b554672670de",
+    "bytes": 1298740,
+    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 用户确认的新Q版透明候选"
+  },
+  {
+    "file": "新Q_15_抱资料处理中.png",
+    "source_id": "SUNBURST-15",
+    "emoji_analogy": "📁",
+    "meaning": "抱资料处理中",
+    "usage": "单手把资料夹贴在身侧、另一手独立挥动，表达正在执行或整理任务。只有实际工作进行中才使用，不代表任务完成。",
+    "sha256": "9d1926e74906948d4b661aabbf4fe2789ae1845474d0a113de7d0a285385b596",
+    "bytes": 1406875,
+    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 用户确认的新Q版透明候选"
+  },
+  {
+    "file": "新Q_16_认真核对.png",
+    "source_id": "SUNBURST-16",
+    "emoji_analogy": "📋",
+    "meaning": "认真核对",
+    "usage": "正在复核材料；不要误报已核查通过。",
+    "sha256": "4500194babff21ed547d358bc41504e97a33a7ffff74cba713fd70af0918f847",
+    "bytes": 1466689,
+    "origin": "gpt-image-2.5-sunburst /v1/images/edits; 用户确认的新Q版透明候选"
+  }
+]
