@@ -22,7 +22,7 @@ class PickTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory(prefix="whale-pick-")
         self.addCleanup(self.temp.cleanup)
-        self.root = Path(self.temp.name) / "包 数据" / "deepseek-chan"
+        self.root = Path(self.temp.name) / "任意目录" / "角色资料"
         self.common = self.root / "assets/stickers/common"
         self.common.mkdir(parents=True)
         self.items, self.variants = [], []
@@ -136,36 +136,22 @@ class PickTests(unittest.TestCase):
         self.save()
         self.assertEqual(self.call("list")[0], 2)
 
-    def test_complete_file_uri_encoding_and_minis_rejection(self):
-        code, out, _ = self.call("pick", "SUNBURST-04", "--format", "markdown")
+    def test_output_formats_are_file_contracts(self):
+        for args in (("--format", "html", "list"), ("list", "--format", "html")):
+            with contextlib.redirect_stderr(io.StringIO()), self.assertRaises(SystemExit):
+                mod.build_parser().parse_args(args)
+        code, out, _ = self.call("pick", "SUNBURST-04")
         self.assertEqual(code, 0)
-        self.assertIn("file:///", out)
-        self.assertIn("%E5%8C%85%20%E6%95%B0%E6%8D%AE", out)
-        self.assertIn("%20%23.png", out)
-        self.assertEqual(self.call("pick", "SUNBURST-04", "--format", "minis")[0], 2)
+        record = json.loads(out)["sticker"]
+        self.assertEqual(set(record), {"path", "file", "source_id", "meaning", "usage",
+                                      "text_note", "sha256", "sha256_verified", "bytes", "variant"})
 
-    def test_http_user_base(self):
-        code, out, _ = self.call("pick", "SUNBURST-04", "--format", "markdown",
-                                 "--url-base", "https://media.example.org/鲸鱼 图/")
-        self.assertEqual(code, 0)
-        self.assertIn("https://media.example.org/%E9%B2%B8%E9%B1%BC%20%E5%9B%BE/", out)
-        self.assertNotIn("file:///", out)
-
-    def test_http_credentials_rejected_without_echo(self):
-        code, out, err = self.call("pick", "ZIP-01", "--url-base",
-                                   "https://u:secret@example.org/common/")
-        self.assertEqual((code, out), (2, ""))
-        self.assertNotIn("secret", err)
-
-    def test_root_precedence_and_sibling_discovery(self):
+    def test_root_precedence_and_arbitrary_package_name(self):
         with patch.dict(os.environ, {"WHALE_CHAN_ROOT": str(self.root)}):
             self.assertEqual(mod.resolve_root(), self.root)
             with self.assertRaises(ValueError):
                 mod.resolve_root(str(self.root / "missing"))
         with patch.object(mod, "__file__", str(self.root / "skills/whale-stickers/scripts/pick.py")):
-            self.assertEqual(mod.resolve_root(), self.root)
-        workspace = self.root.parent
-        with patch.object(mod, "__file__", str(workspace / "skills/whale-stickers/scripts/pick.py")):
             self.assertEqual(mod.resolve_root(), self.root)
 
 

@@ -1,7 +1,7 @@
 ---
 name: whale-stickers
 description: 在鲸鱼娘角色的轻松聊天、真实工作状态与交付中自然选用已审核表情，或响应用户明确的贴图请求。语义优先，优先真正透明的新Q版；通过当前助手的本地媒体附件工具发送，不假定所有聊天渠道能显示本地URI。严肃敏感场景以文字为主。
-version: 2.1.0
+version: 3.0.0
 ---
 # 鲸鱼娘贴图
 
@@ -12,7 +12,7 @@ version: 2.1.0
 - 按包根 `START_HERE.md` 理解已获准应用的角色，其他资料按需读取。
 - 图像分三层：`assets/reference/character-fullbody.webp` 是三视图/全身形象的顶级基准；`assets/stickers/common/` 是日常正式33张，保留原文件名与原图片；`archive/reference-library/` 是518张参考/杂物间的归档说明和索引，图片通过可选 reference-attic release ZIP 提供，不是日常图库。本脚本只读取 common，不从归档抽图，也不负责生图。
 - 33张中，新增16张新Q PNG 均是真正RGBA透明；原17张里02、06、08、09、11也是真透明，共**透明21、不透明12**。`variants.json` 记录实测背景、透明像素、尺寸与SHA256。拥有alpha通道但全255并不算透明，不要靠换扩展名、加假alpha或擅自抠图制造透明版本。
-- 当前偏好：适宜的日常交流、真实工作状态与成果交付中积极考虑一张图，像emoji一样自然、节制；优先新Q版与真正透明图，但**语义适用比透明更重要**。不透明原版仍可用于准确场景；透明原版也不是通用情绪替代品。不机械逐轮发、不连续重复同图。可搭配 `minis-tts` 的真实短语音，二者都是文字的可选点缀。
+- 当前偏好：适宜的日常交流、真实工作状态与成果交付中积极考虑一张图，像emoji一样自然、节制；优先新Q版与真正透明图，但**语义适用比透明更重要**。不透明原版仍可用于准确场景；透明原版也不是通用情绪替代品。不机械逐轮发、不连续重复同图。可搭配 `whale-tts` 的真实短语音，二者都是文字的可选点缀。
 
 ## 操作步骤
 
@@ -60,16 +60,12 @@ python3 skills/whale-stickers/scripts/pick.py pick 新Q_04_完成交付
 python3 skills/whale-stickers/scripts/pick.py pick SUNBURST-04 --format path
 ```
 
-安装后常见结构为 `<workspace>/skills/whale-stickers/` 与 `<workspace>/deepseek-chan/assets/`。脚本从自身路径向上查找索引，也检查祖先下的 `deepseek-chan` 兄弟包。不同布局用 `--root /path/to/deepseek-chan` 或 `WHALE_CHAN_ROOT`；优先级为显式参数→环境变量→自动寻找，显式无效时失败而不偷偷回退。选项可放在命令前后。
+脚本从自身位置向上查找正式索引，包目录可以任意命名。单独复制脚本时，用 `--root /资料包目录` 或 `WHALE_CHAN_ROOT` 指向资料；优先级为显式参数 → 环境变量 → 自动寻找。选项可放在命令前后。
 
-默认 `--format json` 返回包根与 `sticker`/`entries`：真实绝对路径、文件名、source_id、meaning、usage、text_note（未提供时为空）、SHA256核验结果、字节数及 `variant` 元数据。`--format path` 只输出路径。`--verify-sha256`是兼容选项，校验始终执行。
+默认 `--format json` 返回包根与 `sticker`/`entries`：真实绝对路径、文件名、source_id、meaning、usage、text_note、SHA256 核验结果、字节数及 `variant` 元数据。`--format path` 只输出已校验路径。
 
-`--transparent-only`只从 `variants.json` 已核验的透明条目筛选，元数据须覆盖完整正式索引；SHA256须与真实图片及index一致。它不改写语义、不创建新图、不自动选出万能表情。没有元数据时普通选图仍可用，但透明过滤会明确失败。
+`--transparent-only` 从 `variants.json` 中已核验的透明条目筛选。元数据须覆盖完整索引，SHA256 须与实际图片一致；没有元数据时普通选图仍可用。
 
-## 实际发送：先识别前端
+## 交付
 
-- **实际宿主与当前渠道**：优先将JSON中的实际 `path` 交给当前平台提供的本地消息附件/媒体工具，以图片发送。工具名与参数以该平台的工具说明为准；不存在统一魔法命令。发送结果须来自真实工具返回，不能把本机路径当成用户已经收到的图片。
-- **Minis**：只有实际文件在 `/var/minis` 下时使用 `--format minis`；复制返回的 `![说明](minis://...)` 作为内嵌媒体。脚本对完整相对路径做百分号编码，中文、空格及特殊字符不会裸写。选图与默认路径发现不依赖此目录；其他位置会明确拒绝Minis格式。
-- **明确支持本地file URI的前端**：可用 `--format markdown`，返回已编码的真实 `file:///...` 图片语法。多数远程聊天渠道不支持本地URI；不能保证渲染。
-- **用户已明确配置可访问的媒体HTTP目录**：用 `--url-base https://media.example.org/whale/common/ --format markdown`。base对应common内容，脚本追加编码后的原文件名；不会上传图片或验证远端权限。不要把未经确认可访问的资源链接当作用户可见内嵌图片，不要把token拼入URL、日志或仓库。
-- 缺少媒体能力时给完整文字；仅当路径对用户确实有用且用户要求时提供，不用无用的本地路径替代图片，并诚实说明尚未以可见附件交付；不要假装所有渠道都能显示图片。
+把 JSON 中的 `path` 交给当前渠道支持的图片附件工具；位置必须能被该工具读取。宿主自行处理上传、内嵌显示或消息附件，按工具结果确认发送。脚本仅选图，不上传或生成媒体链接。

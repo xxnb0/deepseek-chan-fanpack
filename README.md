@@ -53,6 +53,6 @@ https://github.com/user-attachments/assets/97fcf4f3-7b6c-45c2-bd99-30e94785842a
 
 ## 按需深入
 
-[宿主自适配](docs/platforms.md) · [图片与生成](docs/assets.md) · [语音](docs/voice.md) · [场景验收](tests/persona-cases.json) · [维护、历史安装与回滚](docs/validation.md) · [素材来源](NOTICE.md)
+[宿主自适配](docs/platforms.md) · [图片与生成](docs/assets.md) · [语音](docs/voice.md) · [场景验收](tests/persona-cases.json) · [维护与回滚](docs/validation.md) · [素材来源](NOTICE.md)
 
-`skills/` 和 `scripts/` 是可选实现与兼容附件；`sources/minis/` 保留早期环境的配置参考。
+可选工具：[鲸鱼娘贴图](skills/whale-stickers/SKILL.md) · [鲸鱼娘 TTS](skills/whale-tts/SKILL.md)。已有媒体能力的 AI 可直接使用资料。
