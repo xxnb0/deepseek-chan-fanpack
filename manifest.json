@@ -3203,8 +3203,14 @@
     },
     {
       "path": "assets/audio/README.md",
-      "bytes": 426,
-      "sha256": "d2b995ec78bf19d2f67486658a818ab77e2ebdad19deb84fb4c3d49d3fc6c78b",
+      "bytes": 593,
+      "sha256": "f1561e5f9b5bae1526cdd9a5db0c93826bccfd5c86fe1060356767994b54a349",
+      "tier": "core"
+    },
+    {
+      "path": "assets/audio/whale-chan-voice-preview.mp4",
+      "bytes": 226439,
+      "sha256": "6d3f21c9a96c8594c631ecb36cd71cc9e0fb96011d0c06ff9da98b37076ea493",
       "tier": "core"
     },
     {
@@ -3539,8 +3545,8 @@
     },
     {
       "path": "scripts/verify.py",
-      "bytes": 6128,
-      "sha256": "2ca46be36933d461fb6988e1d299af918efeac5ff503dfbe077fc75c33b8595a",
+      "bytes": 6135,
+      "sha256": "2e5a27fdad390c9648f32a3ba96ea6eed06090ba4d9c57c8fefbf155ba662431",
       "tier": "core"
     },
     {
@@ -3642,7 +3648,7 @@
     {
       "path": "tests/test_verify.py",
       "bytes": 2429,
-      "sha256": "cce0ff9fee3fb942924996480775e673e95f00afaf440b0fdade0cb200848f4c",
+      "sha256": "02215bb721f21c7e4e86107c81bafc9c959e64e61ad1dd313c503b577ea7c738",
       "tier": "core"
     }
   ]

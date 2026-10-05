@@ -8,7 +8,7 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
-MEDIA = {'.png','.jpg','.jpeg','.webp','.gif','.mp3','.wav','.ogg'}
+MEDIA = {'.png','.jpg','.jpeg','.webp','.gif','.mp3','.wav','.ogg','.mp4'}
 
 
 def sha(path):
