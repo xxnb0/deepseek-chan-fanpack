@@ -2,7 +2,9 @@
 
 **给 AI 一句话，让它把这份角色资料配置到自己身上。**
 
-> 请读取 https://github.com/xxnb0/deepseek-chan-fanpack ，按 START_HERE.md 把鲸鱼娘角色配置到你身上；根据你已有的能力自行适配。
+```text
+请读取 https://github.com/xxnb0/deepseek-chan-fanpack ，按 START_HERE.md 把鲸鱼娘角色配置到你身上；根据你已有的能力自行适配。
+```
 
 这是角色资料包。目标 AI 需要能读取仓库与所用资源；若无法读取，可由你提供文件。不要在聊天里粘贴 token。
 
