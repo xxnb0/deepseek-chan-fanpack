@@ -20,6 +20,9 @@ class ContractTests(unittest.TestCase):
         self.assertNotIn('pip install',start)
         self.assertNotIn('scripts/install.py',(ROOT/'README.md').read_text())
         self.assertIn('START_HERE.md',(ROOT/'README.md').read_text())
+        self.assertIn('头像也一并检查',start)
+        self.assertIn('需要额外同意就询问',start)
+        self.assertIn('适合小尺寸的角色肖像',(ROOT/'IDENTITY.md').read_text())
 
     def test_active_docs_do_not_assume_repository_visibility(self):
         for p in list(ROOT.rglob('*.md'))+[ROOT/'personality.json']:
