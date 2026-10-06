@@ -3491,8 +3491,8 @@
     },
     {
       "path": "docs/community-sources.md",
-      "bytes": 6448,
-      "sha256": "1f4e8c99736579c08990092d57f71c06e1b64f8ded11b63381b0867b48dfe2ba",
+      "bytes": 6629,
+      "sha256": "ce8e6d7c034e702b16480faae832f77acf7f215b6434b845644098dc69a9e379",
       "tier": "core"
     },
     {
@@ -3534,8 +3534,8 @@
     {
       "path": "docs/research-method.md",
       "tier": "core",
-      "bytes": 4819,
-      "sha256": "32d3af32626f2597ddf9fce51504734ab7e4b6655b1407a31aad6db8ac758cae"
+      "bytes": 4972,
+      "sha256": "31aa3aa33eb4babaf9d293baea990891e4b19e327f0b5d295823c2e1fd917348"
     },
     {
       "path": "docs/tts-troubleshooting.md",
@@ -3588,8 +3588,8 @@
     {
       "path": "research/sources.json",
       "tier": "core",
-      "bytes": 17920,
-      "sha256": "6238fd809ece0eb6cb03dd7ad765f5676cab07d697ed2dc492390cab5104f727"
+      "bytes": 18583,
+      "sha256": "ee1bce1f0fa8833c58bcc62f30044bb78679e07db24a1dca7dfcbb36a3d76dc5"
     },
     {
       "path": "scripts/export_persona.py",
