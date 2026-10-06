@@ -26,6 +26,8 @@ class ContractTests(unittest.TestCase):
 
     def test_active_docs_do_not_assume_repository_visibility(self):
         for p in list(ROOT.rglob('*.md'))+[ROOT/'personality.json']:
+            if any(part in {'.git','.venv','output','__pycache__'} for part in p.relative_to(ROOT).parts):
+                continue
             text=p.read_text().lower()
             for term in ('私仓','私有角色资料包','私有备份','private repository'):
                 self.assertNotIn(term,text,str(p.relative_to(ROOT)))

@@ -2,6 +2,8 @@
 
 本包提供角色语义和资源。目标 AI 根据自己的角色载体、可用工具与权限完成适配，通常先按 [START_HERE.md](../START_HERE.md) 应用文字角色。
 
+这里保持平台中立；实际 Muse、Dot、Hermes、OpenClaw 与角色卡的差异见 [平台速查](platform-adapters.md)。可选 [导出工具](export.md) 只产生待导入材料，不替宿主确认路径或覆盖全局约定。
+
 ## 先做只读自检
 
 按需判断相关能力，记录 `supported`、`unsupported` 或 `unknown` 及实际工具/设置入口；未知项留待验证，无需主人填写配置表。

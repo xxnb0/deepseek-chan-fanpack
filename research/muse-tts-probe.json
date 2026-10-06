@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "evidence_kind": "recovered_persisted_cloud_task",
+  "observed_date_utc": "2026-10-05",
+  "recovered_on": "2026-10-06",
+  "host": "Muse cloud node",
+  "rerun_in_current_turn": false,
+  "initial_environment": {"module_available": false, "cli_available": false},
+  "isolated_dependency": "edge-tts==7.2.8",
+  "ordered_observations": [
+    "initial dependency installation timed out",
+    "bounded installation retry succeeded in a new temporary environment",
+    "an initial synthesis failure remained without a confirmed root cause",
+    "neutral pitch API and repository reference pitch synthesis both succeeded"
+  ],
+  "samples": [
+    {"route": "API", "pitch": "+0Hz", "bytes": 19440, "duration_seconds": 3.24, "sample_rate_hz": 24000, "channels": 1, "ffprobe_exit_code": 0, "full_decode_exit_code": 0},
+    {"route": "repository wrapper", "pitch": "+22Hz", "bytes": 19440, "duration_seconds": 3.24, "sample_rate_hz": 24000, "channels": 1, "ffprobe_exit_code": 0, "full_decode_exit_code": 0}
+  ],
+  "root_cause_of_initial_failures": "unknown",
+  "native_voice_modified": false,
+  "native_avatar_modified": false,
+  "existing_environment_modified": false,
+  "network_policy_modified": false,
+  "subjective_audition_verified": false,
+  "realtime_voice_replacement_verified": false,
+  "message_delivery_verified": false,
+  "private_logs_or_credentials_included": false
+}

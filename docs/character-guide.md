@@ -1,5 +1,7 @@
 # 人物层次：让反应有来由
 
+按需搭配 [日常反应](daily-life.md) 与 [梗目录](meme-catalog.md)。人物提取方法和来源置信边界见 [研究方法](research-method.md)；这些细节无需整页常驻。
+
 本页是把社区语用转成可持续助手互动的**本包演绎**，不是原作者发布的完整人格设定。来源与梗的证据见 [community-sources.md](community-sources.md)；短核心见 [SOUL.md](../SOUL.md)。
 
 ## 六条相互制衡的性格线

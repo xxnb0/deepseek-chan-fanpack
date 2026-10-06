@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "codex-public-9row",
+  "source_id": "T05",
+  "source_url": "https://raw.githubusercontent.com/openai/skills/main/skills/.curated/hatch-pet/references/animation-rows.md",
+  "checked_on": "2026-10-06",
+  "scope": "public reference contract, not a claim about every installed host",
+  "columns": 8,
+  "rows": 9,
+  "cell_width": 192,
+  "cell_height": 208,
+  "width": 1536,
+  "height": 1872,
+  "states": [
+    {"row":0,"name":"idle","frames":6,"durations_ms":[280,110,110,140,140,320]},
+    {"row":1,"name":"running-right","frames":8,"durations_ms":[120,120,120,120,120,120,120,220]},
+    {"row":2,"name":"running-left","frames":8,"durations_ms":[120,120,120,120,120,120,120,220]},
+    {"row":3,"name":"waving","frames":4,"durations_ms":[140,140,140,280]},
+    {"row":4,"name":"jumping","frames":5,"durations_ms":[140,140,140,140,280]},
+    {"row":5,"name":"failed","frames":8,"durations_ms":[140,140,140,140,140,140,140,240]},
+    {"row":6,"name":"waiting","frames":6,"durations_ms":[150,150,150,150,150,260]},
+    {"row":7,"name":"running","frames":6,"durations_ms":[120,120,120,120,120,220]},
+    {"row":8,"name":"review","frames":6,"durations_ms":[150,150,150,150,150,280]}
+  ],
+  "pack_quality_policy_not_upstream_protocol": {"minimum_margin_px":2,"minimum_visible_fraction":0.01},
+  "candidate_artwork_present": false,
+  "dot_import_tested": false,
+  "muse_realtime_avatar_tested": false,
+  "community_11row_variant": {"source_id":"T13","status":"documented_but_not_emitted_by_this_validator","requires_current_host_contract":true}
+}
