@@ -1,5 +1,7 @@
 # 语音：气质可迁移，参数可替换
 
+Muse 的原生实时声音与 Edge 独立音频是两条路径；先看 [TTS 分流与排障](tts-troubleshooting.md)。该页保留已有云端合成成功记录，同时明确未验证实时声线替换。只读检查可用 `scripts/voice_doctor.py`，它默认不会联网或生成声音。
+
 现有可选脚本采用 **Edge TTS**：`zh-CN-XiaoyiNeural`（晓伊）、音高 `+22Hz`、语速 `+0%`。这些是参考参数，已有 TTS 的宿主可以自行选择贴合的声音；不同服务按各自支持的参数调整。
 
 [听听语音样例](../assets/audio/whale-chan-voice-sample.mp3) · [台词与参数](../assets/audio/README.md)

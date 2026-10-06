@@ -25,3 +25,9 @@ python3 skills/whale-tts/scripts/generate.py --text '让我看看，这里还有
 Edge 参数只是参考。脚本输出 MP3 与元数据，不自动发送、不自动播放，不检查宿主的消息能力。在线服务会接收朗读文本；私人或敏感内容按宿主规则处理。详见 [语音说明](docs/voice.md)。
 
 `WHALE_CHAN_ROOT` 和 `WHALE_AUDIO_DIR` 是可选显式路径，非强制配置。本地文件由宿主原生附件工具发送。
+
+## 可选检查与导出
+
+`scripts/voice_doctor.py` 默认只读检查当前解释器、Edge 模块／CLI 与解码工具，不联网、不安装、不选择声线。实际 MP3 可加 `--audio` 检查；明确加 `--decode` 才进行有界完整解码，详见 [TTS 排障](docs/tts-troubleshooting.md)。
+
+`scripts/export_persona.py` 将一致的人格导出到新目录，不安装宿主设置；`scripts/pet_asset.py` 验收实际候选 atlas 并可打包，不生成缺失动作。分别见 [导出](docs/export.md) 与 [宠物](docs/pets.md)。宿主已具备这些能力时，直接使用资料，不必重复装工具。

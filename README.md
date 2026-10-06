@@ -53,6 +53,12 @@ https://github.com/user-attachments/assets/97fcf4f3-7b6c-45c2-bd99-30e94785842a
 
 ## 按需深入
 
+[日常反应与原创表达](docs/daily-life.md) · [梗目录](docs/meme-catalog.md) · [42 个分层来源入口](research/sources.json) · [人物提取方法](docs/research-method.md)
+
+[Muse / Dot / Hermes / OpenClaw 适配](docs/platform-adapters.md) · [人格与角色卡导出](docs/export.md) · [Muse 声音分流与排障](docs/tts-troubleshooting.md) · [宠物规范与候选检查](docs/pets.md)
+
+宠物部分目前提供规范、制作简报和校验／打包工具，**尚无已完成视觉验收的角色动画图**；平台导入、实时声线与人格表现须在实际宿主分别验收。
+
 [宿主自适配](docs/platforms.md) · [图片与生成](docs/assets.md) · [语音](docs/voice.md) · [场景验收](tests/persona-cases.json) · [维护与回滚](docs/validation.md) · [素材来源](NOTICE.md)
 
 可选工具：[鲸鱼娘贴图](skills/whale-stickers/SKILL.md) · [鲸鱼娘 TTS](skills/whale-tts/SKILL.md)。已有媒体能力的 AI 可直接使用资料。

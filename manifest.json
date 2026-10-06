@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "name": "deepseek-chan",
-  "export_date": "2026-10-05",
+  "export_date": "2026-10-06",
   "reference": {
     "path": "assets/reference/character-fullbody.webp",
     "kind": "three-view-reference",
@@ -29,14 +29,14 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 1650,
-      "sha256": "e8280f1b9606af05806a2aebcfa4de7fa61c1665169b35cc89390c5e9d7ced68",
+      "bytes": 2416,
+      "sha256": "7f11c4419678510f438d203cde235285c56b768d63d4652e238c7cfb5b0cd6fc",
       "tier": "core"
     },
     {
       "path": "IDENTITY.md",
-      "bytes": 962,
-      "sha256": "070c2a3eed27f086e17a502c75d8b47cdb5f39382988b24b94a008a6f340e241",
+      "bytes": 1498,
+      "sha256": "e39565415752b758ee9a025077a1c912cc0a444e7863e3611ee5eae523b30c2d",
       "tier": "core"
     },
     {
@@ -47,27 +47,33 @@
     },
     {
       "path": "README.md",
-      "bytes": 3306,
-      "sha256": "fce6a82d36debc1c44112ca169c8c18f593dc357d2b96195dc11815c963bcfa7",
+      "bytes": 3919,
+      "sha256": "4bf49595e485ae326d7775438d0659518154fd951e16c74b0f0a198b948c5ef0",
       "tier": "core"
     },
     {
       "path": "SOUL.md",
-      "bytes": 3164,
-      "sha256": "ed51e5d6877f85500e90896ec40e74304f41ce78fa4e38237acbc45b1ff74db1",
+      "bytes": 3993,
+      "sha256": "554787705b74edefd4438890e78fb9b9760e9a83a294a3dcd39401246e3467bd",
       "tier": "core"
     },
     {
       "path": "START_HERE.md",
-      "bytes": 3076,
-      "sha256": "2b649647d94c8be6c7e1561571d3984a6c89a4c1e4c26740e23391375b3027e1",
+      "bytes": 3611,
+      "sha256": "d52380cf5f944b64c4caafc3798660e679dd734eb7b333e5ed51ab2039706703",
       "tier": "core"
     },
     {
       "path": "TOOLS.md",
-      "bytes": 1581,
-      "sha256": "52a6aa5fa52729c6045469c867382cba5b7fa4db6a8fb5fafe263a8f160620c6",
+      "bytes": 2210,
+      "sha256": "9a57b46c4032a9575c4d7c37275e4b24edb9b61920fa34b23c41cb3b3fec4254",
       "tier": "core"
+    },
+    {
+      "path": "adapters/AGENTS.fragment.md",
+      "tier": "core",
+      "bytes": 892,
+      "sha256": "6c06b33d8eac14d861d7dca11f96ce34f030be5c2018e96457ddc158d00657b3"
     },
     {
       "path": "archive/reference-library/QUARK-0005.png",
@@ -3214,6 +3220,24 @@
       "tier": "core"
     },
     {
+      "path": "assets/pet/README.md",
+      "tier": "core",
+      "bytes": 614,
+      "sha256": "30665310d2f01ebd4544bbd966b026b7a5399d9ec1e9054f29eab8027a549443"
+    },
+    {
+      "path": "assets/pet/atlas-profile.json",
+      "tier": "core",
+      "bytes": 1568,
+      "sha256": "d200d4213c8cd5994d9f8c589f9daa4c3d4347e25d29b671bb617d4fe2215df9"
+    },
+    {
+      "path": "assets/pet/generation-brief.md",
+      "tier": "core",
+      "bytes": 2467,
+      "sha256": "ac6148019ba3bc745b12ba3739e54ae28ad5d40ef0d9ad06f38f23701d312cf2"
+    },
+    {
       "path": "assets/reference/README.md",
       "bytes": 709,
       "sha256": "caeb3035ef74b1d0dd35d8436affdb99100223b66172257f8cc632a1112aff1f",
@@ -3461,45 +3485,93 @@
     },
     {
       "path": "docs/character-guide.md",
-      "bytes": 6465,
-      "sha256": "b9fc5723d7e3567bf34b6634d4cd0e6a4b3a4a1322adf2f8de2b4489c29efca6",
+      "bytes": 6658,
+      "sha256": "bb63f4d53a2a92c49a9c2677ff4e7e012dc8e417f821c7986074f3296930dc7c",
       "tier": "core"
     },
     {
       "path": "docs/community-sources.md",
-      "bytes": 5977,
-      "sha256": "04ba96eed4565b1cf8ea62a3289d67d9f80207b4361233e0d33efa39c4bee16b",
+      "bytes": 6629,
+      "sha256": "ce8e6d7c034e702b16480faae832f77acf7f215b6434b845644098dc69a9e379",
       "tier": "core"
+    },
+    {
+      "path": "docs/daily-life.md",
+      "tier": "core",
+      "bytes": 4957,
+      "sha256": "9d4a21df561dd57fe01e12734a71d50deb69e489034481bba1fbd5ab0932cbba"
+    },
+    {
+      "path": "docs/export.md",
+      "tier": "core",
+      "bytes": 2032,
+      "sha256": "773a4bb9b9f39597dfed282eb29bae9ee0f389f78d330b7fbb2a07f30e90f23c"
+    },
+    {
+      "path": "docs/meme-catalog.md",
+      "tier": "core",
+      "bytes": 2798,
+      "sha256": "8fc6283b08ef4ccb6d5d82adcccc13e04bb627549f5fa4f09db1c5dc353d401f"
+    },
+    {
+      "path": "docs/pets.md",
+      "tier": "core",
+      "bytes": 3711,
+      "sha256": "fc0dc9b179853dfc21a84edde597f8cb585e16f7c2bd8ab7f68c5892d8677180"
+    },
+    {
+      "path": "docs/platform-adapters.md",
+      "tier": "core",
+      "bytes": 5020,
+      "sha256": "a50f1bf4a375817bd3c3903ded391b30a160aefdd7c8c031fc1051200c8f2c32"
     },
     {
       "path": "docs/platforms.md",
-      "bytes": 4006,
-      "sha256": "a78a34cf1d3f021b99902d5649a3dd1b125dab99ad70599ee310f47925ee3894",
+      "bytes": 4245,
+      "sha256": "d2e005b53a32802228d8363d0601580bee9a36fc2e2a9862145a3090d71c22de",
       "tier": "core"
     },
     {
+      "path": "docs/research-method.md",
+      "tier": "core",
+      "bytes": 4972,
+      "sha256": "31aa3aa33eb4babaf9d293baea990891e4b19e327f0b5d295823c2e1fd917348"
+    },
+    {
+      "path": "docs/tts-troubleshooting.md",
+      "tier": "core",
+      "bytes": 4514,
+      "sha256": "aeb1d6913f9da2772e30ad916c2b0e21478e7f40addfde11e9ce8a51645cfe82"
+    },
+    {
       "path": "docs/validation.md",
-      "bytes": 1811,
-      "sha256": "426ed6e7b2c6686e874ff26511d3aa9b5be63d78307818e804bd3a48c74a3f38",
+      "bytes": 2471,
+      "sha256": "fec3ea587aa166f3a59faac361889850953cf84bad30beda637b44da2fce6781",
       "tier": "core"
     },
     {
       "path": "docs/voice.md",
-      "bytes": 2422,
-      "sha256": "96756d9b9631d0152b83045a57f73958a3b73a2791328fcbf148fc208fc6816b",
+      "bytes": 2717,
+      "sha256": "ff4810c1fb1cfee990ab676886a31f8f992174823da95514730897d2681c5f79",
       "tier": "core"
     },
     {
       "path": "personality.json",
-      "bytes": 3232,
-      "sha256": "5d97e69c792893c4fa023a50a93618e542d610ac21811ac8e3879ba1f09574b7",
+      "bytes": 4067,
+      "sha256": "29bf10fd279787e988b31da410d617e126f82df9741b8848a63032d1cb41d059",
       "tier": "core"
     },
     {
       "path": "prompts/system.md",
-      "bytes": 2955,
-      "sha256": "5e91b80456bc0032bf920e419117c927e564da2113461ee2aee898b273579597",
+      "bytes": 3784,
+      "sha256": "8c6b8ec8834941cb86143a4099139962b7621d458a3947be3f6d684237d0c2ea",
       "tier": "core"
+    },
+    {
+      "path": "requirements-media.txt",
+      "tier": "core",
+      "bytes": 95,
+      "sha256": "e74c2a93b81222c2c972b95230e036a6c1033612e67e39f9a30828d8c3f2bad3"
     },
     {
       "path": "requirements-tts.txt",
@@ -3508,10 +3580,40 @@
       "tier": "core"
     },
     {
+      "path": "research/muse-tts-probe.json",
+      "tier": "core",
+      "bytes": 1397,
+      "sha256": "84b2324f5152c41ae592e46039f4f9579e4174bf823a3d63b1111391dbaa6bc1"
+    },
+    {
+      "path": "research/sources.json",
+      "tier": "core",
+      "bytes": 18583,
+      "sha256": "ee1bce1f0fa8833c58bcc62f30044bb78679e07db24a1dca7dfcbb36a3d76dc5"
+    },
+    {
+      "path": "scripts/export_persona.py",
+      "tier": "core",
+      "bytes": 8945,
+      "sha256": "796d1d54d4acd4855b80b753a9010bd33c4b8e8d84b1ea0e97b6f7dee70f4f6e"
+    },
+    {
+      "path": "scripts/pet_asset.py",
+      "tier": "core",
+      "bytes": 9109,
+      "sha256": "063433068bf06eee34cf896d73752768dd16e78f92b1060f05bb49f95fd57cd6"
+    },
+    {
       "path": "scripts/verify.py",
       "bytes": 6135,
       "sha256": "169e77979915c045c85e8138b4dc977671f5a921f4318b84822c9ee4ace5b385",
       "tier": "core"
+    },
+    {
+      "path": "scripts/voice_doctor.py",
+      "tier": "core",
+      "bytes": 5056,
+      "sha256": "b2812889543ac0c7961d3ca6bd8b4f559d1c1dc4dad4b96285779b768e5e58fa"
     },
     {
       "path": "skills/whale-stickers/SKILL.md",
@@ -3545,15 +3647,33 @@
     },
     {
       "path": "tests/persona-cases.json",
-      "bytes": 6460,
-      "sha256": "8a6126a08f88134ef46338c2f9cc4188b406d5605f7283f8498c7d74b1366c23",
+      "bytes": 10766,
+      "sha256": "1d06b59343904414489f09cba8273778b0b2c61ec502414be15438bc5c47269c",
       "tier": "core"
     },
     {
       "path": "tests/test_contract.py",
-      "bytes": 3599,
-      "sha256": "c60eda5e8c0ed4cc9c5593977752815c41e12542a198489de85f50d4ace519b1",
+      "bytes": 3731,
+      "sha256": "71443d81cbfb80ca6477658aa27e2fc64056cfc26a95dc53694ed257bbb438de",
       "tier": "core"
+    },
+    {
+      "path": "tests/test_export_persona.py",
+      "tier": "core",
+      "bytes": 6074,
+      "sha256": "4af0c1de5747c9f2d6d1f98452cadd09a4e100f25a7c55d631d7236f3b18925b"
+    },
+    {
+      "path": "tests/test_pet_asset.py",
+      "tier": "core",
+      "bytes": 5294,
+      "sha256": "942b647dd37726a1df6254b48e4068f8036d3c01622c49ce05976817a6ac2d4d"
+    },
+    {
+      "path": "tests/test_research.py",
+      "tier": "core",
+      "bytes": 4224,
+      "sha256": "6d2ea0236c176596efacd0013cd8de1da4bbf5221f3693f937ce58d2cc656912"
     },
     {
       "path": "tests/test_tts.py",
@@ -3563,9 +3683,15 @@
     },
     {
       "path": "tests/test_verify.py",
-      "bytes": 2429,
-      "sha256": "02215bb721f21c7e4e86107c81bafc9c959e64e61ad1dd313c503b577ea7c738",
+      "bytes": 2453,
+      "sha256": "968c73b4793cfa761c08b37d731810b5bfad537111843127a3c8b3bcc0a3eb65",
       "tier": "core"
+    },
+    {
+      "path": "tests/test_voice_doctor.py",
+      "tier": "core",
+      "bytes": 4246,
+      "sha256": "22f7f9a303c0ade469b210845a775c17b29e13825720117d46ce0c8f619c8f1b"
     }
   ]
 }

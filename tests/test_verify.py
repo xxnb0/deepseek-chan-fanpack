@@ -13,7 +13,7 @@ class VerifyTests(unittest.TestCase):
     def setUp(self):
         self.tmp=tempfile.TemporaryDirectory()
         self.root=Path(self.tmp.name)/'pack'
-        shutil.copytree(ROOT,self.root,ignore=shutil.ignore_patterns('__pycache__','*.pyc'))
+        shutil.copytree(ROOT,self.root,ignore=shutil.ignore_patterns('.git','.venv','output','__pycache__','*.pyc'))
         # Deliberately sparse fixture: never needs downloading any media.
         for p in self.root.rglob('*'):
             if p.is_file() and p.suffix.lower() in verify.MEDIA:p.unlink()

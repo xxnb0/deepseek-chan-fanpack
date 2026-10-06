@@ -1,0 +1,2 @@
+# Optional atlas validation/encoding only; text export and TTS doctor use stdlib.
+Pillow>=10.4
