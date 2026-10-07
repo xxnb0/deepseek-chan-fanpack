@@ -3605,8 +3605,8 @@
     },
     {
       "path": "scripts/verify.py",
-      "bytes": 12835,
-      "sha256": "4c7a4aaa5bb10e8313b98234f1ebc7794a772ea55d8621b3e805728d31be87b8",
+      "bytes": 12848,
+      "sha256": "80320fd8c9d890b66ee5cad7099f03228d4324bf6b4214f1aeeaba7b0089f3ea",
       "tier": "core"
     },
     {
@@ -4043,8 +4043,8 @@
     },
     {
       "path": "tests/test_pet_manifest.py",
-      "bytes": 4522,
-      "sha256": "c97173f9a07a2ee62a15b48e55ada9236ed68dcd81a723db9699e603b0b5f382",
+      "bytes": 5069,
+      "sha256": "a435472b7ea5598b38a0009e32d8e914b47563b3ff823844debf48f5368ec109",
       "tier": "core"
     }
   ]

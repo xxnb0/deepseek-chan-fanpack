@@ -25,7 +25,7 @@ def verify_pet_manifest(root, known):
             path=(parent/relative).resolve()
             if relative.is_absolute() or urlsplit(value).scheme or not path.is_relative_to(base):
                 raise ValueError
-        except (OSError,ValueError):
+        except (OSError,ValueError,RuntimeError):
             errors.append('Invalid pet path: '+label);return None
         return path
 

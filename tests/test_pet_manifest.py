@@ -85,6 +85,18 @@ class PetManifestTests(unittest.TestCase):
         _, errors = VERIFY.verify_pet_manifest(self.root, self.known)
         self.assertIn("Invalid pet path: v2/spritesheetPath", errors)
 
+    def test_symlink_loop_is_reported_without_interrupting_validation(self):
+        cycle = self.pet / "cycle"
+        try:
+            cycle.symlink_to("cycle")
+        except OSError as exc:
+            self.skipTest(f"Symlinks unavailable: {exc}")
+        self.manifest["formats"]["v1"]["metadata"] = "cycle"
+        self.save_manifest()
+        stats, errors = VERIFY.verify_pet_manifest(self.root, self.known)
+        self.assertIn("Invalid pet path: v1/metadata", errors)
+        self.assertEqual(stats["pet_formats_metadata_checked"], 2)
+
     def test_non_object_format_does_not_interrupt_validation(self):
         self.manifest["formats"]["v1"] = []
         self.save_manifest()
