@@ -1,0 +1,97 @@
+{
+  "reviewer": "independent-resumed-task-direction-review",
+  "method": "Only the unlabeled randomized directions-blind.png and a crop of its lower half were shown to an isolated reviewer; labels, prompts, answer key and prior verdicts were withheld. Judgments began at native 192x208 pet size.",
+  "source": "../directions-blind.png",
+  "atlas_sha256": "2f1c68507f2dc5b7c6f8055ca1630faf108c2653afab60ee2891fc55ac576aa3",
+  "scope": "Supplementary single-reviewer check. Does not replace or recompute the original three-reviewer majority.",
+  "pairs": [
+    {
+      "pair": "horizontal-1",
+      "A": "screen-left",
+      "B": "screen-right",
+      "confidence": "high"
+    },
+    {
+      "pair": "horizontal-2",
+      "A": "screen-left",
+      "B": "screen-right",
+      "confidence": "high"
+    },
+    {
+      "pair": "horizontal-3",
+      "A": "screen-left",
+      "B": "screen-right",
+      "confidence": "high"
+    },
+    {
+      "pair": "horizontal-4",
+      "A": "screen-right",
+      "B": "screen-left",
+      "confidence": "high"
+    },
+    {
+      "pair": "horizontal-5",
+      "A": "screen-right",
+      "B": "screen-left",
+      "confidence": "high"
+    },
+    {
+      "pair": "horizontal-6",
+      "A": "screen-left",
+      "B": "screen-right",
+      "confidence": "medium-high"
+    },
+    {
+      "pair": "horizontal-7",
+      "A": "screen-right",
+      "B": "screen-left",
+      "confidence": "medium-high"
+    },
+    {
+      "pair": "vertical-1",
+      "A": "up",
+      "B": "down"
+    },
+    {
+      "pair": "vertical-2",
+      "A": "up",
+      "B": "down"
+    },
+    {
+      "pair": "vertical-3",
+      "A": "up",
+      "B": "down"
+    },
+    {
+      "pair": "vertical-4",
+      "A": "ambiguous",
+      "B": "ambiguous"
+    },
+    {
+      "pair": "vertical-5",
+      "A": "up",
+      "B": "down"
+    },
+    {
+      "pair": "vertical-6",
+      "A": "up",
+      "B": "down"
+    },
+    {
+      "pair": "vertical-7",
+      "A": "up",
+      "B": "down"
+    }
+  ],
+  "evidence": {
+    "horizontal": "Face exposure, visible-width differences between eyes, and sideways displacement of the mouth indicated head yaw. Horizontal pairs 6 and 7 have lower eyelids and more fringe occlusion, but left/right head turn remains readable.",
+    "vertical-4 A": "Ambiguous with a slight down tendency: the upper fringe/eyelids cover more of the eyes and the lower face sits near the collar, but sideways yaw and expression could also explain these landmarks. No clearly protruding nose tip at native size.",
+    "vertical-4 B": "Ambiguous with a slight up tendency: rounder eyes, a more exposed lower face and possibly raised chin suggest up, but perspective change is weak and the pose can read as nearly level. Wide eyes alone are insufficient.",
+    "vertical-6 B": "Down at medium confidence: chin closer to collar, less visible neck and lower facial features. Eyes alone supply only a weak downward cue.",
+    "vertical-7 A": "Up at medium confidence: slightly lifted chin and more space between lower face and collar; the small pitch can first read as level.",
+    "vertical-7 B": "Down at medium confidence: more visible upper head/fringe and a chin near the neck; head/chin rather than eye gaze supplies the slight down cue."
+  },
+  "decisive_axis_verdicts": 26,
+  "ambiguous_axis_verdicts": 2,
+  "no_artwork_modified": true
+}

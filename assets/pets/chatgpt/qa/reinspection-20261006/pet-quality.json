@@ -1,0 +1,72 @@
+{
+  "ok": true,
+  "atlas": "/workspace/scratch/304f0e217d57/deepseek-chan-fanpack/assets/pets/chatgpt/v2/spritesheet.png",
+  "encoded_bytes": 3001833,
+  "sha256": "2f1c68507f2dc5b7c6f8055ca1630faf108c2653afab60ee2891fc55ac576aa3",
+  "jump": {
+    "idle_baseline": 202,
+    "jump_baselines": [
+      202,
+      194,
+      188,
+      196,
+      202
+    ],
+    "airborne_lift_pixels": 14,
+    "landing_delta_pixels": 0
+  },
+  "look_registration": {
+    "neutral_center_x": 95.0,
+    "look_centers_x": [
+      95.5,
+      95.5,
+      96.0,
+      96.0,
+      96.0,
+      95.0,
+      95.5,
+      96.5,
+      99.0,
+      99.0,
+      100.5,
+      101.0,
+      100.5,
+      101.0,
+      100.0,
+      100.0
+    ],
+    "look_widths": [
+      127,
+      127,
+      126,
+      126,
+      124,
+      126,
+      127,
+      127,
+      124,
+      122,
+      119,
+      120,
+      121,
+      122,
+      124,
+      124
+    ],
+    "maximum_center_drift_pixels": 6.0,
+    "maximum_width_ratio": 1.0672268907563025
+  },
+  "errors": [],
+  "warnings": [
+    "look direction 022.5 accepted with a reviewed warning",
+    "look direction 067.5 accepted with a reviewed warning",
+    "look direction 112.5 accepted with a reviewed warning",
+    "look direction 202.5 accepted with a reviewed warning",
+    "look direction 225 accepted with a reviewed warning",
+    "look direction 247.5 accepted with a reviewed warning",
+    "look direction 337.5 accepted with a reviewed warning",
+    "157.5->180 diff is a local outlier (2106 pixels vs neighbor average 1219)",
+    "270->292.5 diff is a local outlier (2112 pixels vs neighbor average 1402)",
+    "337.5->000 diff is a local outlier (2813 pixels vs neighbor average 1218)"
+  ]
+}

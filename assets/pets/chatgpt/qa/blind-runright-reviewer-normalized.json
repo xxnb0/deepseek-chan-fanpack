@@ -1,0 +1,89 @@
+{
+  "pairs": [
+    {
+      "pair": "horizontal-1",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A 的双眼、鼻口朝画面左侧偏，右脸颊更外露；B 鼻口和视线偏向画面右侧，左脸颊更外露。"
+    },
+    {
+      "pair": "horizontal-2",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A 抬头时鼻尖和眼睛朝左，脸部开口偏左；B 抬头时鼻尖和嘴部偏右，头部明显朝右。"
+    },
+    {
+      "pair": "horizontal-3",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A 的脸和目光轻转左侧，鼻口位于脸的左偏位置；B 右侧脸部开口和鼻口右偏更明显。"
+    },
+    {
+      "pair": "horizontal-4",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A 有清晰向右的三分之二侧脸，鼻尖右凸；B 对着左侧，鼻口左移且目光向左。"
+    },
+    {
+      "pair": "horizontal-5",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A 头部右转、鼻尖嘴部朝右；B 左转，鼻口和瞳孔整体朝左侧。"
+    },
+    {
+      "pair": "horizontal-6",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A 低一点的脸部仍明确向左，鼻嘴左偏；B 低头时脸部朝右，鼻嘴和目光右偏。"
+    },
+    {
+      "pair": "horizontal-7",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A 低头的鼻口与脸部开口偏右；B 低头的脸部开口偏左，左向偏移虽较轻仍可见。"
+    },
+    {
+      "pair": "vertical-1",
+      "A": "up",
+      "B": "down",
+      "reason": "A 眼睛向上张开、下巴抬起、面部上仰；B 顶部头发占比更高，脸压低、瞳孔朝下且下巴收起。"
+    },
+    {
+      "pair": "vertical-2",
+      "A": "up",
+      "B": "down",
+      "reason": "A 抬下巴，目光和脸面向右上方；B 额头压低、上眼睑下盖、鼻口向下收，目光朝右下。"
+    },
+    {
+      "pair": "vertical-3",
+      "A": "up",
+      "B": "down",
+      "reason": "A 下巴抬起且眼球目光位于上侧，脸面朝右上；B 下巴回收，眼睑和视线压低，脸面朝右下。"
+    },
+    {
+      "pair": "vertical-4",
+      "A": "ambiguous",
+      "B": "up",
+      "reason": "A 水平向右十分清楚，但垂直俯角很轻，眼睑稍低不足以单独可靠区分向下与平视；B 有可见抬下巴和上仰视线，判断为向上。"
+    },
+    {
+      "pair": "vertical-5",
+      "A": "up",
+      "B": "down",
+      "reason": "A 抬头向左上看，眼睛朝上且下巴抬起；B 额头更居前、脸面下压、下巴收，目光朝左下。"
+    },
+    {
+      "pair": "vertical-6",
+      "A": "up",
+      "B": "down",
+      "reason": "A 头部后仰并抬下巴，瞳孔向左上；B 面部略向下倾、目光落在左下方，下巴比正常抬头姿态收起。"
+    },
+    {
+      "pair": "vertical-7",
+      "A": "up",
+      "B": "ambiguous",
+      "reason": "A 的下巴和脸面上仰、瞳孔朝左上；B 主要体现清晰左转，垂直倾斜和瞳孔下移不够显著，独立观察无法可靠排除平视。"
+    }
+  ],
+  "label_normalization": "Visible sheet H1..H7/V1..V7 mapped to generator key horizontal-1..7/vertical-1..7; no classification or reason changed. Original reviewer JSON is retained."
+}

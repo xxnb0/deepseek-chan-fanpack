@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "created_on": "2026-10-06",
+  "generator": "Built-in image_gen, reference-guided separate base, nine animation rows, four cardinal anchors and two coherent look rows.",
+  "workflow": "work-pets:create-pet 0.1.6 and bundled sprite-sheet-contract / QA scripts",
+  "reference_files": [
+    {
+      "path": "assets/reference/character-fullbody.webp",
+      "sha256": "8bf0e20432bd14297c2490617d6012159ec99c17936461cdd035ba964ab6cf7d"
+    },
+    {
+      "path": "assets/stickers/common/08_摸鱼玩梗.webp",
+      "sha256": "bc4b1d1d753ec7f901365325b77c7e1078e791ca7cd397db2d65e9da98894cfd"
+    }
+  ],
+  "identity_brief": "Preserve exact identity of the first full-body front side back reference; second is style and face proportions only. Cute compact chibi anime whale girl, large blue eyes, dark royal-blue hair fading cyan at long ends, small hair curl, whale-fin-shaped side hair, white frilled maid headband with blue bows, navy maid dress, white frilled apron bearing a simple tiny blue whale silhouette, white tights, navy Mary Jane shoes. One thick dark blue whale tail attaches beneath the rear waist bow and curves beside her; whole tail stays connected. Simplify gold trim to readable details. No held plush, no loose prop, no text or speech bubbles. Clean two-dimensional anime sticker art with slim navy outlines, soft restrained cel shading. Front-facing anchored stance as base; keep full feet and entire whale tail in frame. Symmetric accessories suitable for directional mirroring. No shadows, gradients in background or decorative effects.",
+  "newly_generated": true,
+  "copied_community_atlas": false,
+  "mirrored_running_left": false,
+  "chroma_key": "#00FF00",
+  "successful_final_despill_passes": 1,
+  "final_despill_preserves_alpha": true,
+  "registration": {
+    "non_jumping_standard_rows": "Single shared 179/197 scaling around common foot anchor; jumping retained to reserve real lift.",
+    "row10_source": "Single whole-strip source scale 321/379.5 to match approved row9; no per-cell size fitting.",
+    "v1": "Exact crop from final v2 pixels."
+  },
+  "accepted_source_fingerprints": [
+    {
+      "run_path": "decoded/base.png",
+      "sha256": "a64254d2d5a7c8c261a678edb45fb19c50dc3f2466f4ab6eb1e15d5a8a23d44f"
+    },
+    {
+      "run_path": "decoded/idle.png",
+      "sha256": "6ee54729b38bf12cd57135b0142f12ab7688d0868aab18b249983e8b5ee2a269"
+    },
+    {
+      "run_path": "decoded/running-right.png",
+      "sha256": "81ba2bc0c14ca83a6f910f91450225986b6a9ff413b8271e85ee6f397de5585c"
+    },
+    {
+      "run_path": "decoded/running-left.png",
+      "sha256": "858baf0ab8efbf2a8d55249730ac5fdddd5106995439b5149d622d41a594c892"
+    },
+    {
+      "run_path": "decoded/waving.png",
+      "sha256": "43da72803091b1e579b0ad9b7664bdca9b2ebad70d32ea1f4480245a1f9836cd"
+    },
+    {
+      "run_path": "decoded/jumping.png",
+      "sha256": "de8985e95b9814f8330a35b15c079e1f41d3136b6770a6cf9003785cfe79215f"
+    },
+    {
+      "run_path": "decoded/failed.png",
+      "sha256": "29967c57d14b3ea150b83fab4d0661b1142e9e52d122e83b0ba438a2373ef213"
+    },
+    {
+      "run_path": "decoded/waiting.png",
+      "sha256": "8d4728155d299dac23b86d45d8679f3a5bd23c39c6d2df446cbbb3ff02d85ade"
+    },
+    {
+      "run_path": "decoded/running.png",
+      "sha256": "29cb4e855b391a2301924b1d535edf60b576e80668ec3ed4dff34f06d40c74f5"
+    },
+    {
+      "run_path": "decoded/review.png",
+      "sha256": "849ce0cfec4fbfa6b758c1ecd778096860e0aa059f216dc53392186b1a9bdc05"
+    },
+    {
+      "run_path": "decoded/look-cardinals.png",
+      "sha256": "78cc57928d9132c33078ae2a8ad87198a7f2dd536cec0ba67df89b89d49d7382"
+    },
+    {
+      "run_path": "decoded/look-row-9.png",
+      "sha256": "3f0231936ed3baf2daeefa53195296212fa00e4c3554f6302a53085ca1e3255e"
+    },
+    {
+      "run_path": "decoded/look-row-10.png",
+      "sha256": "d4cc8d33a9c59f161249e70f73179e68cfe87106f11901fd979f51f8b2b60545"
+    }
+  ],
+  "rejected_attempts": {
+    "jumping": "Clipped or differently scaled attempts replaced; final transition independently rechecked.",
+    "look_row9": "Neighbour-contact source replaced.",
+    "look_row10": "Wrong-quadrant attempts replaced; not distributed as ready assets."
+  },
+  "source_note": "The source fingerprints document production provenance. Raw generator strips are not an install requirement and are not included in this compact distribution. The final atlases and read-only QA outputs are the distributed artifacts.",
+  "independent_reinspection": {
+    "checked_on": "2026-10-06",
+    "report": "qa/reinspection-20261006/summary.json",
+    "atlas_bytes_preserved": true,
+    "production_history_distinguished_from_reproducible_file_checks": true
+  }
+}

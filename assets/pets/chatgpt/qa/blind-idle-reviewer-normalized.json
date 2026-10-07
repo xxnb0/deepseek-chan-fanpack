@@ -1,0 +1,89 @@
+{
+  "pairs": [
+    {
+      "pair": "horizontal-1",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "Horizontal pair 1：A 的脸部中线和嘴相对头部中心偏画面左，双眼看左上；B 的鼻嘴和可见面部转向画面右，目光也偏右。"
+    },
+    {
+      "pair": "horizontal-2",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "Horizontal pair 2：A 仰头同时将鼻嘴朝画面左侧，脸左侧方向明确；B 头部转向右侧，嘴和视线集中在头部右半边。"
+    },
+    {
+      "pair": "horizontal-3",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "Horizontal pair 3：A 偏转较轻，但脸部中线和瞳孔仍落向画面左侧；B 的面部朝画面右上，右侧鼻嘴偏移比 A 更清楚。"
+    },
+    {
+      "pair": "horizontal-4",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "Horizontal pair 4：A 头朝画面右侧，鼻嘴与眼睛均偏右；B 头朝画面左侧，面部中线和嘴在左侧。"
+    },
+    {
+      "pair": "horizontal-5",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "Horizontal pair 5：A 偏低的脸和瞳孔朝画面右侧；B 的鼻嘴和眼睛朝画面左侧，左侧偏转可见。"
+    },
+    {
+      "pair": "horizontal-6",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "Horizontal pair 6：A 低头时脸部中线和嘴向画面左偏；B 低头同时将脸和眼睛朝画面右偏。"
+    },
+    {
+      "pair": "horizontal-7",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "Horizontal pair 7：A 俯视姿态下的鼻嘴、眼睛位置在脸的画面右侧；B 的低头面部和视线则偏向画面左侧。"
+    },
+    {
+      "pair": "vertical-1",
+      "A": "up",
+      "B": "down",
+      "reason": "Vertical pair 1：A 下巴抬起、眼睛朝上，脸部前面向上扬；B 头顶可见面积增加、下巴收低，眼睛在向下看。"
+    },
+    {
+      "pair": "vertical-2",
+      "A": "up",
+      "B": "down",
+      "reason": "Vertical pair 2：A 侧转时下巴和脸仍明显上扬，瞳孔朝上；B 下巴收向胸前，上眼睑压低，目光朝下。"
+    },
+    {
+      "pair": "vertical-3",
+      "A": "up",
+      "B": "down",
+      "reason": "Vertical pair 3：A 虽以横向转头为主，眼睛与鼻嘴仍略朝上、下巴轻抬；B 头部轻俯，眼睑与视线朝下，嘴也更靠近胸前。"
+    },
+    {
+      "pair": "vertical-4",
+      "A": "down",
+      "B": "up",
+      "reason": "Vertical pair 4：A 侧转的面部略压低，眼睛沿低处看，鼻嘴低于扬起姿态；B 脸部上扬且瞳孔偏上，下巴抬起。垂直差异较轻，但可见。"
+    },
+    {
+      "pair": "vertical-5",
+      "A": "up",
+      "B": "down",
+      "reason": "Vertical pair 5：A 明显仰起脸、瞳孔往上，嘴下方的下巴抬高；B 头顶更显、下巴内收，双眼向下。"
+    },
+    {
+      "pair": "vertical-6",
+      "A": "up",
+      "B": "down",
+      "reason": "Vertical pair 6：A 头与面部朝上扬，鼻嘴及下巴呈仰视关系；B 面部降低，眼睛低看且下巴收近领口。"
+    },
+    {
+      "pair": "vertical-7",
+      "A": "up",
+      "B": "down",
+      "reason": "Vertical pair 7：A 的下巴轻抬、眼睛朝上，面部位置比中性更扬起；B 保持横向转头但鼻嘴和目光略向下，头顶显露更多。属于较轻的上下偏转。"
+    }
+  ],
+  "label_normalization": "Visible sheet H1..H7/V1..V7 mapped to generator key horizontal-1..7/vertical-1..7; no classification or reason changed. Original reviewer JSON is retained."
+}
