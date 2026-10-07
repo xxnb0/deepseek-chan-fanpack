@@ -53,11 +53,20 @@ https://github.com/user-attachments/assets/97fcf4f3-7b6c-45c2-bd99-30e94785842a
 
 ## 按需深入
 
-[日常反应与原创表达](docs/daily-life.md) · [梗目录](docs/meme-catalog.md) · [42 个分层来源入口](research/sources.json) · [人物提取方法](docs/research-method.md)
+[日常反应与原创表达](docs/daily-life.md) · [梗目录](docs/meme-catalog.md) · [46 个分层来源入口](research/sources.json) · [人物提取方法](docs/research-method.md)
 
-[Muse / Dot / Hermes / OpenClaw 适配](docs/platform-adapters.md) · [人格与角色卡导出](docs/export.md) · [Muse 声音分流与排障](docs/tts-troubleshooting.md) · [宠物规范与候选检查](docs/pets.md)
+[Muse / Dot / Hermes / OpenClaw 适配](docs/platform-adapters.md) · [人格与角色卡导出](docs/export.md) · [Muse 声音分流与排障](docs/tts-troubleshooting.md) · [宠物成品与候选检查](docs/pets.md)
 
-宠物部分目前提供规范、制作简报和校验／打包工具，**尚无已完成视觉验收的角色动画图**；平台导入、实时声线与人格表现须在实际宿主分别验收。
+宠物部分现提供 [九行 v1／十一行 v2 动作图、元数据与验收记录](assets/pets/chatgpt/README.md)：九种状态，v2 另有16个朝向。已做结构预检和视觉复核，中间朝向保留警告；平台导入、Dot绑定、实时声线与人格表现仍须在实际宿主分别验收。
+
+<details>
+<summary>展开鲸鱼娘九种动作预览</summary>
+
+![鲸鱼娘待机、移动、挥手、跳跃、等待和工作等九种状态](assets/pets/chatgpt/previews/all-states.gif)
+
+上传时使用版本目录中的 PNG 图集，预览 GIF 只用于观看。
+
+</details>
 
 [宿主自适配](docs/platforms.md) · [图片与生成](docs/assets.md) · [语音](docs/voice.md) · [场景验收](tests/persona-cases.json) · [维护与回滚](docs/validation.md) · [素材来源](NOTICE.md)
 

@@ -1,0 +1,79 @@
+{
+  "reason": "shared headroom for jumping; one transform per non-jumping group, no per-frame size normalization",
+  "source_height_idle": 197,
+  "source_height_jump_rest": 179,
+  "transforms": [
+    {
+      "state": "failed",
+      "scale": 0.9086294416243654,
+      "anchor": [
+        96,
+        203
+      ]
+    },
+    {
+      "state": "idle",
+      "scale": 0.9086294416243654,
+      "anchor": [
+        96,
+        203
+      ]
+    },
+    {
+      "state": "jumping",
+      "scale": 1.0,
+      "anchor": [
+        96,
+        203
+      ]
+    },
+    {
+      "state": "review",
+      "scale": 0.9086294416243654,
+      "anchor": [
+        96,
+        203
+      ]
+    },
+    {
+      "state": "running",
+      "scale": 0.9086294416243654,
+      "anchor": [
+        96,
+        203
+      ]
+    },
+    {
+      "state": "running-left",
+      "scale": 0.9086294416243654,
+      "anchor": [
+        96,
+        203
+      ]
+    },
+    {
+      "state": "running-right",
+      "scale": 0.9086294416243654,
+      "anchor": [
+        96,
+        203
+      ]
+    },
+    {
+      "state": "waiting",
+      "scale": 0.9086294416243654,
+      "anchor": [
+        96,
+        203
+      ]
+    },
+    {
+      "state": "waving",
+      "scale": 0.9086294416243654,
+      "anchor": [
+        96,
+        203
+      ]
+    }
+  ]
+}

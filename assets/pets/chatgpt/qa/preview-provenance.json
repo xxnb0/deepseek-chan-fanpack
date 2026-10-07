@@ -1,0 +1,401 @@
+{
+  "schema_version": 2,
+  "verified_on": "2026-10-06",
+  "source": "../v2/spritesheet.png",
+  "source_sha256": "2f1c68507f2dc5b7c6f8055ca1630faf108c2653afab60ee2891fc55ac576aa3",
+  "source_bytes": 3001833,
+  "original_run_source": "final/spritesheet-extended.png",
+  "artifact_paths_relative_to": "assets/pets/chatgpt/",
+  "all_state_frames": 57,
+  "look_frames": 16,
+  "cell_size": [
+    192,
+    208
+  ],
+  "v1_export": "exact crop [0,0,1536,1872], no resampling",
+  "mp4_from": "previews/all-states.gif",
+  "production_code_fingerprints": [
+    {
+      "run_path": "helpers/render_delivery_previews.py",
+      "sha256": "b2c6a996ce2abe58808e3ee55a3f397cafe95f159f1d098d98d00c0e6b6066b1"
+    },
+    {
+      "bundled_script": "render_animation_previews.py",
+      "sha256": "5fe50707052f815964cc5bfc35addc79b2d55f3331fc7562645e56835211a400"
+    }
+  ],
+  "independent_content_audit": {
+    "method": "Read-only comparison of current files with the retained production run and in-memory reconstruction of the documented palette/composition path; no delivered image was regenerated.",
+    "standard_frame_crops_exactly_match_final_atlas": 57,
+    "per_state_gif_palette_frames_exactly_match_final_atlas": 57,
+    "idle_jump_idle_gif_palette_frames_exactly_match_final_atlas": 17,
+    "look_loop_gif_palette_frames_exactly_match_final_atlas": 16,
+    "these_90_gif_frames_differ_from_pre_despill_atlas": true,
+    "four_still_panels_match_final_atlas_composition": 4,
+    "all_preview_files_match_retained_final_run_copies": true,
+    "scope_note": "This proves local artifact provenance and encoded-preview content. It does not prove playback in ChatGPT, GUI import, account sync, Dot binding, or runtime event triggering.",
+    "all_states_gif_composited_palette_frames_exactly_match_final_atlas": 57,
+    "these_additional_57_frames_differ_from_pre_despill_atlas": true,
+    "contact_sheet_cells_match_final_atlas_rendering": 88,
+    "contact_sheet_scope": "Cell artwork, checkerboards, borders and cell numbers compared; row-title text not independently reconstructed.",
+    "look_direction_sheet_entire_image_matches_final_atlas_rendering": true,
+    "mp4_evidence": "Current file matches the retained final-run MP4 byte-for-byte. Dimensions and duration match the independently verified GIF, and the inspected production helper explicitly transcodes that GIF. MP4 pictures were not independently decoded and compared.",
+    "mp4_independent_picture_comparison": false
+  },
+  "artifacts": [
+    {
+      "path": "previews/all-states.gif",
+      "bytes": 2842796,
+      "sha256": "9e33f2d6b2ef519720a8ddf20b3f2f412d7032e1c50f2406e302a50db9ce9c4b",
+      "width": 384,
+      "height": 456,
+      "format": "GIF",
+      "frames": 57,
+      "frame_durations_ms": [
+        280,
+        110,
+        110,
+        140,
+        140,
+        320,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        220,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        220,
+        140,
+        140,
+        140,
+        280,
+        140,
+        140,
+        140,
+        140,
+        280,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        240,
+        150,
+        150,
+        150,
+        150,
+        150,
+        260,
+        120,
+        120,
+        120,
+        120,
+        120,
+        220,
+        150,
+        150,
+        150,
+        150,
+        150,
+        280
+      ],
+      "total_duration_ms": 8840,
+      "loop": 0
+    },
+    {
+      "path": "previews/all-states.mp4",
+      "bytes": 399912,
+      "sha256": "b321d1e1d32fc08b4bd8b4fbc3f181ca7b29d734684ca34a8156830779d55afd",
+      "ffprobe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 384,
+            "height": 456,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "50/1",
+            "duration": "8.840000",
+            "nb_frames": "442"
+          }
+        ],
+        "format": {
+          "duration": "8.840000"
+        }
+      }
+    },
+    {
+      "path": "previews/contact-sheet.png",
+      "bytes": 753774,
+      "sha256": "2a625813b6ac40c28253d98f233d8212b64778897fc5187a603e266656941383",
+      "width": 768,
+      "height": 1386,
+      "format": "PNG",
+      "frames": 1
+    },
+    {
+      "path": "previews/four-stills.png",
+      "bytes": 145961,
+      "sha256": "f410013d0650a9fab8767ce35d4b8c1fff10b16662f8ca3557052e6ef1d825e3",
+      "width": 768,
+      "height": 248,
+      "format": "PNG",
+      "frames": 1
+    },
+    {
+      "path": "previews/idle-jump-idle.gif",
+      "bytes": 200371,
+      "sha256": "9baa0036ac31b848b6f0d70f4d2b988decaf4e483ebdb427ffbff94bca2ada98",
+      "width": 192,
+      "height": 208,
+      "format": "GIF",
+      "frames": 17,
+      "frame_durations_ms": [
+        280,
+        110,
+        110,
+        140,
+        140,
+        320,
+        140,
+        140,
+        140,
+        140,
+        280,
+        280,
+        110,
+        110,
+        140,
+        140,
+        320
+      ],
+      "total_duration_ms": 3040,
+      "loop": 0
+    },
+    {
+      "path": "previews/look-directions.png",
+      "bytes": 901078,
+      "sha256": "d260abb5ab93abab0d0af52b96e7293ce4df85c023ca352a4aee3a726b1c81cc",
+      "width": 1536,
+      "height": 1170,
+      "format": "PNG",
+      "frames": 1
+    },
+    {
+      "path": "previews/look-loop.gif",
+      "bytes": 182324,
+      "sha256": "48bc5f7ab00a6ee8e33061276fecf5f677bf96e8af5dea9be27744dfe102ea85",
+      "width": 192,
+      "height": 208,
+      "format": "GIF",
+      "frames": 16,
+      "frame_durations_ms": [
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250,
+        250
+      ],
+      "total_duration_ms": 4000,
+      "loop": 0
+    },
+    {
+      "path": "previews/states/failed.gif",
+      "bytes": 93349,
+      "sha256": "b183d0e1805c7ba0d1a96d50fe57a9055854139455e505475b3b53e210ec700d",
+      "width": 192,
+      "height": 208,
+      "format": "GIF",
+      "frames": 8,
+      "frame_durations_ms": [
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        240
+      ],
+      "total_duration_ms": 1220,
+      "loop": 0
+    },
+    {
+      "path": "previews/states/idle.gif",
+      "bytes": 70327,
+      "sha256": "50656d5d6cb5864f1a1b0f76591470e8903558e622a4c7eac82c251cc4472ba6",
+      "width": 192,
+      "height": 208,
+      "format": "GIF",
+      "frames": 6,
+      "frame_durations_ms": [
+        280,
+        110,
+        110,
+        140,
+        140,
+        320
+      ],
+      "total_duration_ms": 1100,
+      "loop": 0
+    },
+    {
+      "path": "previews/states/jumping.gif",
+      "bytes": 59783,
+      "sha256": "cdf7e978699ee6dc2d6dee01b0faebfa2efaaa18d6c4c320b4d1b49a89ff8e22",
+      "width": 192,
+      "height": 208,
+      "format": "GIF",
+      "frames": 5,
+      "frame_durations_ms": [
+        140,
+        140,
+        140,
+        140,
+        280
+      ],
+      "total_duration_ms": 840,
+      "loop": 0
+    },
+    {
+      "path": "previews/states/review.gif",
+      "bytes": 74369,
+      "sha256": "b017c923d4cf4f46f779685a3bfc733d5466ae061300a9758fe9e21b20101f04",
+      "width": 192,
+      "height": 208,
+      "format": "GIF",
+      "frames": 6,
+      "frame_durations_ms": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        280
+      ],
+      "total_duration_ms": 1030,
+      "loop": 0
+    },
+    {
+      "path": "previews/states/running-left.gif",
+      "bytes": 87522,
+      "sha256": "aaf8dfbed8dcbe71c2aa204955277b37746557cc45cbf4429354a273904494cb",
+      "width": 192,
+      "height": 208,
+      "format": "GIF",
+      "frames": 8,
+      "frame_durations_ms": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        220
+      ],
+      "total_duration_ms": 1060,
+      "loop": 0
+    },
+    {
+      "path": "previews/states/running-right.gif",
+      "bytes": 87332,
+      "sha256": "31483c7af85d8b2ec4f5b615036a337dbd8fb7eb1feaa70e7937f07f607d864d",
+      "width": 192,
+      "height": 208,
+      "format": "GIF",
+      "frames": 8,
+      "frame_durations_ms": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        220
+      ],
+      "total_duration_ms": 1060,
+      "loop": 0
+    },
+    {
+      "path": "previews/states/running.gif",
+      "bytes": 71658,
+      "sha256": "e257522cbf183d3e6aefc595914b8b6e01ac591cde91c35cc320cb62ea5f1006",
+      "width": 192,
+      "height": 208,
+      "format": "GIF",
+      "frames": 6,
+      "frame_durations_ms": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        220
+      ],
+      "total_duration_ms": 820,
+      "loop": 0
+    },
+    {
+      "path": "previews/states/waiting.gif",
+      "bytes": 71874,
+      "sha256": "6deb3e8484b3ff210b3cf150699586422d7bb5b14e5bd6e7ea57c7a29dfd84d9",
+      "width": 192,
+      "height": 208,
+      "format": "GIF",
+      "frames": 6,
+      "frame_durations_ms": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        260
+      ],
+      "total_duration_ms": 1010,
+      "loop": 0
+    },
+    {
+      "path": "previews/states/waving.gif",
+      "bytes": 49895,
+      "sha256": "ff104d5be1a717dc549e8cb97be8588288844320f66dc272efcceec25c5d8b80",
+      "width": 192,
+      "height": 208,
+      "format": "GIF",
+      "frames": 4,
+      "frame_durations_ms": [
+        140,
+        140,
+        140,
+        280
+      ],
+      "total_duration_ms": 700,
+      "loop": 0
+    }
+  ],
+  "created_pet": false,
+  "activated_pet": false
+}

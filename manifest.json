@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "name": "deepseek-chan",
-  "export_date": "2026-10-06",
+  "export_date": "2026-10-07",
   "reference": {
     "path": "assets/reference/character-fullbody.webp",
     "kind": "three-view-reference",
@@ -47,8 +47,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3919,
-      "sha256": "4bf49595e485ae326d7775438d0659518154fd951e16c74b0f0a198b948c5ef0",
+      "bytes": 4309,
+      "sha256": "011a14f803c321b1c1fbc4b9482be50c78c8e0c043ae5055fa915fe8ad0ab5c5",
       "tier": "core"
     },
     {
@@ -71,9 +71,9 @@
     },
     {
       "path": "adapters/AGENTS.fragment.md",
-      "tier": "core",
       "bytes": 892,
-      "sha256": "6c06b33d8eac14d861d7dca11f96ce34f030be5c2018e96457ddc158d00657b3"
+      "sha256": "6c06b33d8eac14d861d7dca11f96ce34f030be5c2018e96457ddc158d00657b3",
+      "tier": "core"
     },
     {
       "path": "archive/reference-library/QUARK-0005.png",
@@ -3221,21 +3221,21 @@
     },
     {
       "path": "assets/pet/README.md",
-      "tier": "core",
-      "bytes": 614,
-      "sha256": "30665310d2f01ebd4544bbd966b026b7a5399d9ec1e9054f29eab8027a549443"
+      "bytes": 740,
+      "sha256": "3fc86c9e7344eb874dca52b216eb47fb253dfa2b803c095b8c2526cd5bee7a1b",
+      "tier": "core"
     },
     {
       "path": "assets/pet/atlas-profile.json",
-      "tier": "core",
       "bytes": 1568,
-      "sha256": "d200d4213c8cd5994d9f8c589f9daa4c3d4347e25d29b671bb617d4fe2215df9"
+      "sha256": "d200d4213c8cd5994d9f8c589f9daa4c3d4347e25d29b671bb617d4fe2215df9",
+      "tier": "core"
     },
     {
       "path": "assets/pet/generation-brief.md",
-      "tier": "core",
       "bytes": 2467,
-      "sha256": "ac6148019ba3bc745b12ba3739e54ae28ad5d40ef0d9ad06f38f23701d312cf2"
+      "sha256": "ac6148019ba3bc745b12ba3739e54ae28ad5d40ef0d9ad06f38f23701d312cf2",
+      "tier": "core"
     },
     {
       "path": "assets/reference/README.md",
@@ -3491,39 +3491,39 @@
     },
     {
       "path": "docs/community-sources.md",
-      "bytes": 6629,
-      "sha256": "ce8e6d7c034e702b16480faae832f77acf7f215b6434b845644098dc69a9e379",
+      "bytes": 8734,
+      "sha256": "2eecf48d5866191144e52dbef7b186cc50ef4b77db25435da65d91caacb4c1ce",
       "tier": "core"
     },
     {
       "path": "docs/daily-life.md",
-      "tier": "core",
       "bytes": 4957,
-      "sha256": "9d4a21df561dd57fe01e12734a71d50deb69e489034481bba1fbd5ab0932cbba"
+      "sha256": "9d4a21df561dd57fe01e12734a71d50deb69e489034481bba1fbd5ab0932cbba",
+      "tier": "core"
     },
     {
       "path": "docs/export.md",
-      "tier": "core",
       "bytes": 2032,
-      "sha256": "773a4bb9b9f39597dfed282eb29bae9ee0f389f78d330b7fbb2a07f30e90f23c"
+      "sha256": "773a4bb9b9f39597dfed282eb29bae9ee0f389f78d330b7fbb2a07f30e90f23c",
+      "tier": "core"
     },
     {
       "path": "docs/meme-catalog.md",
-      "tier": "core",
-      "bytes": 2798,
-      "sha256": "8fc6283b08ef4ccb6d5d82adcccc13e04bb627549f5fa4f09db1c5dc353d401f"
+      "bytes": 3068,
+      "sha256": "cb8786a4aa6d4991178e8e0d63d4cd7a76b833211796b2a2bcfcf2909ade3bb8",
+      "tier": "core"
     },
     {
       "path": "docs/pets.md",
-      "tier": "core",
-      "bytes": 3711,
-      "sha256": "fc0dc9b179853dfc21a84edde597f8cb585e16f7c2bd8ab7f68c5892d8677180"
+      "bytes": 5831,
+      "sha256": "9afb1cb3fecfe150c8a76668b163b8df9a5d05b4ae9e91806754d18d0063ea9c",
+      "tier": "core"
     },
     {
       "path": "docs/platform-adapters.md",
-      "tier": "core",
-      "bytes": 5020,
-      "sha256": "a50f1bf4a375817bd3c3903ded391b30a160aefdd7c8c031fc1051200c8f2c32"
+      "bytes": 6884,
+      "sha256": "d7fe6196c0ec3f2fccba0481ba59d3656a812e606a0c65542021226d10ede5b8",
+      "tier": "core"
     },
     {
       "path": "docs/platforms.md",
@@ -3533,26 +3533,26 @@
     },
     {
       "path": "docs/research-method.md",
-      "tier": "core",
-      "bytes": 4972,
-      "sha256": "31aa3aa33eb4babaf9d293baea990891e4b19e327f0b5d295823c2e1fd917348"
+      "bytes": 6381,
+      "sha256": "838a787ebde6d5ee1e57acc79acd5df262797cef8892e98165390cf26ad945a7",
+      "tier": "core"
     },
     {
       "path": "docs/tts-troubleshooting.md",
-      "tier": "core",
-      "bytes": 4514,
-      "sha256": "aeb1d6913f9da2772e30ad916c2b0e21478e7f40addfde11e9ce8a51645cfe82"
+      "bytes": 5374,
+      "sha256": "96a9bb162d1deba77cba77bd45a80474c02255f9addc434231e74b11e8ac45d4",
+      "tier": "core"
     },
     {
       "path": "docs/validation.md",
-      "bytes": 2471,
-      "sha256": "fec3ea587aa166f3a59faac361889850953cf84bad30beda637b44da2fce6781",
+      "bytes": 3749,
+      "sha256": "bbb7a84778b53c0f574b8e34a1552445c1421e1f6a8fac173567660a903b12df",
       "tier": "core"
     },
     {
       "path": "docs/voice.md",
-      "bytes": 2717,
-      "sha256": "ff4810c1fb1cfee990ab676886a31f8f992174823da95514730897d2681c5f79",
+      "bytes": 4299,
+      "sha256": "9b014f4ab8f9b5a738a893ddb9b2711169dea8ebc44af0397ea521ac2a1143bd",
       "tier": "core"
     },
     {
@@ -3569,9 +3569,9 @@
     },
     {
       "path": "requirements-media.txt",
-      "tier": "core",
       "bytes": 95,
-      "sha256": "e74c2a93b81222c2c972b95230e036a6c1033612e67e39f9a30828d8c3f2bad3"
+      "sha256": "e74c2a93b81222c2c972b95230e036a6c1033612e67e39f9a30828d8c3f2bad3",
+      "tier": "core"
     },
     {
       "path": "requirements-tts.txt",
@@ -3581,39 +3581,39 @@
     },
     {
       "path": "research/muse-tts-probe.json",
-      "tier": "core",
       "bytes": 1397,
-      "sha256": "84b2324f5152c41ae592e46039f4f9579e4174bf823a3d63b1111391dbaa6bc1"
+      "sha256": "84b2324f5152c41ae592e46039f4f9579e4174bf823a3d63b1111391dbaa6bc1",
+      "tier": "core"
     },
     {
       "path": "research/sources.json",
-      "tier": "core",
-      "bytes": 18583,
-      "sha256": "ee1bce1f0fa8833c58bcc62f30044bb78679e07db24a1dca7dfcbb36a3d76dc5"
+      "bytes": 23626,
+      "sha256": "11148b02e73b10deef269e79cd0aa97c0ad46e11b68e63ff7e9b41633317166b",
+      "tier": "core"
     },
     {
       "path": "scripts/export_persona.py",
-      "tier": "core",
       "bytes": 8945,
-      "sha256": "796d1d54d4acd4855b80b753a9010bd33c4b8e8d84b1ea0e97b6f7dee70f4f6e"
+      "sha256": "796d1d54d4acd4855b80b753a9010bd33c4b8e8d84b1ea0e97b6f7dee70f4f6e",
+      "tier": "core"
     },
     {
       "path": "scripts/pet_asset.py",
-      "tier": "core",
       "bytes": 9109,
-      "sha256": "063433068bf06eee34cf896d73752768dd16e78f92b1060f05bb49f95fd57cd6"
+      "sha256": "063433068bf06eee34cf896d73752768dd16e78f92b1060f05bb49f95fd57cd6",
+      "tier": "core"
     },
     {
       "path": "scripts/verify.py",
-      "bytes": 6135,
-      "sha256": "169e77979915c045c85e8138b4dc977671f5a921f4318b84822c9ee4ace5b385",
+      "bytes": 12835,
+      "sha256": "4c7a4aaa5bb10e8313b98234f1ebc7794a772ea55d8621b3e805728d31be87b8",
       "tier": "core"
     },
     {
       "path": "scripts/voice_doctor.py",
-      "tier": "core",
       "bytes": 5056,
-      "sha256": "b2812889543ac0c7961d3ca6bd8b4f559d1c1dc4dad4b96285779b768e5e58fa"
+      "sha256": "b2812889543ac0c7961d3ca6bd8b4f559d1c1dc4dad4b96285779b768e5e58fa",
+      "tier": "core"
     },
     {
       "path": "skills/whale-stickers/SKILL.md",
@@ -3635,14 +3635,14 @@
     },
     {
       "path": "skills/whale-tts/SKILL.md",
-      "bytes": 2097,
-      "sha256": "df32f3c807504f6337447e6c449c6010b03bb60181acad0fd1a0d4818ef82b2c",
+      "bytes": 2481,
+      "sha256": "3ddfcc8cd06f93264c156cb1c257ca537ae126060e64a192b98ca56b00d54d05",
       "tier": "core"
     },
     {
       "path": "skills/whale-tts/scripts/generate.py",
-      "bytes": 5919,
-      "sha256": "0ad0914a67cd2aea7f18fb2ac2f4f1e0c517d1cb81bb42ff55a4bea98b0d8af4",
+      "bytes": 10236,
+      "sha256": "d346bb89666b59a4dce82108d0052c7c2deea74bf0f4383e984eaeaadf017fc2",
       "tier": "core"
     },
     {
@@ -3659,39 +3659,393 @@
     },
     {
       "path": "tests/test_export_persona.py",
-      "tier": "core",
       "bytes": 6074,
-      "sha256": "4af0c1de5747c9f2d6d1f98452cadd09a4e100f25a7c55d631d7236f3b18925b"
+      "sha256": "4af0c1de5747c9f2d6d1f98452cadd09a4e100f25a7c55d631d7236f3b18925b",
+      "tier": "core"
     },
     {
       "path": "tests/test_pet_asset.py",
-      "tier": "core",
       "bytes": 5294,
-      "sha256": "942b647dd37726a1df6254b48e4068f8036d3c01622c49ce05976817a6ac2d4d"
+      "sha256": "942b647dd37726a1df6254b48e4068f8036d3c01622c49ce05976817a6ac2d4d",
+      "tier": "core"
     },
     {
       "path": "tests/test_research.py",
-      "tier": "core",
       "bytes": 4224,
-      "sha256": "6d2ea0236c176596efacd0013cd8de1da4bbf5221f3693f937ce58d2cc656912"
+      "sha256": "07b6ff16461c85df7273aba6b317085542a377a9c577442ab954632290449fa9",
+      "tier": "core"
     },
     {
       "path": "tests/test_tts.py",
-      "bytes": 6509,
-      "sha256": "0aa3e056c452e875e995111a1e3aad98b1fac2bed7755ec41f258ed7463c5885",
+      "bytes": 14414,
+      "sha256": "b2f3845226fccaf2a2abe611a67c947432e61ee4738b43b0e1842fe9a345774b",
       "tier": "core"
     },
     {
       "path": "tests/test_verify.py",
-      "bytes": 2453,
-      "sha256": "968c73b4793cfa761c08b37d731810b5bfad537111843127a3c8b3bcc0a3eb65",
+      "bytes": 2697,
+      "sha256": "cc7a53809fd5fc5bc204218b13bdd495a2513ec03d0871cb936dabad02665c20",
       "tier": "core"
     },
     {
       "path": "tests/test_voice_doctor.py",
-      "tier": "core",
       "bytes": 4246,
-      "sha256": "22f7f9a303c0ade469b210845a775c17b29e13825720117d46ce0c8f619c8f1b"
+      "sha256": "22f7f9a303c0ade469b210845a775c17b29e13825720117d46ce0c8f619c8f1b",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/NOTICE.md",
+      "bytes": 2264,
+      "sha256": "97989a32770beacb0c0dfffc73d46f86fe4360f986f318d3da25a1dc32edb26c",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/README.md",
+      "bytes": 1364,
+      "sha256": "3c9655a2bcdbc65468a6c80e8ea33d69bd83c600a89e7ba3d992312d46cfaee9",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/manifest.json",
+      "bytes": 2826,
+      "sha256": "a1e66f29bf64992caa194819e893c51de6dc26522b17bb8cc6a5b8028ad3fc3b",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/previews/all-states.gif",
+      "bytes": 2842796,
+      "sha256": "9e33f2d6b2ef519720a8ddf20b3f2f412d7032e1c50f2406e302a50db9ce9c4b",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/previews/all-states.mp4",
+      "bytes": 399912,
+      "sha256": "b321d1e1d32fc08b4bd8b4fbc3f181ca7b29d734684ca34a8156830779d55afd",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/previews/contact-sheet.png",
+      "bytes": 753774,
+      "sha256": "2a625813b6ac40c28253d98f233d8212b64778897fc5187a603e266656941383",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/previews/four-stills.png",
+      "bytes": 145961,
+      "sha256": "f410013d0650a9fab8767ce35d4b8c1fff10b16662f8ca3557052e6ef1d825e3",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/previews/idle-jump-idle.gif",
+      "bytes": 200371,
+      "sha256": "9baa0036ac31b848b6f0d70f4d2b988decaf4e483ebdb427ffbff94bca2ada98",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/previews/look-directions.png",
+      "bytes": 901078,
+      "sha256": "d260abb5ab93abab0d0af52b96e7293ce4df85c023ca352a4aee3a726b1c81cc",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/previews/look-loop.gif",
+      "bytes": 182324,
+      "sha256": "48bc5f7ab00a6ee8e33061276fecf5f677bf96e8af5dea9be27744dfe102ea85",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/previews/states/failed.gif",
+      "bytes": 93349,
+      "sha256": "b183d0e1805c7ba0d1a96d50fe57a9055854139455e505475b3b53e210ec700d",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/previews/states/idle.gif",
+      "bytes": 70327,
+      "sha256": "50656d5d6cb5864f1a1b0f76591470e8903558e622a4c7eac82c251cc4472ba6",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/previews/states/jumping.gif",
+      "bytes": 59783,
+      "sha256": "cdf7e978699ee6dc2d6dee01b0faebfa2efaaa18d6c4c320b4d1b49a89ff8e22",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/previews/states/review.gif",
+      "bytes": 74369,
+      "sha256": "b017c923d4cf4f46f779685a3bfc733d5466ae061300a9758fe9e21b20101f04",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/previews/states/running-left.gif",
+      "bytes": 87522,
+      "sha256": "aaf8dfbed8dcbe71c2aa204955277b37746557cc45cbf4429354a273904494cb",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/previews/states/running-right.gif",
+      "bytes": 87332,
+      "sha256": "31483c7af85d8b2ec4f5b615036a337dbd8fb7eb1feaa70e7937f07f607d864d",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/previews/states/running.gif",
+      "bytes": 71658,
+      "sha256": "e257522cbf183d3e6aefc595914b8b6e01ac591cde91c35cc320cb62ea5f1006",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/previews/states/waiting.gif",
+      "bytes": 71874,
+      "sha256": "6deb3e8484b3ff210b3cf150699586422d7bb5b14e5bd6e7ea57c7a29dfd84d9",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/previews/states/waving.gif",
+      "bytes": 49895,
+      "sha256": "ff104d5be1a717dc549e8cb97be8588288844320f66dc272efcceec25c5d8b80",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/production.json",
+      "bytes": 4711,
+      "sha256": "891f9938a050521d456574bbe22037e67720ce9d64e7fcc7a42af511f8801613",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/qa/blind-idle-reviewer-normalized.json",
+      "bytes": 3671,
+      "sha256": "c1cb1db5f2bb62d2cc866f3b635504daf7244bef0e49a8dcf5206df2d16cf747",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/qa/blind-idle-reviewer.json",
+      "bytes": 3361,
+      "sha256": "67d81fe71d99abc2a5a2e498f0561f3df6deb6884c6c6c707c1f4d6368919213",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/qa/blind-root-reviewer-normalized.json",
+      "bytes": 3263,
+      "sha256": "acb5aa8d8b82dfef51cb260eeadbaae5a513a15a7987f24dda6261ed5d1a365f",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/qa/blind-root-reviewer.json",
+      "bytes": 2953,
+      "sha256": "d4befa3bf4f1f2a2a9cf3bf1afe602dbe3b1fe6d759bac6731034ac990753ce9",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/qa/blind-runright-reviewer-normalized.json",
+      "bytes": 3361,
+      "sha256": "5f5e26b1feee298b32f013b605a521dfc6a1c583e2165b63b0de117e01b7161c",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/qa/blind-runright-reviewer.json",
+      "bytes": 3051,
+      "sha256": "7b841f85e190aa28783a68a2b956e075f2bb4a5b8e1f66ce54a5bf2add5f0bce",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/qa/chroma-despill-extended.json",
+      "bytes": 1904,
+      "sha256": "7df49a788db416238fbbfe4dd4f4854bc4dfb4415bd075eb36473183d05da5a7",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/qa/direction-semantics.json",
+      "bytes": 4616,
+      "sha256": "d16ff63614729318e915f9f6a5051cbc3b4ac9bcfdf5175db0cce059e0dfd322",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/qa/directions-answer-key.json",
+      "bytes": 4253,
+      "sha256": "a0ced8763de7956e36edd7dd4744eac0c86ecc31a67e18d1fda6292e749128d3",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/qa/directions-blind-combined.json",
+      "bytes": 3925,
+      "sha256": "704c27fea9552ec836e646c390d8f15ccf5fba8bd7a7977a5ebd146d225495db",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/qa/directions-blind-validation.json",
+      "bytes": 5420,
+      "sha256": "3c45c2479d12117e9cd9f4c9972cfba3c59a4c9dab90b8b5c251168aa641d5d5",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/qa/directions-blind.png",
+      "bytes": 943707,
+      "sha256": "7cd79a1e1b922eb197cf785c3f04195a72b8d6f4bc97992e834e6cd59b07a642",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/qa/final-visual-review.json",
+      "bytes": 1570,
+      "sha256": "d1ddd3b97526fcbaebf75baf3158c6c5a795442bfbb41a186db5e3d50a99fb6b",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/qa/look-continuity.json",
+      "bytes": 3697,
+      "sha256": "39690eab226ee6c160f594f18973272498e7b3ed1f6dc8ee17d2667c103c2168",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/qa/look-row10-source-size-normalization.json",
+      "bytes": 424,
+      "sha256": "e8a7d7e088c8e2190a9e12873a1cf44e789cd05dff9a20a1a68224cebfeee088",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/qa/mcp-validation-v1.json",
+      "bytes": 801,
+      "sha256": "0a30fc851dfe2fc58a8e5051ec12cdb1a0df23bc2166e96a793a704fb3f5f616",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/qa/mcp-validation-v2.json",
+      "bytes": 823,
+      "sha256": "a75b62abf6ccbb443af2a85f9020daf611fbce1a23d8e7409e1af12866033900",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/qa/pet-quality.json",
+      "bytes": 1696,
+      "sha256": "e8a1ac3d8a9f0115e0dea6e2d3b6e59b53f110635f7b2c6520e76feafead12c3",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/qa/preview-provenance.json",
+      "bytes": 9764,
+      "sha256": "e6099f4fc60c0ac4efc520d2afb16cf4354e37964f00cf466fafe12986b9dbb1",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/qa/reinspection-20261006/directions-blind-validation.json",
+      "bytes": 5420,
+      "sha256": "3c45c2479d12117e9cd9f4c9972cfba3c59a4c9dab90b8b5c251168aa641d5d5",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/qa/reinspection-20261006/frame-review.json",
+      "bytes": 25356,
+      "sha256": "55539c5c16eb58a6f992641330b065e0c275e5f13f6d8ea5f56bb50739b0f380",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/qa/reinspection-20261006/independent-blind-review.json",
+      "bytes": 3336,
+      "sha256": "d08ebea31811f0439969328d1be7c20ec3ed1b165c70ea3c9e5c2ff77e245f4d",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/qa/reinspection-20261006/independent-blind-validation.json",
+      "bytes": 5475,
+      "sha256": "7617ac91388dde5f5d9b953b14b0f4c59d8cfc008a3b44035130e283ab73311c",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/qa/reinspection-20261006/look-continuity.json",
+      "bytes": 3697,
+      "sha256": "39690eab226ee6c160f594f18973272498e7b3ed1f6dc8ee17d2667c103c2168",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/qa/reinspection-20261006/mcp-validation-v1.json",
+      "bytes": 964,
+      "sha256": "c0b20a4340334129c8b679f868483b9e39c77346eac640f10371bdd73fcc5bae",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/qa/reinspection-20261006/mcp-validation-v2.json",
+      "bytes": 986,
+      "sha256": "0c3149a01f37cc551bbb8a093c4f59a4edc0f41ab75336af3ede879c14a742cb",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/qa/reinspection-20261006/pet-quality.json",
+      "bytes": 1703,
+      "sha256": "2865467fd875d79192c30230e917f303f32508588b109d92d1d90feab6294284",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/qa/reinspection-20261006/summary.json",
+      "bytes": 5310,
+      "sha256": "19ba87c4064d65ddc7f57f985e10e8aa9a4d066608ad8cbeacad23dbd0211f6b",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/qa/reinspection-20261006/validation-v1.json",
+      "bytes": 14919,
+      "sha256": "d013200c6d457fe0fde5ba8afc5dcc8372fe374cae383620c8f07233a6c5e276",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/qa/reinspection-20261006/validation-v2.json",
+      "bytes": 18304,
+      "sha256": "b1d78910cc7a99e75cad742cac261e70f18bf355b51d80a98b95c7ad607f8171",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/qa/standard-independent-review.json",
+      "bytes": 11838,
+      "sha256": "3911920d2db43dfcb483d8789215be2ad0246d2934927fe6affff33cf23b7835",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/qa/standard-registration-correction.json",
+      "bytes": 1307,
+      "sha256": "cf9cb10abbf8b9bf04d97c01967b48c437cdfd66fe9cd87b68f22360c32a6962",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/qa/validation-v1.json",
+      "bytes": 14906,
+      "sha256": "2c9cad321d496b0b105bda2086dcf75746d87669ef9dbe58f828f2fa44f3f63f",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/qa/validation-v2.json",
+      "bytes": 18297,
+      "sha256": "d571ce6dc360aedef92bbabef0607cb4bf29b37a8585534d28f5a4ff90d8fda3",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/v1/pet.json",
+      "bytes": 280,
+      "sha256": "087854dbd4bb6fc427da833bc6a4d6839bd75b917e3a33ae16995d8e3955c543",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/v1/spritesheet.png",
+      "bytes": 2361492,
+      "sha256": "1fa059950321d16dd23b283dd44e90e700d58701a55227fa0f243b81ad5b782d",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/v2/pet.json",
+      "bytes": 280,
+      "sha256": "27b603fe115e4fa28dc5401487f4a503932a649d8bd77758ac379700f97bdcfe",
+      "tier": "core"
+    },
+    {
+      "path": "assets/pets/chatgpt/v2/spritesheet.png",
+      "bytes": 3001833,
+      "sha256": "2f1c68507f2dc5b7c6f8055ca1630faf108c2653afab60ee2891fc55ac576aa3",
+      "tier": "core"
+    },
+    {
+      "path": "tests/test_pet_manifest.py",
+      "bytes": 4522,
+      "sha256": "c97173f9a07a2ee62a15b48e55ada9236ed68dcd81a723db9699e603b0b5f382",
+      "tier": "core"
     }
   ]
 }

@@ -1,0 +1,42 @@
+{
+  "checked_at": "2026-10-06",
+  "operation": "pets_validate_pet_spritesheet",
+  "read_only": true,
+  "created_pet": false,
+  "activated_pet": false,
+  "file": "../v2/spritesheet.png",
+  "sha256": "2f1c68507f2dc5b7c6f8055ca1630faf108c2653afab60ee2891fc55ac576aa3",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Action completed."
+      }
+    ],
+    "structuredContent": {
+      "valid": true,
+      "file_size_bytes": 3001833,
+      "mime_type": "image/png",
+      "width": 1536,
+      "height": 2288,
+      "sprite_version": 2,
+      "cell_width": 192,
+      "cell_height": 208,
+      "frames_per_row": [
+        6,
+        8,
+        8,
+        4,
+        5,
+        8,
+        6,
+        6,
+        6,
+        8,
+        8
+      ],
+      "errors": []
+    },
+    "isError": false
+  }
+}

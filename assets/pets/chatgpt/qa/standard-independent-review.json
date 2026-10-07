@@ -1,0 +1,233 @@
+{
+  "reviewer": "independent-standard-animation-review",
+  "reviewed_scope": "Current qa/contact-sheet.png, qa/review.json and qa/frames-registered after common non-jumping registration correction. Previous qa/frames is not the accepted current output.",
+  "status": "pass",
+  "mandatory_repair_count": 0,
+  "method": "Initial complete standard-row visual review plus targeted independent reinspection of the regenerated current contact sheet, native-size registered idle first/last frames and all five registered jumping frames; registration script and current bundled frame report inspected. The correction applies a uniform 179/197 transform to every frame in all eight non-jumping rows around the common foot anchor; jumping is unchanged. No per-frame content fitting is used. Final encoded-atlas playback and despill remain downstream gates.",
+  "states": [
+    {
+      "state": "idle",
+      "verdict": "pass",
+      "evidence": "Calm breathing and open/half-closed/closed/reopened eyes, relaxed arms, planted feet; first and last close. Not inert."
+    },
+    {
+      "state": "running-right",
+      "verdict": "pass",
+      "evidence": "All eight faces and forward-leading knees/feet point screen-right; hair and tail trail screen-left. Long stride, support, tucked flight and extension phases vary clearly. No directional reversal or identical-copy row."
+    },
+    {
+      "state": "running-left",
+      "verdict": "pass",
+      "evidence": "All eight faces and leading feet point screen-left; hair and tail trail screen-right. Stride/support/tucked phases alternate clearly with no frame facing the wrong way."
+    },
+    {
+      "state": "waving",
+      "verdict": "pass",
+      "evidence": "Single attached screen-left hand rises, changes wrist position and lowers; feet planted, opposite hand calm, no drawn waving marks."
+    },
+    {
+      "state": "jumping",
+      "verdict": "pass",
+      "evidence": "True lift and return retained; shared registration correction removes the prior idle/jump rest-scale mismatch. All five current jumping frames were rechecked."
+    },
+    {
+      "state": "failed",
+      "verdict": "pass",
+      "evidence": "Startled hands near chest, lowered discouraged gaze, closed eyes and facepalm, then recovery. Clearly distinct from asking or working. No floating symbols."
+    },
+    {
+      "state": "waiting",
+      "verdict": "pass",
+      "evidence": "Clasped expectant hands, inquisitive head tilt, open palms offered toward user, then clasp again. Readable approval/help/input request and distinct from idle."
+    },
+    {
+      "state": "running",
+      "verdict": "pass",
+      "evidence": "Stationary focused chin-tap and finger counting; hands act on own thought process, no foot-running or props."
+    },
+    {
+      "state": "review",
+      "verdict": "pass",
+      "evidence": "Folded arms plus downward and lateral head/eye inspection, blink, return to attentive forward stance. Clear inspection rather than working finger-count or outward request."
+    }
+  ],
+  "identity": {
+    "verdict": "pass",
+    "evidence": "Blue-to-cyan hair, fin side locks, white frilled headband and bows, apron whale motif, navy maid outfit, tights, shoes and one attached whale tail remain stable. Current corrected idle and jump rest endpoints have coherent character scale; no conspicuous remaining identity or scale jump."
+  },
+  "minor_limitations": [
+    "Running directional gait is a compact stylized repeated cadence with modest arm variation; limb depth remains subtle because both tights are white. Direction and alternating stance/flight remain readable.",
+    "The active-work middle count poses include a short near-held beat rather than strongly distinct exact finger counts.",
+    "Visible green edge spill remains, especially around the directional hair. This is expected before the mandated one-time final despill and must be checked after cleanup; it is not evidence that the current intermediate atlas is upload-ready.",
+    "Registered frames have slightly different low-alpha fringe extents due to resampling; opaque foot anchors agree. Verify fringe cleanup and motion again in final encoded atlas as planned."
+  ],
+  "snapshot": {
+    "contact_sheet_sha256": "d23b20448f7f55545c81e7078895c6be942ca659bbf61c24f21688a6cf47b4b3",
+    "frame_review_sha256": "c8f5406fd784f326c7af7fba5e4bb386fbc03c3b914c3538f17d0b5e84c14c6e",
+    "registration_script_sha256": "389ab5a160bbffe85ef75fb57c71251cf57b78bfd3fe87cd7ca134b4e526f692",
+    "current_frame_root": "/workspace/scratch/304f0e217d57/whale-pet-run-20261006/qa/frames-registered",
+    "targeted_frame_sha256": {
+      "idle/00.png": "9824dd37470824b8f224669ffdfd827f5b1e540250187bffbb40454d2b739af9",
+      "idle/01.png": "03c364f0d2b4a4e5b67bd8812e5e213179a38de58f858f62fd8bc18e90991498",
+      "idle/02.png": "1d68752b18f3fbf582f786a6f393d3984346a3fe5321c35e956d793f6e91f9f9",
+      "idle/03.png": "f80c5896a30b6d23b0431bca376c57e33ca0fb5e5c22c0fba3c2b686434ed7d1",
+      "idle/04.png": "418f5ed0ce8defe1a4de7749196baad927427d661fdcbb7ba21471fa390c5437",
+      "idle/05.png": "c889464a7849eebbea8748e6405eb712da32e32a9f3fa1ce44054e4aa7fded4d",
+      "jumping/00.png": "37a89ee44bcbd681c05d60454897060600477558c1e1080e387738b8b7645f7f",
+      "jumping/01.png": "aaff063824b51ca3c5f270d2c6188ea7fa83bfd6a5e7a5dc6a5df13d28fcbf7d",
+      "jumping/02.png": "9f627ded90ceaaade6c4a9901c1645be07691a2b8d0faef5aac1c5b3e33f29fd",
+      "jumping/03.png": "6c4e4f356f4782d23148948567215439064e34f51cdec660b71875a1dab17e73",
+      "jumping/04.png": "5ad7089ca28c130dfc83dc7645f4979d563eade84722fc2cb3bdc5d1455fbcaa"
+    }
+  },
+  "no_visuals_modified": true,
+  "review_history": [
+    {
+      "status": "needs-repair",
+      "mandatory_repair_count": 1,
+      "reviewed_scope": "Current qa/contact-sheet.png and qa/frames, including third-revision jumping; earlier qa/rows/jumping artifacts were excluded.",
+      "snapshot": {
+        "contact_sheet_sha256": "f24048f1e79b48b603b494a441279c19ae332fa42f8c90edf4f95d37ac17cb17",
+        "frame_review_sha256": "8767ceca1ce5c3650b04785f8ec972da921ababd0bacb33a14f71973933991db",
+        "jumping_frame_sha256": {
+          "00.png": "37a89ee44bcbd681c05d60454897060600477558c1e1080e387738b8b7645f7f",
+          "01.png": "aaff063824b51ca3c5f270d2c6188ea7fa83bfd6a5e7a5dc6a5df13d28fcbf7d",
+          "02.png": "9f627ded90ceaaade6c4a9901c1645be07691a2b8d0faef5aac1c5b3e33f29fd",
+          "03.png": "6c4e4f356f4782d23148948567215439064e34f51cdec660b71875a1dab17e73",
+          "04.png": "5ad7089ca28c130dfc83dc7645f4979d563eade84722fc2cb3bdc5d1455fbcaa"
+        }
+      },
+      "must_fix": [
+        {
+          "id": "idle-jump-person-scale-mismatch",
+          "scope": [
+            "idle to jumping",
+            "jumping to idle"
+          ],
+          "failure_type": "registration/scale",
+          "evidence": "Idle 00 bbox [26,6,165,203] is 139x197; jumping 00 bbox [31,24,161,203] is 130x179, jumping 04 [33,24,159,203] is 126x179. Hair, face, torso and legs are all visibly smaller in the jumping rest poses; knees are straight, so this is not a crouch. Both rest rows use y=203 foot baseline. Switching state visibly reduces and then restores the entire character size by roughly 9% in height.",
+          "already_correct": "Jump source is complete and connected. Within the jumping row, foot extents are 203,196,190,198,203, proving 13px vertical lift and exact landing baseline. No tail cutoff or detached effects seen.",
+          "recommendation": "Correct shared body scale and registration before more image generation. Reserve jump headroom consistently for normal states, rather than fitting every state separately to maximal cell height. Apply one uniform transform per approved row/whole family with a common body size and baseline; never independently fit each frame. Re-render idle-to-jump-to-idle after correction."
+        }
+      ],
+      "preview_metadata": {
+        "failed": {
+          "size": [
+            192,
+            208
+          ],
+          "frames": 8
+        },
+        "idle": {
+          "size": [
+            192,
+            208
+          ],
+          "frames": 6
+        },
+        "jumping": {
+          "size": [
+            192,
+            208
+          ],
+          "frames": 5
+        },
+        "review": {
+          "size": [
+            192,
+            208
+          ],
+          "frames": 6
+        },
+        "running-left": {
+          "size": [
+            192,
+            208
+          ],
+          "frames": 8
+        },
+        "running-right": {
+          "size": [
+            192,
+            208
+          ],
+          "frames": 8
+        },
+        "running": {
+          "size": [
+            192,
+            208
+          ],
+          "frames": 6
+        },
+        "waiting": {
+          "size": [
+            192,
+            208
+          ],
+          "frames": 6
+        },
+        "waving": {
+          "size": [
+            192,
+            208
+          ],
+          "frames": 4
+        }
+      },
+      "current_previous_row_identity_checks": {
+        "idle": true,
+        "waving": true,
+        "running": true
+      }
+    }
+  ],
+  "resolved_findings": [
+    {
+      "id": "idle-jump-person-scale-mismatch",
+      "scope": [
+        "idle to jumping",
+        "jumping to idle"
+      ],
+      "failure_type": "registration/scale",
+      "evidence": "Idle 00 bbox [26,6,165,203] is 139x197; jumping 00 bbox [31,24,161,203] is 130x179, jumping 04 [33,24,159,203] is 126x179. Hair, face, torso and legs are all visibly smaller in the jumping rest poses; knees are straight, so this is not a crouch. Both rest rows use y=203 foot baseline. Switching state visibly reduces and then restores the entire character size by roughly 9% in height.",
+      "already_correct": "Jump source is complete and connected. Within the jumping row, foot extents are 203,196,190,198,203, proving 13px vertical lift and exact landing baseline. No tail cutoff or detached effects seen.",
+      "recommendation": "Correct shared body scale and registration before more image generation. Reserve jump headroom consistently for normal states, rather than fitting every state separately to maximal cell height. Apply one uniform transform per approved row/whole family with a common body size and baseline; never independently fit each frame. Re-render idle-to-jump-to-idle after correction."
+    }
+  ],
+  "must_fix": [],
+  "registration_reinspection": {
+    "verdict": "pass",
+    "transformation": "Uniform 179/197 rescaling for all eight non-jumping standard rows, common (96,203) foot anchor; jumping unchanged.",
+    "visible_result": "Previous obvious whole-character shrink/growth between idle and jumping is no longer visible. Idle and jumping rest endpoints now have matching head, torso and leg scale, while jumping retains its purposeful lift.",
+    "current_bounds": {
+      "idle_00": [
+        32,
+        24,
+        159,
+        204
+      ],
+      "idle_05": [
+        34,
+        25,
+        157,
+        204
+      ],
+      "jumping_00": [
+        31,
+        24,
+        161,
+        203
+      ],
+      "jumping_04": [
+        33,
+        24,
+        159,
+        203
+      ]
+    },
+    "foot_alignment": "At opaque alpha >=240, idle first/last and jumping first/last all end at y=201. At alpha >=128, idle rest ends at 201/202 and jump rest at 202. The 1-2px low-alpha envelope difference comes from resampling fringes, not a visible ground-position or whole-body scale pop.",
+    "jump_motion": "Jumping still uses foot bounds 203,196,190,198,203, retaining 13px lift and exact unchanged landing registration.",
+    "remaining_limitations": "Small drawn silhouette and expression differences remain between independent source rows, within ordinary pose variation; no must-fix transition defect remains."
+  }
+}

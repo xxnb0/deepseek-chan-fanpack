@@ -1,7 +1,7 @@
 ---
 name: whale-tts
 description: 鲸鱼娘的可选短语音工具。优先使用宿主已有 TTS；需要 Edge TTS 时生成 MP3 和声音参数，再由宿主原生工具发送。
-version: 3.0.0
+version: 3.1.0
 ---
 # 鲸鱼娘 TTS
 
@@ -24,7 +24,9 @@ python3 skills/whale-tts/scripts/generate.py --text '让我看看，这里还有
 - 输出目录：`--output-dir` → `WHALE_AUDIO_DIR` → 包根 `output/audio/`。
 - 包根：`--root` → `WHALE_CHAN_ROOT` → 从脚本位置向上查找资料。显式输出目录可独立使用。
 
-成功时返回 JSON：`ok`、真实 `path`、`bytes`、`media_type`、`voice`、`pitch`、`rate`、`volume`、`provider`。脚本检查非空与 MP3 标记；完整解码、试听与发送由宿主按需核验。失败时非零退出并清理临时文件。
+成功时返回 JSON：`ok`、真实 `path`、`bytes`、`media_type`、`voice`、`pitch`、`rate`、`volume`、`provider`。脚本检查非空与 MP3 标记；完整解码、试听与发送由宿主按需核验。
+
+失败时非零退出、清理临时文件，返回 `ok: false`、`error`、`error_code`、`stage`。`stage` 区分输入、依赖、输出、合成和文件检查；错误类别只表示观察到的失败，不代表已定位根因，未知原因保持未知。命令参数错误也返回该 JSON 格式，不回显输入值；`--help` 正常输出帮助。不回显原始服务日志，不循环重试或改动网络权限。
 
 ## 交付
 

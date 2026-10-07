@@ -1,0 +1,28 @@
+{
+  "status": "pass-with-reviewed-warnings",
+  "source_sha256": "2f1c68507f2dc5b7c6f8055ca1630faf108c2653afab60ee2891fc55ac576aa3",
+  "reviewed_artifacts": [
+    "previews/contact-sheet.png",
+    "previews/look-directions.png",
+    "previews/four-stills.png",
+    "qa/directions-blind.png"
+  ],
+  "final_visual_observations": [
+    "All nine final animation rows retain the canonical blue hair, maid headband, apron whale mark and attached tail.",
+    "Directional gait faces consistently screen right/left with alternating extension/support/tucked poses.",
+    "Jump has actual lift and returns to the idle foot baseline without the previous character-size pop.",
+    "Final despill removes the green edge contamination visible in intermediate source reviews; no clipped connected tail or separate effects appear.",
+    "Final normal-size direction review supports the clockwise arc with weak vertical signal in the left-down intermediate family, especially 247.5 degrees. No cardinal ambiguity, wrong quadrant or reversal was accepted."
+  ],
+  "blind_review": {
+    "reviewers": 3,
+    "hard_cardinal_gate": "pass",
+    "majority_ambiguous": [
+      "vertical-7 B / 247.5 degrees"
+    ],
+    "original_individual_uncertainty_preserved": true,
+    "interpretation": "Intermediate ambiguity is retained as a review warning, not reclassified as an exact-angle success."
+  },
+  "preview_note": "GIF/MP4 are previews rendered from the final atlas cells; they are not the upload atlas. GIF palette conversion can reduce fine alpha shading.",
+  "pet_runtime_tested": false
+}

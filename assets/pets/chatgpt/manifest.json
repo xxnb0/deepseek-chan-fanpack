@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "created_on": "2026-10-06",
+  "name": "鲸鱼娘 · 大肥鱼",
+  "purpose": "Optional visual companion assets for compatible ChatGPT Work pet entrypoints; separate from character/personality configuration.",
+  "status": "validated-with-reviewed-warnings",
+  "formats": {
+    "v1": {
+      "path": "v1/spritesheet.png",
+      "metadata": "v1/pet.json",
+      "mime_type": "image/png",
+      "mode": "RGBA",
+      "width": 1536,
+      "height": 1872,
+      "bytes": 2361492,
+      "sha256": "1fa059950321d16dd23b283dd44e90e700d58701a55227fa0f243b81ad5b782d",
+      "columns": 8,
+      "rows": 9,
+      "cell_width": 192,
+      "cell_height": 208,
+      "frames_per_row": [
+        6,
+        8,
+        8,
+        4,
+        5,
+        8,
+        6,
+        6,
+        6
+      ],
+      "structural_validation": "qa/validation-v1.json",
+      "mcp_read_only_validation": "qa/mcp-validation-v1.json",
+      "mcp_valid": true
+    },
+    "v2": {
+      "path": "v2/spritesheet.png",
+      "metadata": "v2/pet.json",
+      "mime_type": "image/png",
+      "mode": "RGBA",
+      "width": 1536,
+      "height": 2288,
+      "bytes": 3001833,
+      "sha256": "2f1c68507f2dc5b7c6f8055ca1630faf108c2653afab60ee2891fc55ac576aa3",
+      "columns": 8,
+      "rows": 11,
+      "cell_width": 192,
+      "cell_height": 208,
+      "frames_per_row": [
+        6,
+        8,
+        8,
+        4,
+        5,
+        8,
+        6,
+        6,
+        6,
+        8,
+        8
+      ],
+      "structural_validation": "qa/validation-v2.json",
+      "mcp_read_only_validation": "qa/mcp-validation-v2.json",
+      "mcp_valid": true
+    }
+  },
+  "v1_derivation": {
+    "source": "v2/spritesheet.png",
+    "operation": "Exact pixel crop [0,0,1536,1872]; no resampling or new drawing."
+  },
+  "preview": "previews/all-states.gif",
+  "quality_report": "qa/pet-quality.json",
+  "blind_review_report": "qa/directions-blind-validation.json",
+  "known_limitations": {
+    "semantics_reviewed_warning_angles": [
+      "022.5",
+      "067.5",
+      "112.5",
+      "202.5",
+      "225",
+      "247.5",
+      "337.5"
+    ],
+    "continuity_reviewed_warning_transitions": [
+      "157.5->180",
+      "270->292.5",
+      "337.5->000"
+    ],
+    "blind_majority_ambiguous_vertical_angles": [
+      "247.5"
+    ],
+    "all_cardinals_passed": true,
+    "actual_gui_import_tested": false,
+    "dot_binding_tested": false,
+    "muse_compatible_atlas_claimed": false,
+    "supplementary_blind_ambiguous_vertical_angles": [
+      "067.5",
+      "112.5"
+    ]
+  },
+  "runtime_changes": {
+    "created_pet": false,
+    "selected_pet": false,
+    "changed_personality": false,
+    "changed_settings": false
+  },
+  "attribution": "NOTICE.md",
+  "documentation": "../../../docs/pets.md",
+  "latest_reinspection": "qa/reinspection-20261006/summary.json"
+}

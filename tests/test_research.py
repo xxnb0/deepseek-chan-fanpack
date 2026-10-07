@@ -12,7 +12,7 @@ class ResearchTests(unittest.TestCase):
     def test_sources_have_unique_ids_urls_and_explicit_limits(self):
         registry = json.loads((ROOT / 'research/sources.json').read_text(encoding='utf-8'))
         entries = registry['sources']
-        self.assertEqual(len(entries), 42)
+        self.assertEqual(len(entries), 46)
         self.assertEqual(len({e['id'] for e in entries}), len(entries))
         self.assertEqual(len({e['url'] for e in entries}), len(entries))
         for entry in entries:

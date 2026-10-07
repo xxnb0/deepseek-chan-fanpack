@@ -29,7 +29,10 @@ class VerifyTests(unittest.TestCase):
         result=verify.verify(self.root,metadata_only=True)
         self.assertTrue(result['ok'],result['errors'])
         self.assertFalse(result['full_media_verification'])
-        self.assertEqual(len(result['media_files_not_byte_verified']),36)
+        manifest=json.loads((self.root/'manifest.json').read_text())
+        expected={entry['path'] for entry in manifest['files']
+                  if entry.get('tier')!='archive' and Path(entry['path']).suffix.lower() in verify.MEDIA}
+        self.assertEqual(set(result['media_files_not_byte_verified']),expected)
         self.assertEqual(result['media_files_byte_verified'],0)
 
     def test_full_mode_rejects_sparse_checkout(self):

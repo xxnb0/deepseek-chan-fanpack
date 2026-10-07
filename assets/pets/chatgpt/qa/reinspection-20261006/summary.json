@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-10-06",
+  "status": "validated-candidates-with-reviewed-warnings",
+  "scope": "Independent resumed-task review of the already completed distributed files. Exact atlas pixels preserved; no pet lifecycle mutation.",
+  "source_files": [
+    {
+      "path": "../../v1/spritesheet.png",
+      "sha256": "1fa059950321d16dd23b283dd44e90e700d58701a55227fa0f243b81ad5b782d",
+      "bytes": 2361492
+    },
+    {
+      "path": "../../v2/spritesheet.png",
+      "sha256": "2f1c68507f2dc5b7c6f8055ca1630faf108c2653afab60ee2891fc55ac576aa3",
+      "bytes": 3001833
+    }
+  ],
+  "bundled_reports": [
+    {
+      "path": "directions-blind-validation.json",
+      "sha256": "3c45c2479d12117e9cd9f4c9972cfba3c59a4c9dab90b8b5c251168aa641d5d5",
+      "ok": true
+    },
+    {
+      "path": "frame-review.json",
+      "sha256": "55539c5c16eb58a6f992641330b065e0c275e5f13f6d8ea5f56bb50739b0f380",
+      "ok": true
+    },
+    {
+      "path": "independent-blind-validation.json",
+      "sha256": "7617ac91388dde5f5d9b953b14b0f4c59d8cfc008a3b44035130e283ab73311c",
+      "ok": true
+    },
+    {
+      "path": "look-continuity.json",
+      "sha256": "39690eab226ee6c160f594f18973272498e7b3ed1f6dc8ee17d2667c103c2168",
+      "ok": true
+    },
+    {
+      "path": "pet-quality.json",
+      "sha256": "2865467fd875d79192c30230e917f303f32508588b109d92d1d90feab6294284",
+      "ok": true
+    },
+    {
+      "path": "validation-v1.json",
+      "sha256": "d013200c6d457fe0fde5ba8afc5dcc8372fe374cae383620c8f07233a6c5e276",
+      "ok": true
+    },
+    {
+      "path": "validation-v2.json",
+      "sha256": "b1d78910cc7a99e75cad742cac261e70f18bf355b51d80a98b95c7ad607f8171",
+      "ok": true
+    }
+  ],
+  "read_only_mcp": {
+    "operation": "mcp__codex_apps__pets_validate_pet_spritesheet",
+    "v1": {
+      "report": "mcp-validation-v1.json",
+      "valid": true,
+      "errors": []
+    },
+    "v2": {
+      "report": "mcp-validation-v2.json",
+      "valid": true,
+      "errors": []
+    },
+    "pet_upload_session_created": false
+  },
+  "visual_review": {
+    "reviewed_artifacts": [
+      "../../previews/contact-sheet.png",
+      "../../previews/look-directions.png",
+      "../../previews/four-stills.png"
+    ],
+    "method": "Native-size labeled direction inspection and ordered animation-frame contact sheet; supplemented by an isolated normal-size axis blind review. Local encoded previews exist; native ChatGPT/Dot playback was not tested.",
+    "nine_states": "All required states retain the same character identity, connected tail and complete frames. Running left/right have correctly facing alternating poses. Idle blinks; jumping lifts and returns; working/review/waiting remain distinct.",
+    "four_cardinals": "All four are supported by existing three-reviewer majority and supplementary isolated review; no cardinal mismatch or ambiguity found.",
+    "intermediate_directions": "Weak head-pitch cues remain around nearly horizontal and near-cardinal steps. Current labeled loop review found no wrong-quadrant pose or visible backtracking; these are approximate directional poses, not precise eye-tracking calibration.",
+    "existing_labeled_warning_angles": [
+      "022.5",
+      "067.5",
+      "112.5",
+      "202.5",
+      "225",
+      "247.5",
+      "337.5"
+    ],
+    "original_three_reviewer_majority_ambiguous_vertical_angles": [
+      "247.5"
+    ],
+    "supplementary_single_reviewer_ambiguous_vertical_angles": [
+      "067.5",
+      "112.5"
+    ],
+    "supplementary_report": "independent-blind-review.json",
+    "original_three_reviewer_results_preserved": true,
+    "mandatory_visual_repair_identified": false
+  },
+  "provenance_audit": {
+    "report": "../preview-provenance.json",
+    "report_sha256": "e6099f4fc60c0ac4efc520d2afb16cf4354e37964f00cf466fafe12986b9dbb1",
+    "v1_equals_v2_first_nine_rows_pixel_for_pixel": true,
+    "distributed_atlases_match_retained_run_bytes": true,
+    "reference_fingerprints_matched": 2,
+    "accepted_source_fingerprints_matched": 13,
+    "gif_frames_bound_to_final_atlas": 147,
+    "final_frame_pngs_bound_to_final_atlas": 57,
+    "despill_input_output_alpha_identical": true,
+    "despill_input_output_changed_pixels": 153203,
+    "despill_changed_by_cell_matches_report": true,
+    "mp4_independent_picture_comparison": false,
+    "historical_process_scope": "Fingerprints and retained input/output pixels were checked. The exact historical generation path, number of successful executions and lack of mirroring remain documented production history, not facts independently proved from image hashes."
+  },
+  "candidate_decisions": {
+    "v1": "Usable nine-state compatibility candidate for an entrypoint that accepts the v1 contract; actual GUI import and runtime behavior remain untested.",
+    "v2": "Usable optional extended candidate only for an entrypoint that explicitly accepts v2, with the documented approximate diagonal-gaze limitations."
+  },
+  "runtime_unverified": [
+    "GUI import",
+    "native ChatGPT event-triggered playback",
+    "account synchronization",
+    "Dot-to-pet binding"
+  ],
+  "changes": {
+    "atlas_bytes_changed": false,
+    "new_artwork_generated": false,
+    "despill_reapplied": false,
+    "created_pet": false,
+    "selected_pet": false,
+    "changed_account_settings": false
+  }
+}
